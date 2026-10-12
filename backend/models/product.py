@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from sqlalchemy import DateTime, Float, Integer, String
+from sqlalchemy import DateTime, Float, ForeignKey, Integer, String
 from sqlalchemy.orm import Mapped, mapped_column
 
 from database import Base, utcnow
@@ -21,7 +21,11 @@ class Product(Base):
     fat: Mapped[float] = mapped_column(Float, nullable=False)
     carbs: Mapped[float] = mapped_column(Float, nullable=False)
     image_url: Mapped[str | None] = mapped_column(String(512), nullable=True)
-    source: Mapped[str] = mapped_column(String(16), nullable=False)  # local | off
+    source: Mapped[str] = mapped_column(String(16), nullable=False)  # local | off | user
+    # Владелец для пользовательских продуктов (source = 'user'); у общих — NULL
+    owner_user_id: Mapped[int | None] = mapped_column(
+        Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=True, index=True
+    )
     cached_at: Mapped[datetime | None] = mapped_column(DateTime, nullable=True)
     created_at: Mapped[datetime] = mapped_column(
         DateTime, nullable=False, default=utcnow

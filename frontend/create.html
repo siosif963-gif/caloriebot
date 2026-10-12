@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>CalorieBot — Свой продукт</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Свой продукт</h1>
+    <div class="hint" style="margin-top: 4px">Значения указываются на 100 г продукта. Он будет виден только вам.</div>
+
+    <form id="form" autocomplete="off" onsubmit="return false">
+      <div class="field">
+        <label for="fieldName">Название</label>
+        <input id="fieldName" class="text-input" type="text" maxlength="100" placeholder="Например, Домашний сырник">
+        <div class="field-error" hidden></div>
+      </div>
+      <div class="field">
+        <label for="fieldBrand">Бренд (необязательно)</label>
+        <input id="fieldBrand" class="text-input" type="text" maxlength="100" placeholder="Магазин, кафе или производитель">
+        <div class="field-error" hidden></div>
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="fieldCalories">Ккал</label>
+          <input id="fieldCalories" class="text-input" type="text" inputmode="decimal" placeholder="0">
+          <div class="field-error" hidden></div>
+        </div>
+        <div class="field">
+          <label for="fieldProtein">Белки, г</label>
+          <input id="fieldProtein" class="text-input" type="text" inputmode="decimal" placeholder="0">
+          <div class="field-error" hidden></div>
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="fieldFat">Жиры, г</label>
+          <input id="fieldFat" class="text-input" type="text" inputmode="decimal" placeholder="0">
+          <div class="field-error" hidden></div>
+        </div>
+        <div class="field">
+          <label for="fieldCarbs">Углеводы, г</label>
+          <input id="fieldCarbs" class="text-input" type="text" inputmode="decimal" placeholder="0">
+          <div class="field-error" hidden></div>
+        </div>
+      </div>
+
+      <div id="calcHint" class="hint calc-hint"></div>
+      <button id="calcBtn" class="btn-secondary" type="button" hidden>Посчитать ккал по БЖУ</button>
+    </form>
+  </main>
+
+  <script type="module" src="create.js"></script>
+</body>
+</html>

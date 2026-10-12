@@ -40,11 +40,27 @@ def get_db() -> Generator[Session, None, None]:
         db.close()
 
 
+def _ensure_columns() -> None:
+    """Добавляет колонки, появившиеся после первого релиза (миграций в проекте нет)."""
+    with engine.begin() as conn:
+        columns = {row[1] for row in conn.exec_driver_sql("PRAGMA table_info(products)")}
+        if "owner_user_id" not in columns:
+            conn.exec_driver_sql(
+                "ALTER TABLE products ADD COLUMN owner_user_id INTEGER "
+                "REFERENCES users(id) ON DELETE CASCADE"
+            )
+            conn.exec_driver_sql(
+                "CREATE INDEX IF NOT EXISTS ix_products_owner_user_id "
+                "ON products (owner_user_id)"
+            )
+
+
 def init_db() -> None:
     """Создаёт таблицы и загружает стартовые продукты."""
     import models  # noqa: F401  (регистрирует модели в Base.metadata)
     from services import product_service
 
     Base.metadata.create_all(engine)
+    _ensure_columns()
     with SessionLocal() as db:
         product_service.seed_local_products(db)

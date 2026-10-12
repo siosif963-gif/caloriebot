@@ -24,7 +24,9 @@ def add_entry(
 ) -> DiaryEntry:
     """Считает КБЖУ порции и сохраняет запись со снимком названия и бренда."""
     product = db.get(Product, product_id)
-    if product is None:
+    if product is None or (
+        product.owner_user_id is not None and product.owner_user_id != user.id
+    ):
         raise NotFoundError("Продукт не найден")
 
     entry = DiaryEntry(

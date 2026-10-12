@@ -6,6 +6,7 @@ import {
   setMainButtonEnabled,
   navigate,
   haptic,
+  confirmDialog,
   showToast,
   todayLocal,
   round1,
@@ -13,7 +14,7 @@ import {
   displayBrand,
   foodEmoji,
 } from './app.js';
-import { getProduct, addDiaryEntry } from './api.js';
+import { getProduct, addDiaryEntry, deleteProduct } from './api.js';
 
 const el = {
   media: document.getElementById('productMedia'),
@@ -26,6 +27,7 @@ const el = {
   previewMacros: document.getElementById('previewMacros'),
   mealButtons: document.querySelectorAll('#mealSwitch [data-meal]'),
   quickButtons: document.querySelectorAll('.quick-btn'),
+  deleteBtn: document.getElementById('deleteProductBtn'),
 };
 
 const MIN_WEIGHT = 1;
@@ -73,6 +75,7 @@ function renderProduct() {
   } else {
     el.media.append(createAvatar(product.name));
   }
+  el.deleteBtn.hidden = product.source !== 'user';
   el.name.textContent = product.name;
   el.brand.textContent = displayBrand(product.brand);
   el.per100.textContent =
@@ -130,6 +133,21 @@ async function submit() {
   }
 }
 
+async function onDeleteProduct() {
+  if (!product || product.source !== 'user') return;
+  const ok = await confirmDialog(`Удалить «${product.name}» из ваших продуктов?`);
+  if (!ok) return;
+  try {
+    await deleteProduct(product.id);
+    haptic.success();
+    showToast('Продукт удалён', 'success');
+    navigate('search.html');
+  } catch (err) {
+    haptic.error();
+    showToast(err.message || 'Не удалось удалить продукт', 'error');
+  }
+}
+
 async function init() {
   initApp({ backTo: 'search.html' });
 
@@ -147,6 +165,7 @@ async function init() {
   updatePreview();
 
   el.weight.addEventListener('input', updatePreview);
+  el.deleteBtn.addEventListener('click', onDeleteProduct);
   el.quickButtons.forEach((button) => {
     button.addEventListener('click', () => {
       haptic.light();

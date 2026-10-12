@@ -93,6 +93,14 @@ export function getProduct(id) {
   return request(`/api/products/${encodeURIComponent(id)}`);
 }
 
+export function createProduct(data) {
+  return request('/api/products', { method: 'POST', body: data });
+}
+
+export function deleteProduct(id) {
+  return request(`/api/products/${encodeURIComponent(id)}`, { method: 'DELETE' });
+}
+
 export function addDiaryEntry(data) {
   return request('/api/diary/add', { method: 'POST', body: data });
 }

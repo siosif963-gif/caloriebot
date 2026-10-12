@@ -13,6 +13,7 @@ const el = {
   errorText: document.getElementById('errorText'),
   retryBtn: document.getElementById('retryBtn'),
   results: document.getElementById('results'),
+  createBtn: document.getElementById('createBtn'),
 };
 
 let debounceTimer = null;
@@ -36,6 +37,7 @@ function storageSet(key, value) {
 }
 
 function resetView() {
+  el.createBtn.hidden = true;
   el.banner.hidden = true;
   el.errorBox.hidden = true;
   el.stateText.textContent = '';
@@ -81,10 +83,10 @@ function renderCard(product) {
   const name = document.createElement('div');
   name.className = 'product-name';
   name.textContent = product.name;
-  if (product.source === 'off') {
+  if (product.source === 'off' || product.source === 'user') {
     const badge = document.createElement('span');
     badge.className = 'badge';
-    badge.textContent = 'OFF';
+    badge.textContent = product.source === 'user' ? 'МОЁ' : 'OFF';
     name.append(badge);
   }
   info.append(name);
@@ -110,6 +112,7 @@ function renderCard(product) {
 
 function renderResults(response) {
   resetView();
+  el.createBtn.hidden = false;
   el.banner.hidden = response.external_status !== 'unavailable';
   if (response.items.length === 0) {
     el.stateText.textContent = 'Продукт не найден. Попробуйте другое название';
@@ -120,6 +123,7 @@ function renderResults(response) {
 
 function showError(message) {
   resetView();
+  el.createBtn.hidden = false;
   el.errorText.textContent = message;
   el.errorBox.hidden = false;
 }
@@ -161,6 +165,10 @@ function onInput() {
 initApp({ backTo: 'index.html' });
 
 el.input.addEventListener('input', onInput);
+el.createBtn.addEventListener('click', () => {
+  haptic.light();
+  navigate('create.html', { name: el.input.value.trim() });
+});
 el.retryBtn.addEventListener('click', () => {
   haptic.light();
   const query = el.input.value.trim();

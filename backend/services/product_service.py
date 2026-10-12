@@ -2,11 +2,12 @@
 import json
 import logging
 import re
+import uuid
 from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from sqlalchemy import case, func, select
+from sqlalchemy import case, func, or_, select
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
 
@@ -14,13 +15,14 @@ from config import settings
 from database import utcnow
 from models.product import Product
 from services import openfoodfacts
-from services.errors import ExternalServiceError, NotFoundError
+from services.errors import ExternalServiceError, NotFoundError, ValidationError
 
 logger = logging.getLogger(__name__)
 
 SEED_FILE = Path(__file__).resolve().parent.parent / "data" / "russian_products.json"
 MAX_RESULTS = 20
 MIN_LOCAL_RESULTS = 5
+MAX_USER_PRODUCTS = 300
 
 
 @dataclass
@@ -88,16 +90,26 @@ def _refresh_if_stale(db: Session, product: Product) -> Product:
     return product
 
 
-def _search_local(db: Session, words: list[str]) -> list[Product]:
+def _search_local(
+    db: Session, words: list[str], user_id: int | None = None
+) -> list[Product]:
     if not words:
         return []
-    stmt = select(Product)
+    # Чужие пользовательские продукты не видны: только общие и свои
+    stmt = select(Product).where(
+        or_(Product.owner_user_id.is_(None), Product.owner_user_id == user_id)
+    )
     for word in words:
         stmt = stmt.where(
             Product.name_search.like(f"%{_escape_like(word)}%", escape="\\")
         )
     stmt = stmt.order_by(
-        case((Product.source == "local", 0), else_=1), func.length(Product.name)
+        case(
+            (Product.source == "user", 0),
+            (Product.source == "local", 1),
+            else_=2,
+        ),
+        func.length(Product.name),
     ).limit(MAX_RESULTS * 2)
     # Один и тот же продукт может быть и в справочнике, и в кэше OFF — убираем дубли
     unique: dict[str, Product] = {}
@@ -177,14 +189,16 @@ def get_by_barcode(db: Session, code: str) -> Product | None:
     return product
 
 
-def get_by_id(db: Session, product_id: int) -> Product:
+def get_by_id(db: Session, product_id: int, user_id: int | None = None) -> Product:
     product = db.get(Product, product_id)
-    if product is None:
+    if product is None or (
+        product.owner_user_id is not None and product.owner_user_id != user_id
+    ):
         raise NotFoundError("Продукт не найден")
     return _refresh_if_stale(db, product)
 
 
-def search(db: Session, q: str) -> SearchResult:
+def search(db: Session, q: str, user_id: int | None = None) -> SearchResult:
     """Умный поиск: локальная база, затем OpenFoodFacts (если локальных < 5)."""
     q = q.strip()
 
@@ -195,7 +209,7 @@ def search(db: Session, q: str) -> SearchResult:
 
     # 2-3. Локальный поиск
     q_norm = normalize_name(q)
-    local = _search_local(db, q_norm.split()[:5])
+    local = _search_local(db, q_norm.split()[:5], user_id)
 
     # 4-5. Хватает локальных или запрос слишком короткий
     if len(local) >= MIN_LOCAL_RESULTS or len(q_norm) < 3:
@@ -232,7 +246,8 @@ def _merge(local: list[Product], extra: list[Product]) -> list[Product]:
         if product.id not in seen:
             seen.add(product.id)
             merged.append(product)
-    merged.sort(key=lambda p: 0 if p.source == "local" else 1)
+    order = {"user": 0, "local": 1}
+    merged.sort(key=lambda p: order.get(p.source, 2))
     return merged[:MAX_RESULTS]
 
 
@@ -293,3 +308,57 @@ def seed_local_products(db: Session) -> None:
             updated,
             removed,
         )
+
+
+def create_user_product(
+    db: Session,
+    user_id: int,
+    name: str,
+    brand: str | None,
+    calories: float,
+    protein: float,
+    fat: float,
+    carbs: float,
+) -> Product:
+    """Создаёт личный продукт пользователя (виден только ему)."""
+    count = db.scalar(
+        select(func.count()).select_from(Product).where(Product.owner_user_id == user_id)
+    )
+    if count and count >= MAX_USER_PRODUCTS:
+        raise ValidationError(
+            f"Можно создать не больше {MAX_USER_PRODUCTS} своих продуктов"
+        )
+
+    product = Product(
+        code=f"u-{uuid.uuid4().hex}",
+        name=name,
+        brand=brand,
+        name_search=normalize_name(name, brand)[:512],
+        calories=round(calories, 1),
+        protein=round(protein, 1),
+        fat=round(fat, 1),
+        carbs=round(carbs, 1),
+        image_url=None,
+        source="user",
+        owner_user_id=user_id,
+        cached_at=None,
+    )
+    db.add(product)
+    db.commit()
+    db.refresh(product)
+    return product
+
+
+def delete_user_product(db: Session, user_id: int, product_id: int) -> None:
+    """Удаляет личный продукт. Записи дневника сохраняют снимок названия и КБЖУ."""
+    product = db.scalar(
+        select(Product).where(
+            Product.id == product_id,
+            Product.owner_user_id == user_id,
+            Product.source == "user",
+        )
+    )
+    if product is None:
+        raise NotFoundError("Продукт не найден")
+    db.delete(product)
+    db.commit()
