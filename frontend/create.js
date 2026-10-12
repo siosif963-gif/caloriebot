@@ -88,8 +88,16 @@ function validate(showEmptyErrors = false) {
   // Подсказка: сколько калорий получается по БЖУ
   const { protein, fat, carbs } = values;
   const macrosOk = [protein, fat, carbs].every((v) => typeof v === 'number');
-  if (macrosOk) {
-    const calc = round1(4 * protein + 9 * fat + 4 * carbs);
+  el.calcHint.classList.remove('field-error');
+  if (macrosOk && protein + fat + carbs > 100) {
+    // На 100 г продукта белков, жиров и углеводов вместе не больше 100 г
+    valid = false;
+    el.calcHint.textContent =
+      `Белки + жиры + углеводы = ${round1(protein + fat + carbs)} г, но на 100 г продукта их не может быть больше 100 г`;
+    el.calcHint.classList.add('field-error');
+    el.calcBtn.hidden = true;
+  } else if (macrosOk) {
+    const calc = Math.min(900, round1(4 * protein + 9 * fat + 4 * carbs));
     el.calcHint.textContent = `По БЖУ получается ${calc} ккал на 100 г`;
     el.calcBtn.hidden = false;
     el.calcBtn.dataset.value = String(calc);

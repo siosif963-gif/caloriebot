@@ -1,6 +1,6 @@
 from typing import Literal
 
-from pydantic import BaseModel, ConfigDict, Field, field_validator
+from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
 
 
 class ProductOut(BaseModel):
@@ -48,3 +48,12 @@ class ProductCreate(BaseModel):
             return None
         value = " ".join(value.split())
         return value or None
+
+    @model_validator(mode="after")
+    def _check_macros_sum(self) -> "ProductCreate":
+        # На 100 г продукта белков, жиров и углеводов вместе не может быть больше 100 г
+        if self.protein + self.fat + self.carbs > 100.0001:
+            raise ValueError(
+                "сумма белков, жиров и углеводов не может быть больше 100 г на 100 г продукта"
+            )
+        return self

@@ -858,3 +858,8 @@ h1 + .field {
   font-size: 15px;
   cursor: pointer;
 }
+
+.calc-hint.field-error {
+  margin-top: 14px;
+  text-align: center;
+}
