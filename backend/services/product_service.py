@@ -233,15 +233,16 @@ def _merge(local: list[Product], extra: list[Product]) -> list[Product]:
 
 
 def seed_local_products(db: Session) -> None:
-    """Загружает стартовые продукты, если локальных ещё нет."""
-    has_local = db.scalar(
-        select(func.count()).select_from(Product).where(Product.source == "local")
-    )
-    if has_local:
-        return
-
+    """Догружает из JSON локальные продукты, которых ещё нет в базе (по code)."""
     with SEED_FILE.open(encoding="utf-8") as file:
-        items = json.load(file)
+        all_items = json.load(file)
+
+    existing_codes = set(
+        db.scalars(select(Product.code).where(Product.source == "local"))
+    )
+    items = [item for item in all_items if item["code"] not in existing_codes]
+    if not items:
+        return
 
     now: datetime = utcnow()
     for item in items:
