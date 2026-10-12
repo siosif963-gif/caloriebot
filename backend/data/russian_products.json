@@ -1,2090 +1,5366 @@
 [
-  {
-    "code": "ru-0001",
-    "name": "Творог 5%",
-    "brand": "ВкусВилл",
-    "calories": 121,
-    "protein": 17,
-    "fat": 5,
-    "carbs": 1.8
-  },
-  {
-    "code": "ru-0002",
-    "name": "Творог 9%",
-    "brand": "ВкусВилл",
-    "calories": 169,
-    "protein": 16,
-    "fat": 9,
-    "carbs": 2.0
-  },
-  {
-    "code": "ru-0003",
-    "name": "Кефир 2.5%",
-    "brand": "ВкусВилл",
-    "calories": 53,
-    "protein": 3.0,
-    "fat": 2.5,
-    "carbs": 4.0
-  },
-  {
-    "code": "ru-0004",
-    "name": "Молоко 3.2%",
-    "brand": "ВкусВилл",
-    "calories": 59,
-    "protein": 2.9,
-    "fat": 3.2,
-    "carbs": 4.7
-  },
-  {
-    "code": "ru-0005",
-    "name": "Сметана 15%",
-    "brand": "ВкусВилл",
-    "calories": 158,
-    "protein": 2.6,
-    "fat": 15,
-    "carbs": 3.0
-  },
-  {
-    "code": "ru-0006",
-    "name": "Йогурт натуральный 3.5%",
-    "brand": "ВкусВилл",
-    "calories": 66,
-    "protein": 4.0,
-    "fat": 3.5,
-    "carbs": 5.0
-  },
-  {
-    "code": "ru-0007",
-    "name": "Сыр Российский",
-    "brand": "ВкусВилл",
-    "calories": 363,
-    "protein": 23,
-    "fat": 30,
-    "carbs": 0
-  },
-  {
-    "code": "ru-0008",
-    "name": "Масло сливочное 82.5%",
-    "brand": "ВкусВилл",
-    "calories": 748,
-    "protein": 0.5,
-    "fat": 82.5,
-    "carbs": 0.8
-  },
-  {
-    "code": "ru-0009",
-    "name": "Куриная грудка охлаждённая",
-    "brand": "ВкусВилл",
-    "calories": 113,
-    "protein": 23.6,
-    "fat": 1.9,
-    "carbs": 0.4
-  },
-  {
-    "code": "ru-0010",
-    "name": "Гречка ядрица",
-    "brand": "ВкусВилл",
-    "calories": 313,
-    "protein": 12.6,
-    "fat": 3.3,
-    "carbs": 62.1
-  },
-  {
-    "code": "ru-0011",
-    "name": "Овсяные хлопья",
-    "brand": "ВкусВилл",
-    "calories": 352,
-    "protein": 12.3,
-    "fat": 6.1,
-    "carbs": 59.5
-  },
-  {
-    "code": "ru-0012",
-    "name": "Хлеб бородинский",
-    "brand": "ВкусВилл",
-    "calories": 208,
-    "protein": 6.9,
-    "fat": 1.3,
-    "carbs": 40.9
-  },
-  {
-    "code": "ru-0013",
-    "name": "Яйцо куриное С1",
-    "brand": "ВкусВилл",
-    "calories": 157,
-    "protein": 12.7,
-    "fat": 11.5,
-    "carbs": 0.7
-  },
-  {
-    "code": "ru-0014",
-    "name": "Сырники",
-    "brand": "ВкусВилл",
-    "calories": 220,
-    "protein": 14,
-    "fat": 9,
-    "carbs": 20
-  },
-  {
-    "code": "ru-0015",
-    "name": "Макароны",
-    "brand": "Пятёрочка «Красная цена»",
-    "calories": 348,
-    "protein": 11,
-    "fat": 1.5,
-    "carbs": 70
-  },
-  {
-    "code": "ru-0016",
-    "name": "Рис круглозёрный",
-    "brand": "Пятёрочка «Красная цена»",
-    "calories": 333,
-    "protein": 7,
-    "fat": 1,
-    "carbs": 75
-  },
-  {
-    "code": "ru-0017",
-    "name": "Молоко 2.5%",
-    "brand": "Пятёрочка «Красная цена»",
-    "calories": 52,
-    "protein": 2.8,
-    "fat": 2.5,
-    "carbs": 4.7
-  },
-  {
-    "code": "ru-0018",
-    "name": "Сахар-песок",
-    "brand": "Пятёрочка «Красная цена»",
-    "calories": 399,
-    "protein": 0,
-    "fat": 0,
-    "carbs": 99.8
-  },
-  {
-    "code": "ru-0019",
-    "name": "Гречневая крупа",
-    "brand": "Пятёрочка «Красная цена»",
-    "calories": 308,
-    "protein": 12.6,
-    "fat": 3.3,
-    "carbs": 57.1
-  },
-  {
-    "code": "ru-0020",
-    "name": "Хлопья овсяные",
-    "brand": "Пятёрочка «Глобус Вита»",
-    "calories": 366,
-    "protein": 11,
-    "fat": 6,
-    "carbs": 63
-  },
-  {
-    "code": "ru-0021",
-    "name": "Кукуруза консервированная",
-    "brand": "Пятёрочка «Глобус Вита»",
-    "calories": 58,
-    "protein": 2.2,
-    "fat": 0.4,
-    "carbs": 11.2
-  },
-  {
-    "code": "ru-0022",
-    "name": "Горошек зелёный консервированный",
-    "brand": "Пятёрочка «Глобус Вита»",
-    "calories": 55,
-    "protein": 3.5,
-    "fat": 0.2,
-    "carbs": 9.0
-  },
-  {
-    "code": "ru-0023",
-    "name": "Куриное филе",
-    "brand": "Перекрёсток",
-    "calories": 110,
-    "protein": 23,
-    "fat": 1.5,
-    "carbs": 0.5
-  },
-  {
-    "code": "ru-0024",
-    "name": "Творог 5%",
-    "brand": "Перекрёсток",
-    "calories": 120,
-    "protein": 16.5,
-    "fat": 5,
-    "carbs": 2.0
-  },
-  {
-    "code": "ru-0025",
-    "name": "Хлеб тостовый",
-    "brand": "Перекрёсток",
-    "calories": 262,
-    "protein": 7.5,
-    "fat": 3.5,
-    "carbs": 49
-  },
-  {
-    "code": "ru-0026",
-    "name": "Спагетти",
-    "brand": "Перекрёсток",
-    "calories": 344,
-    "protein": 12,
-    "fat": 1.5,
-    "carbs": 70
-  },
-  {
-    "code": "ru-0027",
-    "name": "Молоко 2.5%",
-    "brand": "Простоквашино",
-    "calories": 52,
-    "protein": 2.8,
-    "fat": 2.5,
-    "carbs": 4.7
-  },
-  {
-    "code": "ru-0028",
-    "name": "Кефир 1%",
-    "brand": "Простоквашино",
-    "calories": 40,
-    "protein": 3.0,
-    "fat": 1.0,
-    "carbs": 4.0
-  },
-  {
-    "code": "ru-0029",
-    "name": "Сметана 20%",
-    "brand": "Простоквашино",
-    "calories": 206,
-    "protein": 2.5,
-    "fat": 20,
-    "carbs": 3.4
-  },
-  {
-    "code": "ru-0030",
-    "name": "Ряженка 4%",
-    "brand": "Простоквашино",
-    "calories": 67,
-    "protein": 2.9,
-    "fat": 4.0,
-    "carbs": 4.2
-  },
-  {
-    "code": "ru-0031",
-    "name": "Молоко 3.2%",
-    "brand": "Домик в деревне",
-    "calories": 59,
-    "protein": 2.9,
-    "fat": 3.2,
-    "carbs": 4.7
-  },
-  {
-    "code": "ru-0032",
-    "name": "Творог 9%",
-    "brand": "Домик в деревне",
-    "calories": 169,
-    "protein": 16,
-    "fat": 9,
-    "carbs": 3
-  },
-  {
-    "code": "ru-0033",
-    "name": "Сметана 15%",
-    "brand": "Домик в деревне",
-    "calories": 158,
-    "protein": 2.6,
-    "fat": 15,
-    "carbs": 3
-  },
-  {
-    "code": "ru-0034",
-    "name": "Кефир 3.2%",
-    "brand": "Домик в деревне",
-    "calories": 59,
-    "protein": 2.9,
-    "fat": 3.2,
-    "carbs": 4.0
-  },
-  {
-    "code": "ru-0035",
-    "name": "Творог 2%",
-    "brand": "Савушкин",
-    "calories": 103,
-    "protein": 18,
-    "fat": 2,
-    "carbs": 3.3
-  },
-  {
-    "code": "ru-0036",
-    "name": "Моцарелла",
-    "brand": "Савушкин",
-    "calories": 240,
-    "protein": 18,
-    "fat": 18,
-    "carbs": 0
-  },
-  {
-    "code": "ru-0037",
-    "name": "Кефир 2.5%",
-    "brand": "Савушкин",
-    "calories": 51,
-    "protein": 3.0,
-    "fat": 2.5,
-    "carbs": 4.0
-  },
-  {
-    "code": "ru-0038",
-    "name": "Сосиски молочные",
-    "brand": "Черкизово",
-    "calories": 266,
-    "protein": 11,
-    "fat": 24,
-    "carbs": 1.6
-  },
-  {
-    "code": "ru-0039",
-    "name": "Фарш говяжий",
-    "brand": "Мираторг",
-    "calories": 254,
-    "protein": 16,
-    "fat": 20,
-    "carbs": 0
-  },
-  {
-    "code": "ru-0040",
-    "name": "Бедро куриное",
-    "brand": "Мираторг",
-    "calories": 185,
-    "protein": 17,
-    "fat": 12.5,
-    "carbs": 0
-  },
-  {
-    "code": "ru-0041",
-    "name": "Масло сливочное 72.5%",
-    "brand": "Простоквашино",
-    "calories": 661,
-    "protein": 1.0,
-    "fat": 72.5,
-    "carbs": 1.4
-  },
-  {
-    "code": "ru-0042",
-    "name": "Спагетти",
-    "brand": "Макфа",
-    "calories": 350,
-    "protein": 12.5,
-    "fat": 1.5,
-    "carbs": 70
-  },
-  {
-    "code": "ru-0043",
-    "name": "Рис басмати",
-    "brand": "Мистраль",
-    "calories": 340,
-    "protein": 7.5,
-    "fat": 0.6,
-    "carbs": 77
-  },
-  {
-    "code": "ru-0044",
-    "name": "Гречка варёная",
-    "brand": null,
-    "calories": 110,
-    "protein": 4.2,
-    "fat": 1.1,
-    "carbs": 21.3
-  },
-  {
-    "code": "ru-0045",
-    "name": "Гречка сухая",
-    "brand": null,
-    "calories": 313,
-    "protein": 12.6,
-    "fat": 3.3,
-    "carbs": 62.1
-  },
-  {
-    "code": "ru-0046",
-    "name": "Рис белый варёный",
-    "brand": null,
-    "calories": 130,
-    "protein": 2.7,
-    "fat": 0.3,
-    "carbs": 28.2
-  },
-  {
-    "code": "ru-0047",
-    "name": "Рис белый сухой",
-    "brand": null,
-    "calories": 344,
-    "protein": 6.7,
-    "fat": 0.7,
-    "carbs": 78.9
-  },
-  {
-    "code": "ru-0048",
-    "name": "Овсяная каша на воде",
-    "brand": null,
-    "calories": 88,
-    "protein": 3.0,
-    "fat": 1.7,
-    "carbs": 15
-  },
-  {
-    "code": "ru-0049",
-    "name": "Овсяные хлопья сухие",
-    "brand": null,
-    "calories": 352,
-    "protein": 12.3,
-    "fat": 6.1,
-    "carbs": 59.5
-  },
-  {
-    "code": "ru-0050",
-    "name": "Куриная грудка варёная",
-    "brand": null,
-    "calories": 137,
-    "protein": 29.8,
-    "fat": 1.8,
-    "carbs": 0.5
-  },
-  {
-    "code": "ru-0051",
-    "name": "Куриная грудка сырая",
-    "brand": null,
-    "calories": 113,
-    "protein": 23.6,
-    "fat": 1.9,
-    "carbs": 0.4
-  },
-  {
-    "code": "ru-0052",
-    "name": "Говядина варёная",
-    "brand": null,
-    "calories": 254,
-    "protein": 25.8,
-    "fat": 16.8,
-    "carbs": 0
-  },
-  {
-    "code": "ru-0053",
-    "name": "Свинина",
-    "brand": null,
-    "calories": 259,
-    "protein": 16,
-    "fat": 21.6,
-    "carbs": 0
-  },
-  {
-    "code": "ru-0054",
-    "name": "Яйцо куриное варёное",
-    "brand": null,
-    "calories": 157,
-    "protein": 12.7,
-    "fat": 11.5,
-    "carbs": 0.7
-  },
-  {
-    "code": "ru-0055",
-    "name": "Яичный белок",
-    "brand": null,
-    "calories": 48,
-    "protein": 11,
-    "fat": 0.2,
-    "carbs": 0.7
-  },
-  {
-    "code": "ru-0056",
-    "name": "Банан",
-    "brand": null,
-    "calories": 96,
-    "protein": 1.5,
-    "fat": 0.2,
-    "carbs": 21
-  },
-  {
-    "code": "ru-0057",
-    "name": "Яблоко",
-    "brand": null,
-    "calories": 52,
-    "protein": 0.3,
-    "fat": 0.2,
-    "carbs": 13.8
-  },
-  {
-    "code": "ru-0058",
-    "name": "Апельсин",
-    "brand": null,
-    "calories": 43,
-    "protein": 0.9,
-    "fat": 0.2,
-    "carbs": 8.1
-  },
-  {
-    "code": "ru-0059",
-    "name": "Груша",
-    "brand": null,
-    "calories": 47,
-    "protein": 0.4,
-    "fat": 0.3,
-    "carbs": 10.9
-  },
-  {
-    "code": "ru-0060",
-    "name": "Огурец",
-    "brand": null,
-    "calories": 15,
-    "protein": 0.8,
-    "fat": 0.1,
-    "carbs": 2.8
-  },
-  {
-    "code": "ru-0061",
-    "name": "Помидор",
-    "brand": null,
-    "calories": 20,
-    "protein": 1.1,
-    "fat": 0.2,
-    "carbs": 3.7
-  },
-  {
-    "code": "ru-0062",
-    "name": "Картофель варёный",
-    "brand": null,
-    "calories": 82,
-    "protein": 2.0,
-    "fat": 0.4,
-    "carbs": 16.7
-  },
-  {
-    "code": "ru-0063",
-    "name": "Картофель жареный",
-    "brand": null,
-    "calories": 192,
-    "protein": 2.8,
-    "fat": 9.5,
-    "carbs": 23.4
-  },
-  {
-    "code": "ru-0064",
-    "name": "Морковь",
-    "brand": null,
-    "calories": 35,
-    "protein": 1.3,
-    "fat": 0.1,
-    "carbs": 6.9
-  },
-  {
-    "code": "ru-0065",
-    "name": "Капуста белокочанная",
-    "brand": null,
-    "calories": 27,
-    "protein": 1.8,
-    "fat": 0.1,
-    "carbs": 4.7
-  },
-  {
-    "code": "ru-0066",
-    "name": "Хлеб белый",
-    "brand": null,
-    "calories": 250,
-    "protein": 8.1,
-    "fat": 1.0,
-    "carbs": 48.8
-  },
-  {
-    "code": "ru-0067",
-    "name": "Хлеб ржаной",
-    "brand": null,
-    "calories": 214,
-    "protein": 6.6,
-    "fat": 1.2,
-    "carbs": 40.7
-  },
-  {
-    "code": "ru-0068",
-    "name": "Молоко 2.5%",
-    "brand": null,
-    "calories": 52,
-    "protein": 2.8,
-    "fat": 2.5,
-    "carbs": 4.7
-  },
-  {
-    "code": "ru-0069",
-    "name": "Молоко 3.2%",
-    "brand": null,
-    "calories": 59,
-    "protein": 2.9,
-    "fat": 3.2,
-    "carbs": 4.7
-  },
-  {
-    "code": "ru-0070",
-    "name": "Кефир 1%",
-    "brand": null,
-    "calories": 40,
-    "protein": 3.0,
-    "fat": 1.0,
-    "carbs": 4.0
-  },
-  {
-    "code": "ru-0071",
-    "name": "Творог обезжиренный",
-    "brand": null,
-    "calories": 71,
-    "protein": 16.5,
-    "fat": 0.6,
-    "carbs": 1.3
-  },
-  {
-    "code": "ru-0072",
-    "name": "Сыр твёрдый",
-    "brand": null,
-    "calories": 364,
-    "protein": 24,
-    "fat": 30,
-    "carbs": 0.3
-  },
-  {
-    "code": "ru-0073",
-    "name": "Сметана 20%",
-    "brand": null,
-    "calories": 206,
-    "protein": 2.5,
-    "fat": 20,
-    "carbs": 3.4
-  },
-  {
-    "code": "ru-0074",
-    "name": "Масло подсолнечное",
-    "brand": null,
-    "calories": 899,
-    "protein": 0,
-    "fat": 99.9,
-    "carbs": 0
-  },
-  {
-    "code": "ru-0075",
-    "name": "Сахар",
-    "brand": null,
-    "calories": 399,
-    "protein": 0,
-    "fat": 0,
-    "carbs": 99.8
-  },
-  {
-    "code": "ru-0076",
-    "name": "Мёд",
-    "brand": null,
-    "calories": 329,
-    "protein": 0.8,
-    "fat": 0,
-    "carbs": 81.5
-  },
-  {
-    "code": "ru-0077",
-    "name": "Макароны варёные",
-    "brand": null,
-    "calories": 112,
-    "protein": 3.5,
-    "fat": 0.4,
-    "carbs": 23.2
-  },
-  {
-    "code": "ru-0078",
-    "name": "Макароны сухие",
-    "brand": null,
-    "calories": 337,
-    "protein": 10.4,
-    "fat": 1.1,
-    "carbs": 69.7
-  },
-  {
-    "code": "ru-0079",
-    "name": "Лосось",
-    "brand": null,
-    "calories": 208,
-    "protein": 20.4,
-    "fat": 13.6,
-    "carbs": 0
-  },
-  {
-    "code": "ru-0080",
-    "name": "Треска",
-    "brand": null,
-    "calories": 69,
-    "protein": 16,
-    "fat": 0.6,
-    "carbs": 0
-  },
-  {
-    "code": "ru-0081",
-    "name": "Тунец консервированный в собственном соку",
-    "brand": null,
-    "calories": 96,
-    "protein": 21,
-    "fat": 1,
-    "carbs": 0
-  },
-  {
-    "code": "ru-0082",
-    "name": "Миндаль",
-    "brand": null,
-    "calories": 609,
-    "protein": 18.6,
-    "fat": 53.7,
-    "carbs": 13
-  },
-  {
-    "code": "ru-0083",
-    "name": "Грецкий орех",
-    "brand": null,
-    "calories": 654,
-    "protein": 15.2,
-    "fat": 65.2,
-    "carbs": 7
-  },
-  {
-    "code": "ru-0084",
-    "name": "Авокадо",
-    "brand": null,
-    "calories": 160,
-    "protein": 2.0,
-    "fat": 14.7,
-    "carbs": 1.8
-  },
-  {
-    "code": "ru-0085",
-    "name": "Шоколад молочный",
-    "brand": null,
-    "calories": 534,
-    "protein": 7.7,
-    "fat": 35.7,
-    "carbs": 52.4
-  },
-  {
-    "code": "ru-0086",
-    "name": "Колбаса варёная докторская",
-    "brand": null,
-    "calories": 257,
-    "protein": 12.8,
-    "fat": 22.2,
-    "carbs": 1.5
-  },
-  {
-    "code": "ru-0096",
-    "name": "Воппер",
-    "brand": "Burger King (Бургер Кинг, БК)",
-    "calories": 250,
-    "protein": 11.5,
-    "fat": 14.5,
-    "carbs": 19
-  },
-  {
-    "code": "ru-0097",
-    "name": "Чизбургер",
-    "brand": "Burger King (Бургер Кинг, БК)",
-    "calories": 270,
-    "protein": 14,
-    "fat": 12,
-    "carbs": 26
-  },
-  {
-    "code": "ru-0098",
-    "name": "Картофель фри",
-    "brand": "Burger King (Бургер Кинг, БК)",
-    "calories": 300,
-    "protein": 3.5,
-    "fat": 14,
-    "carbs": 39
-  },
-  {
-    "code": "ru-0099",
-    "name": "Луковые кольца",
-    "brand": "Burger King (Бургер Кинг, БК)",
-    "calories": 280,
-    "protein": 4.5,
-    "fat": 13,
-    "carbs": 36
-  },
-  {
-    "code": "ru-0100",
-    "name": "Наггетсы",
-    "brand": "Burger King (Бургер Кинг, БК)",
-    "calories": 270,
-    "protein": 15,
-    "fat": 16,
-    "carbs": 14
-  },
-  {
-    "code": "ru-0108",
-    "name": "Сэндвич Чикен Терияки",
-    "brand": "Subway (Сабвей)",
-    "calories": 165,
-    "protein": 11,
-    "fat": 2.5,
-    "carbs": 25
-  },
-  {
-    "code": "ru-0109",
-    "name": "Сэндвич Итальянский BMT",
-    "brand": "Subway (Сабвей)",
-    "calories": 210,
-    "protein": 10,
-    "fat": 8,
-    "carbs": 24
-  },
-  {
-    "code": "ru-0110",
-    "name": "Сэндвич с тунцом",
-    "brand": "Subway (Сабвей)",
-    "calories": 215,
-    "protein": 11,
-    "fat": 8.5,
-    "carbs": 24
-  },
-  {
-    "code": "ru-0111",
-    "name": "Сэндвич с индейкой",
-    "brand": "Subway (Сабвей)",
-    "calories": 150,
-    "protein": 10,
-    "fat": 2,
-    "carbs": 24
-  },
-  {
-    "code": "ru-0112",
-    "name": "Пицца Пепперони",
-    "brand": "Додо Пицца (Dodo)",
-    "calories": 270,
-    "protein": 12,
-    "fat": 13,
-    "carbs": 26
-  },
-  {
-    "code": "ru-0113",
-    "name": "Пицца Маргарита",
-    "brand": "Додо Пицца (Dodo)",
-    "calories": 230,
-    "protein": 10,
-    "fat": 8.5,
-    "carbs": 28
-  },
-  {
-    "code": "ru-0114",
-    "name": "Пицца Четыре сыра",
-    "brand": "Додо Пицца (Dodo)",
-    "calories": 270,
-    "protein": 12,
-    "fat": 13,
-    "carbs": 26
-  },
-  {
-    "code": "ru-0115",
-    "name": "Пицца Гавайская",
-    "brand": "Додо Пицца (Dodo)",
-    "calories": 235,
-    "protein": 10,
-    "fat": 8,
-    "carbs": 30
-  },
-  {
-    "code": "ru-0116",
-    "name": "Додстер с ветчиной и сыром",
-    "brand": "Додо Пицца (Dodo)",
-    "calories": 220,
-    "protein": 10,
-    "fat": 10,
-    "carbs": 22
-  },
-  {
-    "code": "ru-0117",
-    "name": "Шаурма куриная",
-    "brand": null,
-    "calories": 215,
-    "protein": 11,
-    "fat": 10,
-    "carbs": 20
-  },
-  {
-    "code": "ru-0118",
-    "name": "Хот-дог",
-    "brand": null,
-    "calories": 250,
-    "protein": 9,
-    "fat": 14,
-    "carbs": 22
-  },
-  {
-    "code": "ru-0119",
-    "name": "Ролл Филадельфия",
-    "brand": null,
-    "calories": 180,
-    "protein": 7,
-    "fat": 7,
-    "carbs": 22
-  },
-  {
-    "code": "ru-0120",
-    "name": "Ролл Калифорния",
-    "brand": null,
-    "calories": 180,
-    "protein": 5,
-    "fat": 5.5,
-    "carbs": 28
-  },
-  {
-    "code": "ru-0121",
-    "name": "Капучино",
-    "brand": null,
-    "calories": 52,
-    "protein": 3,
-    "fat": 2.5,
-    "carbs": 4.5
-  },
-  {
-    "code": "ru-0122",
-    "name": "Латте",
-    "brand": null,
-    "calories": 45,
-    "protein": 2.7,
-    "fat": 2,
-    "carbs": 4.2
-  },
-  {
-    "code": "ru-0123",
-    "name": "Гамбургер",
-    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
-    "calories": 259.8,
-    "protein": 12.4,
-    "fat": 8.5,
-    "carbs": 34.0
-  },
-  {
-    "code": "ru-0124",
-    "name": "Чизбургер",
-    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
-    "calories": 267.0,
-    "protein": 12.8,
-    "fat": 10.1,
-    "carbs": 30.3
-  },
-  {
-    "code": "ru-0125",
-    "name": "Чикенбургер",
-    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
-    "calories": 261.2,
-    "protein": 9.3,
-    "fat": 12.4,
-    "carbs": 28.7
-  },
-  {
-    "code": "ru-0126",
-    "name": "Гранд",
-    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
-    "calories": 254.5,
-    "protein": 14.9,
-    "fat": 12.9,
-    "carbs": 18.8
-  },
-  {
-    "code": "ru-0127",
-    "name": "Гранд де люкс",
-    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
-    "calories": 227.1,
-    "protein": 12.4,
-    "fat": 12.4,
-    "carbs": 15.9
-  },
-  {
-    "code": "ru-0128",
-    "name": "Двойной Гранд",
-    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
-    "calories": 259.6,
-    "protein": 17.4,
-    "fat": 14.9,
-    "carbs": 13.5
-  },
-  {
-    "code": "ru-0129",
-    "name": "Биг Хит",
-    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
-    "calories": 229.8,
-    "protein": 11.8,
-    "fat": 12.3,
-    "carbs": 17.5
-  },
-  {
-    "code": "ru-0130",
-    "name": "Двойной Биг Хит",
-    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
-    "calories": 234.7,
-    "protein": 14.2,
-    "fat": 13.5,
-    "carbs": 13.5
-  },
-  {
-    "code": "ru-0131",
-    "name": "Биг Спешиал",
-    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
-    "calories": 235.3,
-    "protein": 12.6,
-    "fat": 13.8,
-    "carbs": 14.4
-  },
-  {
-    "code": "ru-0132",
-    "name": "Цезарь ролл",
-    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
-    "calories": 223.7,
-    "protein": 9.0,
-    "fat": 10.4,
-    "carbs": 22.7
-  },
-  {
-    "code": "ru-0133",
-    "name": "Шримп ролл",
-    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
-    "calories": 250.6,
-    "protein": 9.1,
-    "fat": 10.4,
-    "carbs": 29.9
-  },
-  {
-    "code": "ru-0134",
-    "name": "Двойной Чизбургер",
-    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
-    "calories": 263.3,
-    "protein": 15.2,
-    "fat": 13.3,
-    "carbs": 21.5
-  },
-  {
-    "code": "ru-0135",
-    "name": "Фиш Бургер",
-    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
-    "calories": 248.9,
-    "protein": 11.3,
-    "fat": 10.5,
-    "carbs": 27.1
-  },
-  {
-    "code": "ru-0136",
-    "name": "Чикен Премьер",
-    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
-    "calories": 224.4,
-    "protein": 11.1,
-    "fat": 10.3,
-    "carbs": 21.8
-  },
-  {
-    "code": "ru-0137",
-    "name": "Чикен Хит",
-    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
-    "calories": 244.4,
-    "protein": 10.6,
-    "fat": 11.1,
-    "carbs": 24.7
-  },
-  {
-    "code": "ru-0138",
-    "name": "Картофель фри",
-    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
-    "calories": 289.5,
-    "protein": 3.4,
-    "fat": 13.2,
-    "carbs": 36.8
-  },
-  {
-    "code": "ru-0139",
-    "name": "Картофель по-деревенски",
-    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
-    "calories": 200.6,
-    "protein": 2.8,
-    "fat": 9.1,
-    "carbs": 25.5
-  },
-  {
-    "code": "ru-0140",
-    "name": "Куриные наггетсы",
-    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
-    "calories": 248.6,
-    "protein": 15.3,
-    "fat": 12.6,
-    "carbs": 16.7
-  },
-  {
-    "code": "ru-0141",
-    "name": "Стрипсы",
-    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
-    "calories": 224.8,
-    "protein": 13.9,
-    "fat": 10.3,
-    "carbs": 18.8
-  },
-  {
-    "code": "ru-0142",
-    "name": "Сырные треугольники Чоризо",
-    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
-    "calories": 290.0,
-    "protein": 12.0,
-    "fat": 13.8,
-    "carbs": 28.8
-  },
-  {
-    "code": "ru-0143",
-    "name": "Креветки в панировке",
-    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
-    "calories": 250.0,
-    "protein": 13.8,
-    "fat": 12.5,
-    "carbs": 20.8
-  },
-  {
-    "code": "ru-0144",
-    "name": "Салат Цезарь",
-    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
-    "calories": 127.6,
-    "protein": 8.3,
-    "fat": 6.2,
-    "carbs": 9.0
-  },
-  {
-    "code": "ru-0145",
-    "name": "Салат Цезарь с креветками",
-    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
-    "calories": 127.4,
-    "protein": 7.5,
-    "fat": 6.6,
-    "carbs": 8.9
-  },
-  {
-    "code": "ru-0146",
-    "name": "Овощной салат",
-    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
-    "calories": 32.3,
-    "protein": 0.8,
-    "fat": 2.1,
-    "carbs": 1.9
-  },
-  {
-    "code": "ru-0147",
-    "name": "Фреш маффин",
-    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
-    "calories": 245.3,
-    "protein": 12.0,
-    "fat": 13.3,
-    "carbs": 18.7
-  },
-  {
-    "code": "ru-0148",
-    "name": "Чикен фреш маффин",
-    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
-    "calories": 228.9,
-    "protein": 9.2,
-    "fat": 9.9,
-    "carbs": 26.1
-  },
-  {
-    "code": "ru-0149",
-    "name": "Двойной фреш маффин",
-    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
-    "calories": 261.7,
-    "protein": 14.3,
-    "fat": 16.3,
-    "carbs": 14.3
-  },
-  {
-    "code": "ru-0150",
-    "name": "Вишнёвый пирожок",
-    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
-    "calories": 362.5,
-    "protein": 3.0,
-    "fat": 15.0,
-    "carbs": 53.8
-  },
-  {
-    "code": "ru-0151",
-    "name": "Клубничное мороженое",
-    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
-    "calories": 148.8,
-    "protein": 2.8,
-    "fat": 2.8,
-    "carbs": 27.9
-  },
-  {
-    "code": "ru-0152",
-    "name": "Айс Де Люкс Шоколадное",
-    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
-    "calories": 184.6,
-    "protein": 3.5,
-    "fat": 5.5,
-    "carbs": 29.9
-  },
-  {
-    "code": "ru-0153",
-    "name": "Молочный коктейль ванильный",
-    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
-    "calories": 76.3,
-    "protein": 1.8,
-    "fat": 1.5,
-    "carbs": 14.0
-  },
-  {
-    "code": "ru-0154",
-    "name": "Капучино",
-    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
-    "calories": 35.5,
-    "protein": 1.8,
-    "fat": 1.9,
-    "carbs": 2.8
-  },
-  {
-    "code": "ru-0155",
-    "name": "Латте",
-    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
-    "calories": 40.7,
-    "protein": 2.1,
-    "fat": 2.2,
-    "carbs": 3.2
-  },
-  {
-    "code": "ru-0156",
-    "name": "Сырный соус",
-    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
-    "calories": 364.0,
-    "protein": 2.0,
-    "fat": 36.4,
-    "carbs": 6.8
-  },
-  {
-    "code": "ru-0157",
-    "name": "Кисло-сладкий соус",
-    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
-    "calories": 164.0,
-    "protein": 0.4,
-    "fat": 0.8,
-    "carbs": 39.2
-  },
-  {
-    "code": "ru-0158",
-    "name": "Горчичный соус",
-    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
-    "calories": 216.0,
-    "protein": 2.0,
-    "fat": 12.0,
-    "carbs": 23.2
-  },
-  {
-    "code": "ru-0159",
-    "name": "Соус «Цезарь»",
-    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
-    "calories": 240,
-    "protein": 2.5,
-    "fat": 22,
-    "carbs": 7
-  },
-  {
-    "code": "ru-0160",
-    "name": "Куриный кусок",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 245.7,
-    "protein": 18.5,
-    "fat": 12.8,
-    "carbs": 14.2
-  },
-  {
-    "code": "ru-0161",
-    "name": "Стрипсы оригинальные",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 289.6,
-    "protein": 24.5,
-    "fat": 15.2,
-    "carbs": 13.8
-  },
-  {
-    "code": "ru-0162",
-    "name": "Стрипсы острые",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 245.2,
-    "protein": 22.3,
-    "fat": 10.4,
-    "carbs": 15.7
-  },
-  {
-    "code": "ru-0163",
-    "name": "Баскет фри",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 276.0,
-    "protein": 3.8,
-    "fat": 15.5,
-    "carbs": 30.1
-  },
-  {
-    "code": "ru-0164",
-    "name": "Вафля бельгийская",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 447.0,
-    "protein": 4.6,
-    "fat": 23.6,
-    "carbs": 54.6
-  },
-  {
-    "code": "ru-0165",
-    "name": "Вафля бельгийская с мороженым",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 320.0,
-    "protein": 4.1,
-    "fat": 15.5,
-    "carbs": 40.9
-  },
-  {
-    "code": "ru-0166",
-    "name": "Вафля бельгийская с мороженым и топпингом клубничным",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 343.0,
-    "protein": 4.0,
-    "fat": 16.3,
-    "carbs": 45.3
-  },
-  {
-    "code": "ru-0167",
-    "name": "Вафля бельгийская с мороженым и топпингом мокка-карамель",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 348.0,
-    "protein": 4.0,
-    "fat": 16.3,
-    "carbs": 46.5
-  },
-  {
-    "code": "ru-0168",
-    "name": "Вафля бельгийская с мороженым и топпингом шоколадным",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 346.0,
-    "protein": 4.1,
-    "fat": 16.3,
-    "carbs": 45.7
-  },
-  {
-    "code": "ru-0169",
-    "name": "Вафля бельгийская с топпингом клубничным",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 425.0,
-    "protein": 4.1,
-    "fat": 21.2,
-    "carbs": 54.5
-  },
-  {
-    "code": "ru-0170",
-    "name": "Вафля бельгийская с топпингом мокка-карамель",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 432.0,
-    "protein": 4.1,
-    "fat": 21.2,
-    "carbs": 56.3
-  },
-  {
-    "code": "ru-0171",
-    "name": "Вафля бельгийская с топпингом шоколадным",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 428.0,
-    "protein": 4.2,
-    "fat": 21.3,
-    "carbs": 55.1
-  },
-  {
-    "code": "ru-0172",
-    "name": "Глясе",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 32.0,
-    "protein": 0.9,
-    "fat": 0.9,
-    "carbs": 5.1
-  },
-  {
-    "code": "ru-0173",
-    "name": "Капучино",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 32.0,
-    "protein": 2.2,
-    "fat": 1.1,
-    "carbs": 3.3
-  },
-  {
-    "code": "ru-0174",
-    "name": "Кока-кола/пепси-кола",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 42.0,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 11.0
-  },
-  {
-    "code": "ru-0175",
-    "name": "Кофе капучино 0,2 зерновой",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 41.0,
-    "protein": 1.9,
-    "fat": 2.3,
-    "carbs": 3.1
-  },
-  {
-    "code": "ru-0176",
-    "name": "Кофе капучино 0,3 зерновой",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 39.0,
-    "protein": 1.8,
-    "fat": 2.2,
-    "carbs": 3.0
-  },
-  {
-    "code": "ru-0177",
-    "name": "Кофе латте 0,3 зерновой",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 49.0,
-    "protein": 2.2,
-    "fat": 2.8,
-    "carbs": 3.8
-  },
-  {
-    "code": "ru-0178",
-    "name": "Кукуруза",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 111.0,
-    "protein": 1.9,
-    "fat": 4.5,
-    "carbs": 15.9
-  },
-  {
-    "code": "ru-0179",
-    "name": "Латте",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 43.0,
-    "protein": 3.0,
-    "fat": 1.5,
-    "carbs": 4.4
-  },
-  {
-    "code": "ru-0180",
-    "name": "Мороженое",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 140.0,
-    "protein": 3.9,
-    "fat": 4.0,
-    "carbs": 22.1
-  },
-  {
-    "code": "ru-0181",
-    "name": "Мороженое в рожке",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 154.0,
-    "protein": 4.4,
-    "fat": 3.9,
-    "carbs": 25.3
-  },
-  {
-    "code": "ru-0182",
-    "name": "Салат веджи",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 27.0,
-    "protein": 1.0,
-    "fat": 1.3,
-    "carbs": 2.7
-  },
-  {
-    "code": "ru-0183",
-    "name": "Салат коул слоу",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 122.0,
-    "protein": 1.4,
-    "fat": 7.9,
-    "carbs": 11.3
-  },
-  {
-    "code": "ru-0184",
-    "name": "Салат цезарь",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 159.0,
-    "protein": 10.5,
-    "fat": 9.1,
-    "carbs": 8.7
-  },
-  {
-    "code": "ru-0185",
-    "name": "Салат цезарь овощной",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 112.0,
-    "protein": 5.5,
-    "fat": 6.9,
-    "carbs": 6.9
-  },
-  {
-    "code": "ru-0186",
-    "name": "Спрайт/ 7up",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 29.0,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 7.0
-  },
-  {
-    "code": "ru-0187",
-    "name": "Топпинг клубничный",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 223.3,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 54.7
-  },
-  {
-    "code": "ru-0188",
-    "name": "Топпинг мокка-карамель",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 287.3,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 72.0
-  },
-  {
-    "code": "ru-0189",
-    "name": "Топпинг шоколадный",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 257.3,
-    "protein": 1.3,
-    "fat": 1.3,
-    "carbs": 60.7
-  },
-  {
-    "code": "ru-0190",
-    "name": "Фанта/ миринда",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 31.0,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 7.5
-  },
-  {
-    "code": "ru-0191",
-    "name": "Чизкейк с изюмом",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 273.0,
-    "protein": 7.4,
-    "fat": 12.9,
-    "carbs": 31.4
-  },
-  {
-    "code": "ru-0192",
-    "name": "Чизкейк с клубничным топпингом",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 267.0,
-    "protein": 6.8,
-    "fat": 11.8,
-    "carbs": 33.4
-  },
-  {
-    "code": "ru-0193",
-    "name": "Чизкейк с топпингом мокка-карамель",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 273.0,
-    "protein": 6.8,
-    "fat": 11.8,
-    "carbs": 35.0
-  },
-  {
-    "code": "ru-0194",
-    "name": "Чизкейк с шоколадным топпингом",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 270.0,
-    "protein": 6.9,
-    "fat": 11.9,
-    "carbs": 33.9
-  },
-  {
-    "code": "ru-0195",
-    "name": "Биггер оригинальный",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 240.0,
-    "protein": 12.8,
-    "fat": 11.0,
-    "carbs": 22.6
-  },
-  {
-    "code": "ru-0196",
-    "name": "Биггер острый",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 225.0,
-    "protein": 12.1,
-    "fat": 9.4,
-    "carbs": 23.2
-  },
-  {
-    "code": "ru-0197",
-    "name": "Боксмастер из тостера оригинальный",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 273.0,
-    "protein": 8.5,
-    "fat": 16.5,
-    "carbs": 22.7
-  },
-  {
-    "code": "ru-0198",
-    "name": "Боксмастер из тостера острый",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 280.0,
-    "protein": 9.0,
-    "fat": 17.6,
-    "carbs": 21.3
-  },
-  {
-    "code": "ru-0199",
-    "name": "Куриные крылышки",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 314.0,
-    "protein": 16.5,
-    "fat": 20.7,
-    "carbs": 15.4
-  },
-  {
-    "code": "ru-0200",
-    "name": "Куриный шашлык",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 140.0,
-    "protein": 24.9,
-    "fat": 4.4,
-    "carbs": 0.2
-  },
-  {
-    "code": "ru-0201",
-    "name": "Лонгер оригинальный",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 253.0,
-    "protein": 11.0,
-    "fat": 11.1,
-    "carbs": 27.3
-  },
-  {
-    "code": "ru-0202",
-    "name": "Лонгер острый",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 220.0,
-    "protein": 10.9,
-    "fat": 5.7,
-    "carbs": 31.2
-  },
-  {
-    "code": "ru-0203",
-    "name": "Мини твистер оригинальный",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 257.0,
-    "protein": 10.1,
-    "fat": 11.8,
-    "carbs": 27.6
-  },
-  {
-    "code": "ru-0204",
-    "name": "Мини твистер острый",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 245.0,
-    "protein": 9.5,
-    "fat": 10.5,
-    "carbs": 28.1
-  },
-  {
-    "code": "ru-0205",
-    "name": "Сандвич зингер",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 231.0,
-    "protein": 11.6,
-    "fat": 10.7,
-    "carbs": 22.2
-  },
-  {
-    "code": "ru-0206",
-    "name": "Сандвич классик",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 220.0,
-    "protein": 10.9,
-    "fat": 8.8,
-    "carbs": 24.3
-  },
-  {
-    "code": "ru-0207",
-    "name": "Твистер из тостера оригинальный",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 234.0,
-    "protein": 10.1,
-    "fat": 9.9,
-    "carbs": 25.9
-  },
-  {
-    "code": "ru-0208",
-    "name": "Твистер из тостера острый",
-    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
-    "calories": 221.0,
-    "protein": 9.5,
-    "fat": 8.5,
-    "carbs": 26.5
-  },
-  {
-    "code": "ru-0209",
-    "name": "Блин E-Mail с Грибами",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 174.7,
-    "protein": 4.5,
-    "fat": 9.4,
-    "carbs": 18.2
-  },
-  {
-    "code": "ru-0210",
-    "name": "Блин Барбекю с Курицей",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 253.0,
-    "protein": 15.5,
-    "fat": 11.9,
-    "carbs": 21.1
-  },
-  {
-    "code": "ru-0211",
-    "name": "Блин Брынза с Куриной Грудкой",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 280.0,
-    "protein": 12.0,
-    "fat": 18.4,
-    "carbs": 16.7
-  },
-  {
-    "code": "ru-0212",
-    "name": "Блин Жульен",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 258.0,
-    "protein": 14.3,
-    "fat": 15.5,
-    "carbs": 15.4
-  },
-  {
-    "code": "ru-0213",
-    "name": "Блин Золотая Рыбка",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 234.0,
-    "protein": 8.4,
-    "fat": 13.8,
-    "carbs": 19.0
-  },
-  {
-    "code": "ru-0214",
-    "name": "Блин Итальяно",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 268.0,
-    "protein": 11.1,
-    "fat": 15.4,
-    "carbs": 21.3
-  },
-  {
-    "code": "ru-0215",
-    "name": "Блин Мясной Богатырь",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 247.0,
-    "protein": 10.1,
-    "fat": 16.0,
-    "carbs": 15.8
-  },
-  {
-    "code": "ru-0216",
-    "name": "Блин Постный с Картофелем",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 214.0,
-    "protein": 3.1,
-    "fat": 11.5,
-    "carbs": 24.6
-  },
-  {
-    "code": "ru-0217",
-    "name": "Блин с Капустой и Яйцом",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 252.0,
-    "protein": 5.5,
-    "fat": 14.8,
-    "carbs": 24.2
-  },
-  {
-    "code": "ru-0218",
-    "name": "Блин с Томленой Куриной Грудкой и Соусом",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 267.0,
-    "protein": 13.7,
-    "fat": 14.0,
-    "carbs": 21.5
-  },
-  {
-    "code": "ru-0219",
-    "name": "Блин Терем",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 290.0,
-    "protein": 11.3,
-    "fat": 20.0,
-    "carbs": 16.1
-  },
-  {
-    "code": "ru-0220",
-    "name": "Блин Утка",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 247.0,
-    "protein": 7.4,
-    "fat": 16.0,
-    "carbs": 18.5
-  },
-  {
-    "code": "ru-0221",
-    "name": "Блин Фарш",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 308.0,
-    "protein": 14.4,
-    "fat": 17.4,
-    "carbs": 23.5
-  },
-  {
-    "code": "ru-0222",
-    "name": "Блин Фермерский",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 310.0,
-    "protein": 4.8,
-    "fat": 21.8,
-    "carbs": 23.5
-  },
-  {
-    "code": "ru-0223",
-    "name": "Блин Хачапури",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 320.0,
-    "protein": 14.9,
-    "fat": 20.9,
-    "carbs": 18.1
-  },
-  {
-    "code": "ru-0224",
-    "name": "Блин Яблочно-Карамельный",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 274.0,
-    "protein": 3.6,
-    "fat": 11.3,
-    "carbs": 39.4
-  },
-  {
-    "code": "ru-0225",
-    "name": "Блинчик Грибы с Картошкой",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 262.0,
-    "protein": 4.9,
-    "fat": 16.3,
-    "carbs": 23.9
-  },
-  {
-    "code": "ru-0226",
-    "name": "Блинчик Курица с Картошкой",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 275.0,
-    "protein": 11.4,
-    "fat": 15.1,
-    "carbs": 23.4
-  },
-  {
-    "code": "ru-0227",
-    "name": "Блинчик с Вишневым Вареньем",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 292.0,
-    "protein": 3.9,
-    "fat": 11.6,
-    "carbs": 43.0
-  },
-  {
-    "code": "ru-0228",
-    "name": "Борщ Постный с Булочкой",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 68.0,
-    "protein": 1.8,
-    "fat": 2.2,
-    "carbs": 10.4
-  },
-  {
-    "code": "ru-0229",
-    "name": "Борщ с Рубленым Мясом",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 93.0,
-    "protein": 2.5,
-    "fat": 6.8,
-    "carbs": 5.3
-  },
-  {
-    "code": "ru-0230",
-    "name": "Гречка",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 138.0,
-    "protein": 4.0,
-    "fat": 4.0,
-    "carbs": 21.6
-  },
-  {
-    "code": "ru-0231",
-    "name": "Гречка с Ветчиной и Сыром",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 170.0,
-    "protein": 9.0,
-    "fat": 7.9,
-    "carbs": 16.0
-  },
-  {
-    "code": "ru-0232",
-    "name": "Гречка с Грибами",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 129.0,
-    "protein": 4.2,
-    "fat": 6.3,
-    "carbs": 14.0
-  },
-  {
-    "code": "ru-0233",
-    "name": "Гречка с Капустой и Яйцом",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 147.0,
-    "protein": 4.1,
-    "fat": 7.1,
-    "carbs": 16.7
-  },
-  {
-    "code": "ru-0234",
-    "name": "Гречка с Куриной Грудкой-Гриль",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 143.0,
-    "protein": 11.4,
-    "fat": 4.0,
-    "carbs": 15.3
-  },
-  {
-    "code": "ru-0235",
-    "name": "Капучино",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 42.0,
-    "protein": 1.9,
-    "fat": 2.4,
-    "carbs": 3.2
-  },
-  {
-    "code": "ru-0236",
-    "name": "Картофельное Пюре",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 162.0,
-    "protein": 1.9,
-    "fat": 11.3,
-    "carbs": 13.2
-  },
-  {
-    "code": "ru-0237",
-    "name": "Лапша Куриная с Фрикадельками",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 67.0,
-    "protein": 5.2,
-    "fat": 1.6,
-    "carbs": 7.9
-  },
-  {
-    "code": "ru-0238",
-    "name": "Облепиховый Чай",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 30.0,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 7.5
-  },
-  {
-    "code": "ru-0239",
-    "name": "Окрошка Домашняя на Квасе",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 72.0,
-    "protein": 2.9,
-    "fat": 4.0,
-    "carbs": 6.2
-  },
-  {
-    "code": "ru-0240",
-    "name": "Пельмени",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 197.0,
-    "protein": 9.4,
-    "fat": 9.9,
-    "carbs": 17.6
-  },
-  {
-    "code": "ru-0241",
-    "name": "Пирожное Картошка",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 433.0,
-    "protein": 7.8,
-    "fat": 33.1,
-    "carbs": 26.1
-  },
-  {
-    "code": "ru-0242",
-    "name": "Салат Афинский",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 179.0,
-    "protein": 4.7,
-    "fat": 16.6,
-    "carbs": 2.9
-  },
-  {
-    "code": "ru-0243",
-    "name": "Салат Витаминчик",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 132.0,
-    "protein": 2.2,
-    "fat": 12.2,
-    "carbs": 3.5
-  },
-  {
-    "code": "ru-0244",
-    "name": "Салат Оливье",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 184.0,
-    "protein": 4.8,
-    "fat": 15.4,
-    "carbs": 6.7
-  },
-  {
-    "code": "ru-0245",
-    "name": "Суп Гороховый Постный с Булочкой",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 74.0,
-    "protein": 3.8,
-    "fat": 1.6,
-    "carbs": 11.2
-  },
-  {
-    "code": "ru-0246",
-    "name": "Сырный Крем-Суп",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 184.0,
-    "protein": 4.8,
-    "fat": 13.7,
-    "carbs": 10.5
-  },
-  {
-    "code": "ru-0247",
-    "name": "Томленая Куриная Грудка",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 125.0,
-    "protein": 22.1,
-    "fat": 3.6,
-    "carbs": 1.0
-  },
-  {
-    "code": "ru-0248",
-    "name": "Уха из Форели по-Фински",
-    "brand": "Теремок (Teremok, блины Теремок)",
-    "calories": 87.0,
-    "protein": 5.4,
-    "fat": 5.2,
-    "carbs": 4.6
-  }
+ {
+  "code": "ru-0001",
+  "name": "Творог 5%",
+  "brand": "ВкусВилл",
+  "calories": 121,
+  "protein": 17,
+  "fat": 5,
+  "carbs": 1.8
+ },
+ {
+  "code": "ru-0002",
+  "name": "Творог 9%",
+  "brand": "ВкусВилл",
+  "calories": 169,
+  "protein": 16,
+  "fat": 9,
+  "carbs": 2.0
+ },
+ {
+  "code": "ru-0003",
+  "name": "Кефир 2.5%",
+  "brand": "ВкусВилл",
+  "calories": 53,
+  "protein": 3.0,
+  "fat": 2.5,
+  "carbs": 4.0
+ },
+ {
+  "code": "ru-0004",
+  "name": "Молоко 3.2%",
+  "brand": "ВкусВилл",
+  "calories": 59,
+  "protein": 2.9,
+  "fat": 3.2,
+  "carbs": 4.7
+ },
+ {
+  "code": "ru-0005",
+  "name": "Сметана 15%",
+  "brand": "ВкусВилл",
+  "calories": 158,
+  "protein": 2.6,
+  "fat": 15,
+  "carbs": 3.0
+ },
+ {
+  "code": "ru-0006",
+  "name": "Йогурт натуральный 3.5%",
+  "brand": "ВкусВилл",
+  "calories": 66,
+  "protein": 4.0,
+  "fat": 3.5,
+  "carbs": 5.0
+ },
+ {
+  "code": "ru-0007",
+  "name": "Сыр Российский",
+  "brand": "ВкусВилл",
+  "calories": 363,
+  "protein": 23,
+  "fat": 30,
+  "carbs": 0
+ },
+ {
+  "code": "ru-0008",
+  "name": "Масло сливочное 82.5%",
+  "brand": "ВкусВилл",
+  "calories": 748,
+  "protein": 0.5,
+  "fat": 82.5,
+  "carbs": 0.8
+ },
+ {
+  "code": "ru-0009",
+  "name": "Куриная грудка охлаждённая",
+  "brand": "ВкусВилл",
+  "calories": 113,
+  "protein": 23.6,
+  "fat": 1.9,
+  "carbs": 0.4
+ },
+ {
+  "code": "ru-0010",
+  "name": "Гречка ядрица",
+  "brand": "ВкусВилл",
+  "calories": 313,
+  "protein": 12.6,
+  "fat": 3.3,
+  "carbs": 62.1
+ },
+ {
+  "code": "ru-0011",
+  "name": "Овсяные хлопья",
+  "brand": "ВкусВилл",
+  "calories": 352,
+  "protein": 12.3,
+  "fat": 6.1,
+  "carbs": 59.5
+ },
+ {
+  "code": "ru-0012",
+  "name": "Хлеб бородинский",
+  "brand": "ВкусВилл",
+  "calories": 208,
+  "protein": 6.9,
+  "fat": 1.3,
+  "carbs": 40.9
+ },
+ {
+  "code": "ru-0013",
+  "name": "Яйцо куриное С1",
+  "brand": "ВкусВилл",
+  "calories": 157,
+  "protein": 12.7,
+  "fat": 11.5,
+  "carbs": 0.7
+ },
+ {
+  "code": "ru-0014",
+  "name": "Сырники",
+  "brand": "ВкусВилл",
+  "calories": 220,
+  "protein": 14,
+  "fat": 9,
+  "carbs": 20
+ },
+ {
+  "code": "ru-0015",
+  "name": "Макароны",
+  "brand": "Пятёрочка «Красная цена»",
+  "calories": 348,
+  "protein": 11,
+  "fat": 1.5,
+  "carbs": 70
+ },
+ {
+  "code": "ru-0016",
+  "name": "Рис круглозёрный",
+  "brand": "Пятёрочка «Красная цена»",
+  "calories": 333,
+  "protein": 7,
+  "fat": 1,
+  "carbs": 75
+ },
+ {
+  "code": "ru-0017",
+  "name": "Молоко 2.5%",
+  "brand": "Пятёрочка «Красная цена»",
+  "calories": 52,
+  "protein": 2.8,
+  "fat": 2.5,
+  "carbs": 4.7
+ },
+ {
+  "code": "ru-0018",
+  "name": "Сахар-песок",
+  "brand": "Пятёрочка «Красная цена»",
+  "calories": 399,
+  "protein": 0,
+  "fat": 0,
+  "carbs": 99.8
+ },
+ {
+  "code": "ru-0019",
+  "name": "Гречневая крупа",
+  "brand": "Пятёрочка «Красная цена»",
+  "calories": 308,
+  "protein": 12.6,
+  "fat": 3.3,
+  "carbs": 57.1
+ },
+ {
+  "code": "ru-0020",
+  "name": "Хлопья овсяные",
+  "brand": "Пятёрочка «Глобус Вита»",
+  "calories": 366,
+  "protein": 11,
+  "fat": 6,
+  "carbs": 63
+ },
+ {
+  "code": "ru-0021",
+  "name": "Кукуруза консервированная",
+  "brand": "Пятёрочка «Глобус Вита»",
+  "calories": 58,
+  "protein": 2.2,
+  "fat": 0.4,
+  "carbs": 11.2
+ },
+ {
+  "code": "ru-0022",
+  "name": "Горошек зелёный консервированный",
+  "brand": "Пятёрочка «Глобус Вита»",
+  "calories": 55,
+  "protein": 3.5,
+  "fat": 0.2,
+  "carbs": 9.0
+ },
+ {
+  "code": "ru-0023",
+  "name": "Куриное филе",
+  "brand": "Перекрёсток",
+  "calories": 110,
+  "protein": 23,
+  "fat": 1.5,
+  "carbs": 0.5
+ },
+ {
+  "code": "ru-0024",
+  "name": "Творог 5%",
+  "brand": "Перекрёсток",
+  "calories": 120,
+  "protein": 16.5,
+  "fat": 5,
+  "carbs": 2.0
+ },
+ {
+  "code": "ru-0025",
+  "name": "Хлеб тостовый",
+  "brand": "Перекрёсток",
+  "calories": 262,
+  "protein": 7.5,
+  "fat": 3.5,
+  "carbs": 49
+ },
+ {
+  "code": "ru-0026",
+  "name": "Спагетти",
+  "brand": "Перекрёсток",
+  "calories": 344,
+  "protein": 12,
+  "fat": 1.5,
+  "carbs": 70
+ },
+ {
+  "code": "ru-0027",
+  "name": "Молоко 2.5%",
+  "brand": "Простоквашино",
+  "calories": 52,
+  "protein": 2.8,
+  "fat": 2.5,
+  "carbs": 4.7
+ },
+ {
+  "code": "ru-0028",
+  "name": "Кефир 1%",
+  "brand": "Простоквашино",
+  "calories": 40,
+  "protein": 3.0,
+  "fat": 1.0,
+  "carbs": 4.0
+ },
+ {
+  "code": "ru-0029",
+  "name": "Сметана 20%",
+  "brand": "Простоквашино",
+  "calories": 206,
+  "protein": 2.5,
+  "fat": 20,
+  "carbs": 3.4
+ },
+ {
+  "code": "ru-0030",
+  "name": "Ряженка 4%",
+  "brand": "Простоквашино",
+  "calories": 67,
+  "protein": 2.9,
+  "fat": 4.0,
+  "carbs": 4.2
+ },
+ {
+  "code": "ru-0031",
+  "name": "Молоко 3.2%",
+  "brand": "Домик в деревне",
+  "calories": 59,
+  "protein": 2.9,
+  "fat": 3.2,
+  "carbs": 4.7
+ },
+ {
+  "code": "ru-0032",
+  "name": "Творог 9%",
+  "brand": "Домик в деревне",
+  "calories": 169,
+  "protein": 16,
+  "fat": 9,
+  "carbs": 3
+ },
+ {
+  "code": "ru-0033",
+  "name": "Сметана 15%",
+  "brand": "Домик в деревне",
+  "calories": 158,
+  "protein": 2.6,
+  "fat": 15,
+  "carbs": 3
+ },
+ {
+  "code": "ru-0034",
+  "name": "Кефир 3.2%",
+  "brand": "Домик в деревне",
+  "calories": 59,
+  "protein": 2.9,
+  "fat": 3.2,
+  "carbs": 4.0
+ },
+ {
+  "code": "ru-0035",
+  "name": "Творог 2%",
+  "brand": "Савушкин",
+  "calories": 103,
+  "protein": 18,
+  "fat": 2,
+  "carbs": 3.3
+ },
+ {
+  "code": "ru-0036",
+  "name": "Моцарелла",
+  "brand": "Савушкин",
+  "calories": 240,
+  "protein": 18,
+  "fat": 18,
+  "carbs": 0
+ },
+ {
+  "code": "ru-0037",
+  "name": "Кефир 2.5%",
+  "brand": "Савушкин",
+  "calories": 51,
+  "protein": 3.0,
+  "fat": 2.5,
+  "carbs": 4.0
+ },
+ {
+  "code": "ru-0038",
+  "name": "Сосиски молочные",
+  "brand": "Черкизово",
+  "calories": 266,
+  "protein": 11,
+  "fat": 24,
+  "carbs": 1.6
+ },
+ {
+  "code": "ru-0039",
+  "name": "Фарш говяжий",
+  "brand": "Мираторг",
+  "calories": 254,
+  "protein": 16,
+  "fat": 20,
+  "carbs": 0
+ },
+ {
+  "code": "ru-0040",
+  "name": "Бедро куриное",
+  "brand": "Мираторг",
+  "calories": 185,
+  "protein": 17,
+  "fat": 12.5,
+  "carbs": 0
+ },
+ {
+  "code": "ru-0041",
+  "name": "Масло сливочное 72.5%",
+  "brand": "Простоквашино",
+  "calories": 661,
+  "protein": 1.0,
+  "fat": 72.5,
+  "carbs": 1.4
+ },
+ {
+  "code": "ru-0042",
+  "name": "Спагетти",
+  "brand": "Макфа",
+  "calories": 350,
+  "protein": 12.5,
+  "fat": 1.5,
+  "carbs": 70
+ },
+ {
+  "code": "ru-0043",
+  "name": "Рис басмати",
+  "brand": "Мистраль",
+  "calories": 340,
+  "protein": 7.5,
+  "fat": 0.6,
+  "carbs": 77
+ },
+ {
+  "code": "ru-0044",
+  "name": "Гречка варёная",
+  "brand": null,
+  "calories": 110,
+  "protein": 4.2,
+  "fat": 1.1,
+  "carbs": 21.3
+ },
+ {
+  "code": "ru-0045",
+  "name": "Гречка сухая",
+  "brand": null,
+  "calories": 313,
+  "protein": 12.6,
+  "fat": 3.3,
+  "carbs": 62.1
+ },
+ {
+  "code": "ru-0046",
+  "name": "Рис белый варёный",
+  "brand": null,
+  "calories": 130,
+  "protein": 2.7,
+  "fat": 0.3,
+  "carbs": 28.2
+ },
+ {
+  "code": "ru-0047",
+  "name": "Рис белый сухой",
+  "brand": null,
+  "calories": 344,
+  "protein": 6.7,
+  "fat": 0.7,
+  "carbs": 78.9
+ },
+ {
+  "code": "ru-0048",
+  "name": "Овсяная каша на воде",
+  "brand": null,
+  "calories": 88,
+  "protein": 3.0,
+  "fat": 1.7,
+  "carbs": 15
+ },
+ {
+  "code": "ru-0049",
+  "name": "Овсяные хлопья сухие",
+  "brand": null,
+  "calories": 352,
+  "protein": 12.3,
+  "fat": 6.1,
+  "carbs": 59.5
+ },
+ {
+  "code": "ru-0050",
+  "name": "Куриная грудка варёная",
+  "brand": null,
+  "calories": 137,
+  "protein": 29.8,
+  "fat": 1.8,
+  "carbs": 0.5
+ },
+ {
+  "code": "ru-0051",
+  "name": "Куриная грудка сырая",
+  "brand": null,
+  "calories": 113,
+  "protein": 23.6,
+  "fat": 1.9,
+  "carbs": 0.4
+ },
+ {
+  "code": "ru-0052",
+  "name": "Говядина варёная",
+  "brand": null,
+  "calories": 254,
+  "protein": 25.8,
+  "fat": 16.8,
+  "carbs": 0
+ },
+ {
+  "code": "ru-0053",
+  "name": "Свинина",
+  "brand": null,
+  "calories": 259,
+  "protein": 16,
+  "fat": 21.6,
+  "carbs": 0
+ },
+ {
+  "code": "ru-0054",
+  "name": "Яйцо куриное варёное",
+  "brand": null,
+  "calories": 157,
+  "protein": 12.7,
+  "fat": 11.5,
+  "carbs": 0.7
+ },
+ {
+  "code": "ru-0055",
+  "name": "Яичный белок",
+  "brand": null,
+  "calories": 48,
+  "protein": 11,
+  "fat": 0.2,
+  "carbs": 0.7
+ },
+ {
+  "code": "ru-0056",
+  "name": "Банан",
+  "brand": null,
+  "calories": 96,
+  "protein": 1.5,
+  "fat": 0.2,
+  "carbs": 21
+ },
+ {
+  "code": "ru-0057",
+  "name": "Яблоко",
+  "brand": null,
+  "calories": 52,
+  "protein": 0.3,
+  "fat": 0.2,
+  "carbs": 13.8
+ },
+ {
+  "code": "ru-0058",
+  "name": "Апельсин",
+  "brand": null,
+  "calories": 43,
+  "protein": 0.9,
+  "fat": 0.2,
+  "carbs": 8.1
+ },
+ {
+  "code": "ru-0059",
+  "name": "Груша",
+  "brand": null,
+  "calories": 47,
+  "protein": 0.4,
+  "fat": 0.3,
+  "carbs": 10.9
+ },
+ {
+  "code": "ru-0060",
+  "name": "Огурец",
+  "brand": null,
+  "calories": 15,
+  "protein": 0.8,
+  "fat": 0.1,
+  "carbs": 2.8
+ },
+ {
+  "code": "ru-0061",
+  "name": "Помидор",
+  "brand": null,
+  "calories": 20,
+  "protein": 1.1,
+  "fat": 0.2,
+  "carbs": 3.7
+ },
+ {
+  "code": "ru-0062",
+  "name": "Картофель варёный",
+  "brand": null,
+  "calories": 82,
+  "protein": 2.0,
+  "fat": 0.4,
+  "carbs": 16.7
+ },
+ {
+  "code": "ru-0063",
+  "name": "Картофель жареный",
+  "brand": null,
+  "calories": 192,
+  "protein": 2.8,
+  "fat": 9.5,
+  "carbs": 23.4
+ },
+ {
+  "code": "ru-0064",
+  "name": "Морковь",
+  "brand": null,
+  "calories": 35,
+  "protein": 1.3,
+  "fat": 0.1,
+  "carbs": 6.9
+ },
+ {
+  "code": "ru-0065",
+  "name": "Капуста белокочанная",
+  "brand": null,
+  "calories": 27,
+  "protein": 1.8,
+  "fat": 0.1,
+  "carbs": 4.7
+ },
+ {
+  "code": "ru-0066",
+  "name": "Хлеб белый",
+  "brand": null,
+  "calories": 250,
+  "protein": 8.1,
+  "fat": 1.0,
+  "carbs": 48.8
+ },
+ {
+  "code": "ru-0067",
+  "name": "Хлеб ржаной",
+  "brand": null,
+  "calories": 214,
+  "protein": 6.6,
+  "fat": 1.2,
+  "carbs": 40.7
+ },
+ {
+  "code": "ru-0068",
+  "name": "Молоко 2.5%",
+  "brand": null,
+  "calories": 52,
+  "protein": 2.8,
+  "fat": 2.5,
+  "carbs": 4.7
+ },
+ {
+  "code": "ru-0069",
+  "name": "Молоко 3.2%",
+  "brand": null,
+  "calories": 59,
+  "protein": 2.9,
+  "fat": 3.2,
+  "carbs": 4.7
+ },
+ {
+  "code": "ru-0070",
+  "name": "Кефир 1%",
+  "brand": null,
+  "calories": 40,
+  "protein": 3.0,
+  "fat": 1.0,
+  "carbs": 4.0
+ },
+ {
+  "code": "ru-0071",
+  "name": "Творог обезжиренный",
+  "brand": null,
+  "calories": 71,
+  "protein": 16.5,
+  "fat": 0.6,
+  "carbs": 1.3
+ },
+ {
+  "code": "ru-0072",
+  "name": "Сыр твёрдый",
+  "brand": null,
+  "calories": 364,
+  "protein": 24,
+  "fat": 30,
+  "carbs": 0.3
+ },
+ {
+  "code": "ru-0073",
+  "name": "Сметана 20%",
+  "brand": null,
+  "calories": 206,
+  "protein": 2.5,
+  "fat": 20,
+  "carbs": 3.4
+ },
+ {
+  "code": "ru-0074",
+  "name": "Масло подсолнечное",
+  "brand": null,
+  "calories": 899,
+  "protein": 0,
+  "fat": 99.9,
+  "carbs": 0
+ },
+ {
+  "code": "ru-0075",
+  "name": "Сахар",
+  "brand": null,
+  "calories": 399,
+  "protein": 0,
+  "fat": 0,
+  "carbs": 99.8
+ },
+ {
+  "code": "ru-0076",
+  "name": "Мёд",
+  "brand": null,
+  "calories": 329,
+  "protein": 0.8,
+  "fat": 0,
+  "carbs": 81.5
+ },
+ {
+  "code": "ru-0077",
+  "name": "Макароны варёные",
+  "brand": null,
+  "calories": 112,
+  "protein": 3.5,
+  "fat": 0.4,
+  "carbs": 23.2
+ },
+ {
+  "code": "ru-0078",
+  "name": "Макароны сухие",
+  "brand": null,
+  "calories": 337,
+  "protein": 10.4,
+  "fat": 1.1,
+  "carbs": 69.7
+ },
+ {
+  "code": "ru-0079",
+  "name": "Лосось",
+  "brand": null,
+  "calories": 208,
+  "protein": 20.4,
+  "fat": 13.6,
+  "carbs": 0
+ },
+ {
+  "code": "ru-0080",
+  "name": "Треска",
+  "brand": null,
+  "calories": 69,
+  "protein": 16,
+  "fat": 0.6,
+  "carbs": 0
+ },
+ {
+  "code": "ru-0081",
+  "name": "Тунец консервированный в собственном соку",
+  "brand": null,
+  "calories": 96,
+  "protein": 21,
+  "fat": 1,
+  "carbs": 0
+ },
+ {
+  "code": "ru-0082",
+  "name": "Миндаль",
+  "brand": null,
+  "calories": 609,
+  "protein": 18.6,
+  "fat": 53.7,
+  "carbs": 13
+ },
+ {
+  "code": "ru-0083",
+  "name": "Грецкий орех",
+  "brand": null,
+  "calories": 654,
+  "protein": 15.2,
+  "fat": 65.2,
+  "carbs": 7
+ },
+ {
+  "code": "ru-0084",
+  "name": "Авокадо",
+  "brand": null,
+  "calories": 160,
+  "protein": 2.0,
+  "fat": 14.7,
+  "carbs": 1.8
+ },
+ {
+  "code": "ru-0085",
+  "name": "Шоколад молочный",
+  "brand": null,
+  "calories": 534,
+  "protein": 7.7,
+  "fat": 35.7,
+  "carbs": 52.4
+ },
+ {
+  "code": "ru-0086",
+  "name": "Колбаса варёная докторская",
+  "brand": null,
+  "calories": 257,
+  "protein": 12.8,
+  "fat": 22.2,
+  "carbs": 1.5
+ },
+ {
+  "code": "ru-0096",
+  "name": "Воппер",
+  "brand": "Burger King (Бургер Кинг, БК)",
+  "calories": 250,
+  "protein": 11.5,
+  "fat": 14.5,
+  "carbs": 19
+ },
+ {
+  "code": "ru-0097",
+  "name": "Чизбургер",
+  "brand": "Burger King (Бургер Кинг, БК)",
+  "calories": 270,
+  "protein": 14,
+  "fat": 12,
+  "carbs": 26
+ },
+ {
+  "code": "ru-0098",
+  "name": "Картофель фри",
+  "brand": "Burger King (Бургер Кинг, БК)",
+  "calories": 300,
+  "protein": 3.5,
+  "fat": 14,
+  "carbs": 39
+ },
+ {
+  "code": "ru-0099",
+  "name": "Луковые кольца",
+  "brand": "Burger King (Бургер Кинг, БК)",
+  "calories": 280,
+  "protein": 4.5,
+  "fat": 13,
+  "carbs": 36
+ },
+ {
+  "code": "ru-0100",
+  "name": "Наггетсы",
+  "brand": "Burger King (Бургер Кинг, БК)",
+  "calories": 270,
+  "protein": 15,
+  "fat": 16,
+  "carbs": 14
+ },
+ {
+  "code": "ru-0108",
+  "name": "Сэндвич Чикен Терияки",
+  "brand": "Subway (Сабвей)",
+  "calories": 165,
+  "protein": 11,
+  "fat": 2.5,
+  "carbs": 25
+ },
+ {
+  "code": "ru-0109",
+  "name": "Сэндвич Итальянский BMT",
+  "brand": "Subway (Сабвей)",
+  "calories": 210,
+  "protein": 10,
+  "fat": 8,
+  "carbs": 24
+ },
+ {
+  "code": "ru-0110",
+  "name": "Сэндвич с тунцом",
+  "brand": "Subway (Сабвей)",
+  "calories": 215,
+  "protein": 11,
+  "fat": 8.5,
+  "carbs": 24
+ },
+ {
+  "code": "ru-0111",
+  "name": "Сэндвич с индейкой",
+  "brand": "Subway (Сабвей)",
+  "calories": 150,
+  "protein": 10,
+  "fat": 2,
+  "carbs": 24
+ },
+ {
+  "code": "ru-0112",
+  "name": "Пицца Пепперони",
+  "brand": "Додо Пицца (Dodo)",
+  "calories": 270,
+  "protein": 12,
+  "fat": 13,
+  "carbs": 26
+ },
+ {
+  "code": "ru-0113",
+  "name": "Пицца Маргарита",
+  "brand": "Додо Пицца (Dodo)",
+  "calories": 230,
+  "protein": 10,
+  "fat": 8.5,
+  "carbs": 28
+ },
+ {
+  "code": "ru-0114",
+  "name": "Пицца Четыре сыра",
+  "brand": "Додо Пицца (Dodo)",
+  "calories": 270,
+  "protein": 12,
+  "fat": 13,
+  "carbs": 26
+ },
+ {
+  "code": "ru-0115",
+  "name": "Пицца Гавайская",
+  "brand": "Додо Пицца (Dodo)",
+  "calories": 235,
+  "protein": 10,
+  "fat": 8,
+  "carbs": 30
+ },
+ {
+  "code": "ru-0116",
+  "name": "Додстер с ветчиной и сыром",
+  "brand": "Додо Пицца (Dodo)",
+  "calories": 220,
+  "protein": 10,
+  "fat": 10,
+  "carbs": 22
+ },
+ {
+  "code": "ru-0117",
+  "name": "Шаурма куриная",
+  "brand": null,
+  "calories": 215,
+  "protein": 11,
+  "fat": 10,
+  "carbs": 20
+ },
+ {
+  "code": "ru-0118",
+  "name": "Хот-дог",
+  "brand": null,
+  "calories": 250,
+  "protein": 9,
+  "fat": 14,
+  "carbs": 22
+ },
+ {
+  "code": "ru-0119",
+  "name": "Ролл Филадельфия",
+  "brand": null,
+  "calories": 180,
+  "protein": 7,
+  "fat": 7,
+  "carbs": 22
+ },
+ {
+  "code": "ru-0120",
+  "name": "Ролл Калифорния",
+  "brand": null,
+  "calories": 180,
+  "protein": 5,
+  "fat": 5.5,
+  "carbs": 28
+ },
+ {
+  "code": "ru-0121",
+  "name": "Капучино",
+  "brand": null,
+  "calories": 52,
+  "protein": 3,
+  "fat": 2.5,
+  "carbs": 4.5
+ },
+ {
+  "code": "ru-0122",
+  "name": "Латте",
+  "brand": null,
+  "calories": 45,
+  "protein": 2.7,
+  "fat": 2,
+  "carbs": 4.2
+ },
+ {
+  "code": "ru-0123",
+  "name": "Гамбургер",
+  "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
+  "calories": 259.8,
+  "protein": 12.4,
+  "fat": 8.5,
+  "carbs": 34.0
+ },
+ {
+  "code": "ru-0124",
+  "name": "Чизбургер",
+  "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
+  "calories": 267.0,
+  "protein": 12.8,
+  "fat": 10.1,
+  "carbs": 30.3
+ },
+ {
+  "code": "ru-0125",
+  "name": "Чикенбургер",
+  "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
+  "calories": 261.2,
+  "protein": 9.3,
+  "fat": 12.4,
+  "carbs": 28.7
+ },
+ {
+  "code": "ru-0126",
+  "name": "Гранд",
+  "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
+  "calories": 254.5,
+  "protein": 14.9,
+  "fat": 12.9,
+  "carbs": 18.8
+ },
+ {
+  "code": "ru-0127",
+  "name": "Гранд де люкс",
+  "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
+  "calories": 227.1,
+  "protein": 12.4,
+  "fat": 12.4,
+  "carbs": 15.9
+ },
+ {
+  "code": "ru-0128",
+  "name": "Двойной Гранд",
+  "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
+  "calories": 259.6,
+  "protein": 17.4,
+  "fat": 14.9,
+  "carbs": 13.5
+ },
+ {
+  "code": "ru-0129",
+  "name": "Биг Хит",
+  "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
+  "calories": 229.8,
+  "protein": 11.8,
+  "fat": 12.3,
+  "carbs": 17.5
+ },
+ {
+  "code": "ru-0130",
+  "name": "Двойной Биг Хит",
+  "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
+  "calories": 234.7,
+  "protein": 14.2,
+  "fat": 13.5,
+  "carbs": 13.5
+ },
+ {
+  "code": "ru-0131",
+  "name": "Биг Спешиал",
+  "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
+  "calories": 235.3,
+  "protein": 12.6,
+  "fat": 13.8,
+  "carbs": 14.4
+ },
+ {
+  "code": "ru-0132",
+  "name": "Цезарь ролл",
+  "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
+  "calories": 223.7,
+  "protein": 9.0,
+  "fat": 10.4,
+  "carbs": 22.7
+ },
+ {
+  "code": "ru-0133",
+  "name": "Шримп ролл",
+  "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
+  "calories": 250.6,
+  "protein": 9.1,
+  "fat": 10.4,
+  "carbs": 29.9
+ },
+ {
+  "code": "ru-0134",
+  "name": "Двойной Чизбургер",
+  "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
+  "calories": 263.3,
+  "protein": 15.2,
+  "fat": 13.3,
+  "carbs": 21.5
+ },
+ {
+  "code": "ru-0135",
+  "name": "Фиш Бургер",
+  "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
+  "calories": 248.9,
+  "protein": 11.3,
+  "fat": 10.5,
+  "carbs": 27.1
+ },
+ {
+  "code": "ru-0136",
+  "name": "Чикен Премьер",
+  "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
+  "calories": 224.4,
+  "protein": 11.1,
+  "fat": 10.3,
+  "carbs": 21.8
+ },
+ {
+  "code": "ru-0137",
+  "name": "Чикен Хит",
+  "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
+  "calories": 244.4,
+  "protein": 10.6,
+  "fat": 11.1,
+  "carbs": 24.7
+ },
+ {
+  "code": "ru-0138",
+  "name": "Картофель фри",
+  "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
+  "calories": 289.5,
+  "protein": 3.4,
+  "fat": 13.2,
+  "carbs": 36.8
+ },
+ {
+  "code": "ru-0139",
+  "name": "Картофель по-деревенски",
+  "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
+  "calories": 200.6,
+  "protein": 2.8,
+  "fat": 9.1,
+  "carbs": 25.5
+ },
+ {
+  "code": "ru-0140",
+  "name": "Куриные наггетсы",
+  "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
+  "calories": 248.6,
+  "protein": 15.3,
+  "fat": 12.6,
+  "carbs": 16.7
+ },
+ {
+  "code": "ru-0141",
+  "name": "Стрипсы",
+  "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
+  "calories": 224.8,
+  "protein": 13.9,
+  "fat": 10.3,
+  "carbs": 18.8
+ },
+ {
+  "code": "ru-0142",
+  "name": "Сырные треугольники Чоризо",
+  "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
+  "calories": 290.0,
+  "protein": 12.0,
+  "fat": 13.8,
+  "carbs": 28.8
+ },
+ {
+  "code": "ru-0143",
+  "name": "Креветки в панировке",
+  "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
+  "calories": 250.0,
+  "protein": 13.8,
+  "fat": 12.5,
+  "carbs": 20.8
+ },
+ {
+  "code": "ru-0144",
+  "name": "Салат Цезарь",
+  "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
+  "calories": 127.6,
+  "protein": 8.3,
+  "fat": 6.2,
+  "carbs": 9.0
+ },
+ {
+  "code": "ru-0145",
+  "name": "Салат Цезарь с креветками",
+  "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
+  "calories": 127.4,
+  "protein": 7.5,
+  "fat": 6.6,
+  "carbs": 8.9
+ },
+ {
+  "code": "ru-0146",
+  "name": "Овощной салат",
+  "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
+  "calories": 32.3,
+  "protein": 0.8,
+  "fat": 2.1,
+  "carbs": 1.9
+ },
+ {
+  "code": "ru-0147",
+  "name": "Фреш маффин",
+  "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
+  "calories": 245.3,
+  "protein": 12.0,
+  "fat": 13.3,
+  "carbs": 18.7
+ },
+ {
+  "code": "ru-0148",
+  "name": "Чикен фреш маффин",
+  "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
+  "calories": 228.9,
+  "protein": 9.2,
+  "fat": 9.9,
+  "carbs": 26.1
+ },
+ {
+  "code": "ru-0149",
+  "name": "Двойной фреш маффин",
+  "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
+  "calories": 261.7,
+  "protein": 14.3,
+  "fat": 16.3,
+  "carbs": 14.3
+ },
+ {
+  "code": "ru-0150",
+  "name": "Вишнёвый пирожок",
+  "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
+  "calories": 362.5,
+  "protein": 3.0,
+  "fat": 15.0,
+  "carbs": 53.8
+ },
+ {
+  "code": "ru-0151",
+  "name": "Клубничное мороженое",
+  "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
+  "calories": 148.8,
+  "protein": 2.8,
+  "fat": 2.8,
+  "carbs": 27.9
+ },
+ {
+  "code": "ru-0152",
+  "name": "Айс Де Люкс Шоколадное",
+  "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
+  "calories": 184.6,
+  "protein": 3.5,
+  "fat": 5.5,
+  "carbs": 29.9
+ },
+ {
+  "code": "ru-0153",
+  "name": "Молочный коктейль ванильный",
+  "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
+  "calories": 76.3,
+  "protein": 1.8,
+  "fat": 1.5,
+  "carbs": 14.0
+ },
+ {
+  "code": "ru-0154",
+  "name": "Капучино",
+  "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
+  "calories": 35.5,
+  "protein": 1.8,
+  "fat": 1.9,
+  "carbs": 2.8
+ },
+ {
+  "code": "ru-0155",
+  "name": "Латте",
+  "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
+  "calories": 40.7,
+  "protein": 2.1,
+  "fat": 2.2,
+  "carbs": 3.2
+ },
+ {
+  "code": "ru-0156",
+  "name": "Сырный соус",
+  "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
+  "calories": 364.0,
+  "protein": 2.0,
+  "fat": 36.4,
+  "carbs": 6.8
+ },
+ {
+  "code": "ru-0157",
+  "name": "Кисло-сладкий соус",
+  "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
+  "calories": 164.0,
+  "protein": 0.4,
+  "fat": 0.8,
+  "carbs": 39.2
+ },
+ {
+  "code": "ru-0158",
+  "name": "Горчичный соус",
+  "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
+  "calories": 216.0,
+  "protein": 2.0,
+  "fat": 12.0,
+  "carbs": 23.2
+ },
+ {
+  "code": "ru-0159",
+  "name": "Соус «Цезарь»",
+  "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
+  "calories": 240,
+  "protein": 2.5,
+  "fat": 22,
+  "carbs": 7
+ },
+ {
+  "code": "ru-0160",
+  "name": "Куриный кусок",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 245.7,
+  "protein": 18.5,
+  "fat": 12.8,
+  "carbs": 14.2
+ },
+ {
+  "code": "ru-0161",
+  "name": "Стрипсы оригинальные",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 289.6,
+  "protein": 24.5,
+  "fat": 15.2,
+  "carbs": 13.8
+ },
+ {
+  "code": "ru-0162",
+  "name": "Стрипсы острые",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 245.2,
+  "protein": 22.3,
+  "fat": 10.4,
+  "carbs": 15.7
+ },
+ {
+  "code": "ru-0163",
+  "name": "Баскет фри",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 276.0,
+  "protein": 3.8,
+  "fat": 15.5,
+  "carbs": 30.1
+ },
+ {
+  "code": "ru-0164",
+  "name": "Вафля бельгийская",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 447.0,
+  "protein": 4.6,
+  "fat": 23.6,
+  "carbs": 54.6
+ },
+ {
+  "code": "ru-0165",
+  "name": "Вафля бельгийская с мороженым",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 320.0,
+  "protein": 4.1,
+  "fat": 15.5,
+  "carbs": 40.9
+ },
+ {
+  "code": "ru-0166",
+  "name": "Вафля бельгийская с мороженым и топпингом клубничным",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 343.0,
+  "protein": 4.0,
+  "fat": 16.3,
+  "carbs": 45.3
+ },
+ {
+  "code": "ru-0167",
+  "name": "Вафля бельгийская с мороженым и топпингом мокка-карамель",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 348.0,
+  "protein": 4.0,
+  "fat": 16.3,
+  "carbs": 46.5
+ },
+ {
+  "code": "ru-0168",
+  "name": "Вафля бельгийская с мороженым и топпингом шоколадным",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 346.0,
+  "protein": 4.1,
+  "fat": 16.3,
+  "carbs": 45.7
+ },
+ {
+  "code": "ru-0169",
+  "name": "Вафля бельгийская с топпингом клубничным",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 425.0,
+  "protein": 4.1,
+  "fat": 21.2,
+  "carbs": 54.5
+ },
+ {
+  "code": "ru-0170",
+  "name": "Вафля бельгийская с топпингом мокка-карамель",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 432.0,
+  "protein": 4.1,
+  "fat": 21.2,
+  "carbs": 56.3
+ },
+ {
+  "code": "ru-0171",
+  "name": "Вафля бельгийская с топпингом шоколадным",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 428.0,
+  "protein": 4.2,
+  "fat": 21.3,
+  "carbs": 55.1
+ },
+ {
+  "code": "ru-0172",
+  "name": "Глясе",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 32.0,
+  "protein": 0.9,
+  "fat": 0.9,
+  "carbs": 5.1
+ },
+ {
+  "code": "ru-0173",
+  "name": "Капучино",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 32.0,
+  "protein": 2.2,
+  "fat": 1.1,
+  "carbs": 3.3
+ },
+ {
+  "code": "ru-0174",
+  "name": "Кока-кола/пепси-кола",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 42.0,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 11.0
+ },
+ {
+  "code": "ru-0175",
+  "name": "Кофе капучино 0,2 зерновой",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 41.0,
+  "protein": 1.9,
+  "fat": 2.3,
+  "carbs": 3.1
+ },
+ {
+  "code": "ru-0176",
+  "name": "Кофе капучино 0,3 зерновой",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 39.0,
+  "protein": 1.8,
+  "fat": 2.2,
+  "carbs": 3.0
+ },
+ {
+  "code": "ru-0177",
+  "name": "Кофе латте 0,3 зерновой",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 49.0,
+  "protein": 2.2,
+  "fat": 2.8,
+  "carbs": 3.8
+ },
+ {
+  "code": "ru-0178",
+  "name": "Кукуруза",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 111.0,
+  "protein": 1.9,
+  "fat": 4.5,
+  "carbs": 15.9
+ },
+ {
+  "code": "ru-0179",
+  "name": "Латте",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 43.0,
+  "protein": 3.0,
+  "fat": 1.5,
+  "carbs": 4.4
+ },
+ {
+  "code": "ru-0180",
+  "name": "Мороженое",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 140.0,
+  "protein": 3.9,
+  "fat": 4.0,
+  "carbs": 22.1
+ },
+ {
+  "code": "ru-0181",
+  "name": "Мороженое в рожке",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 154.0,
+  "protein": 4.4,
+  "fat": 3.9,
+  "carbs": 25.3
+ },
+ {
+  "code": "ru-0182",
+  "name": "Салат веджи",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 27.0,
+  "protein": 1.0,
+  "fat": 1.3,
+  "carbs": 2.7
+ },
+ {
+  "code": "ru-0183",
+  "name": "Салат коул слоу",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 122.0,
+  "protein": 1.4,
+  "fat": 7.9,
+  "carbs": 11.3
+ },
+ {
+  "code": "ru-0184",
+  "name": "Салат цезарь",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 159.0,
+  "protein": 10.5,
+  "fat": 9.1,
+  "carbs": 8.7
+ },
+ {
+  "code": "ru-0185",
+  "name": "Салат цезарь овощной",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 112.0,
+  "protein": 5.5,
+  "fat": 6.9,
+  "carbs": 6.9
+ },
+ {
+  "code": "ru-0186",
+  "name": "Спрайт/ 7up",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 29.0,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 7.0
+ },
+ {
+  "code": "ru-0187",
+  "name": "Топпинг клубничный",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 223.3,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 54.7
+ },
+ {
+  "code": "ru-0188",
+  "name": "Топпинг мокка-карамель",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 287.3,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 72.0
+ },
+ {
+  "code": "ru-0189",
+  "name": "Топпинг шоколадный",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 257.3,
+  "protein": 1.3,
+  "fat": 1.3,
+  "carbs": 60.7
+ },
+ {
+  "code": "ru-0190",
+  "name": "Фанта/ миринда",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 31.0,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 7.5
+ },
+ {
+  "code": "ru-0191",
+  "name": "Чизкейк с изюмом",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 273.0,
+  "protein": 7.4,
+  "fat": 12.9,
+  "carbs": 31.4
+ },
+ {
+  "code": "ru-0192",
+  "name": "Чизкейк с клубничным топпингом",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 267.0,
+  "protein": 6.8,
+  "fat": 11.8,
+  "carbs": 33.4
+ },
+ {
+  "code": "ru-0193",
+  "name": "Чизкейк с топпингом мокка-карамель",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 273.0,
+  "protein": 6.8,
+  "fat": 11.8,
+  "carbs": 35.0
+ },
+ {
+  "code": "ru-0194",
+  "name": "Чизкейк с шоколадным топпингом",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 270.0,
+  "protein": 6.9,
+  "fat": 11.9,
+  "carbs": 33.9
+ },
+ {
+  "code": "ru-0195",
+  "name": "Биггер оригинальный",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 240.0,
+  "protein": 12.8,
+  "fat": 11.0,
+  "carbs": 22.6
+ },
+ {
+  "code": "ru-0196",
+  "name": "Биггер острый",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 225.0,
+  "protein": 12.1,
+  "fat": 9.4,
+  "carbs": 23.2
+ },
+ {
+  "code": "ru-0197",
+  "name": "Боксмастер из тостера оригинальный",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 273.0,
+  "protein": 8.5,
+  "fat": 16.5,
+  "carbs": 22.7
+ },
+ {
+  "code": "ru-0198",
+  "name": "Боксмастер из тостера острый",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 280.0,
+  "protein": 9.0,
+  "fat": 17.6,
+  "carbs": 21.3
+ },
+ {
+  "code": "ru-0199",
+  "name": "Куриные крылышки",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 314.0,
+  "protein": 16.5,
+  "fat": 20.7,
+  "carbs": 15.4
+ },
+ {
+  "code": "ru-0200",
+  "name": "Куриный шашлык",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 140.0,
+  "protein": 24.9,
+  "fat": 4.4,
+  "carbs": 0.2
+ },
+ {
+  "code": "ru-0201",
+  "name": "Лонгер оригинальный",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 253.0,
+  "protein": 11.0,
+  "fat": 11.1,
+  "carbs": 27.3
+ },
+ {
+  "code": "ru-0202",
+  "name": "Лонгер острый",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 220.0,
+  "protein": 10.9,
+  "fat": 5.7,
+  "carbs": 31.2
+ },
+ {
+  "code": "ru-0203",
+  "name": "Мини твистер оригинальный",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 257.0,
+  "protein": 10.1,
+  "fat": 11.8,
+  "carbs": 27.6
+ },
+ {
+  "code": "ru-0204",
+  "name": "Мини твистер острый",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 245.0,
+  "protein": 9.5,
+  "fat": 10.5,
+  "carbs": 28.1
+ },
+ {
+  "code": "ru-0205",
+  "name": "Сандвич зингер",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 231.0,
+  "protein": 11.6,
+  "fat": 10.7,
+  "carbs": 22.2
+ },
+ {
+  "code": "ru-0206",
+  "name": "Сандвич классик",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 220.0,
+  "protein": 10.9,
+  "fat": 8.8,
+  "carbs": 24.3
+ },
+ {
+  "code": "ru-0207",
+  "name": "Твистер из тостера оригинальный",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 234.0,
+  "protein": 10.1,
+  "fat": 9.9,
+  "carbs": 25.9
+ },
+ {
+  "code": "ru-0208",
+  "name": "Твистер из тостера острый",
+  "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
+  "calories": 221.0,
+  "protein": 9.5,
+  "fat": 8.5,
+  "carbs": 26.5
+ },
+ {
+  "code": "ru-0209",
+  "name": "Блин E-Mail с Грибами",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 174.7,
+  "protein": 4.5,
+  "fat": 9.4,
+  "carbs": 18.2
+ },
+ {
+  "code": "ru-0210",
+  "name": "Блин Барбекю с Курицей",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 253.0,
+  "protein": 15.5,
+  "fat": 11.9,
+  "carbs": 21.1
+ },
+ {
+  "code": "ru-0211",
+  "name": "Блин Брынза с Куриной Грудкой",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 280.0,
+  "protein": 12.0,
+  "fat": 18.4,
+  "carbs": 16.7
+ },
+ {
+  "code": "ru-0212",
+  "name": "Блин Жульен",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 258.0,
+  "protein": 14.3,
+  "fat": 15.5,
+  "carbs": 15.4
+ },
+ {
+  "code": "ru-0213",
+  "name": "Блин Золотая Рыбка",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 234.0,
+  "protein": 8.4,
+  "fat": 13.8,
+  "carbs": 19.0
+ },
+ {
+  "code": "ru-0214",
+  "name": "Блин Итальяно",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 268.0,
+  "protein": 11.1,
+  "fat": 15.4,
+  "carbs": 21.3
+ },
+ {
+  "code": "ru-0215",
+  "name": "Блин Мясной Богатырь",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 247.0,
+  "protein": 10.1,
+  "fat": 16.0,
+  "carbs": 15.8
+ },
+ {
+  "code": "ru-0216",
+  "name": "Блин Постный с Картофелем",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 214.0,
+  "protein": 3.1,
+  "fat": 11.5,
+  "carbs": 24.6
+ },
+ {
+  "code": "ru-0217",
+  "name": "Блин с Капустой и Яйцом",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 252.0,
+  "protein": 5.5,
+  "fat": 14.8,
+  "carbs": 24.2
+ },
+ {
+  "code": "ru-0218",
+  "name": "Блин с Томленой Куриной Грудкой и Соусом",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 267.0,
+  "protein": 13.7,
+  "fat": 14.0,
+  "carbs": 21.5
+ },
+ {
+  "code": "ru-0219",
+  "name": "Блин Терем",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 290.0,
+  "protein": 11.3,
+  "fat": 20.0,
+  "carbs": 16.1
+ },
+ {
+  "code": "ru-0220",
+  "name": "Блин Утка",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 247.0,
+  "protein": 7.4,
+  "fat": 16.0,
+  "carbs": 18.5
+ },
+ {
+  "code": "ru-0221",
+  "name": "Блин Фарш",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 308.0,
+  "protein": 14.4,
+  "fat": 17.4,
+  "carbs": 23.5
+ },
+ {
+  "code": "ru-0222",
+  "name": "Блин Фермерский",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 310.0,
+  "protein": 4.8,
+  "fat": 21.8,
+  "carbs": 23.5
+ },
+ {
+  "code": "ru-0223",
+  "name": "Блин Хачапури",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 320.0,
+  "protein": 14.9,
+  "fat": 20.9,
+  "carbs": 18.1
+ },
+ {
+  "code": "ru-0224",
+  "name": "Блин Яблочно-Карамельный",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 274.0,
+  "protein": 3.6,
+  "fat": 11.3,
+  "carbs": 39.4
+ },
+ {
+  "code": "ru-0225",
+  "name": "Блинчик Грибы с Картошкой",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 262.0,
+  "protein": 4.9,
+  "fat": 16.3,
+  "carbs": 23.9
+ },
+ {
+  "code": "ru-0226",
+  "name": "Блинчик Курица с Картошкой",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 275.0,
+  "protein": 11.4,
+  "fat": 15.1,
+  "carbs": 23.4
+ },
+ {
+  "code": "ru-0227",
+  "name": "Блинчик с Вишневым Вареньем",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 292.0,
+  "protein": 3.9,
+  "fat": 11.6,
+  "carbs": 43.0
+ },
+ {
+  "code": "ru-0228",
+  "name": "Борщ Постный с Булочкой",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 68.0,
+  "protein": 1.8,
+  "fat": 2.2,
+  "carbs": 10.4
+ },
+ {
+  "code": "ru-0229",
+  "name": "Борщ с Рубленым Мясом",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 93.0,
+  "protein": 2.5,
+  "fat": 6.8,
+  "carbs": 5.3
+ },
+ {
+  "code": "ru-0230",
+  "name": "Гречка",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 138.0,
+  "protein": 4.0,
+  "fat": 4.0,
+  "carbs": 21.6
+ },
+ {
+  "code": "ru-0231",
+  "name": "Гречка с Ветчиной и Сыром",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 170.0,
+  "protein": 9.0,
+  "fat": 7.9,
+  "carbs": 16.0
+ },
+ {
+  "code": "ru-0232",
+  "name": "Гречка с Грибами",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 129.0,
+  "protein": 4.2,
+  "fat": 6.3,
+  "carbs": 14.0
+ },
+ {
+  "code": "ru-0233",
+  "name": "Гречка с Капустой и Яйцом",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 147.0,
+  "protein": 4.1,
+  "fat": 7.1,
+  "carbs": 16.7
+ },
+ {
+  "code": "ru-0234",
+  "name": "Гречка с Куриной Грудкой-Гриль",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 143.0,
+  "protein": 11.4,
+  "fat": 4.0,
+  "carbs": 15.3
+ },
+ {
+  "code": "ru-0235",
+  "name": "Капучино",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 42.0,
+  "protein": 1.9,
+  "fat": 2.4,
+  "carbs": 3.2
+ },
+ {
+  "code": "ru-0236",
+  "name": "Картофельное Пюре",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 162.0,
+  "protein": 1.9,
+  "fat": 11.3,
+  "carbs": 13.2
+ },
+ {
+  "code": "ru-0237",
+  "name": "Лапша Куриная с Фрикадельками",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 67.0,
+  "protein": 5.2,
+  "fat": 1.6,
+  "carbs": 7.9
+ },
+ {
+  "code": "ru-0238",
+  "name": "Облепиховый Чай",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 30.0,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 7.5
+ },
+ {
+  "code": "ru-0239",
+  "name": "Окрошка Домашняя на Квасе",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 72.0,
+  "protein": 2.9,
+  "fat": 4.0,
+  "carbs": 6.2
+ },
+ {
+  "code": "ru-0240",
+  "name": "Пельмени",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 197.0,
+  "protein": 9.4,
+  "fat": 9.9,
+  "carbs": 17.6
+ },
+ {
+  "code": "ru-0241",
+  "name": "Пирожное Картошка",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 433.0,
+  "protein": 7.8,
+  "fat": 33.1,
+  "carbs": 26.1
+ },
+ {
+  "code": "ru-0242",
+  "name": "Салат Афинский",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 179.0,
+  "protein": 4.7,
+  "fat": 16.6,
+  "carbs": 2.9
+ },
+ {
+  "code": "ru-0243",
+  "name": "Салат Витаминчик",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 132.0,
+  "protein": 2.2,
+  "fat": 12.2,
+  "carbs": 3.5
+ },
+ {
+  "code": "ru-0244",
+  "name": "Салат Оливье",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 184.0,
+  "protein": 4.8,
+  "fat": 15.4,
+  "carbs": 6.7
+ },
+ {
+  "code": "ru-0245",
+  "name": "Суп Гороховый Постный с Булочкой",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 74.0,
+  "protein": 3.8,
+  "fat": 1.6,
+  "carbs": 11.2
+ },
+ {
+  "code": "ru-0246",
+  "name": "Сырный Крем-Суп",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 184.0,
+  "protein": 4.8,
+  "fat": 13.7,
+  "carbs": 10.5
+ },
+ {
+  "code": "ru-0247",
+  "name": "Томленая Куриная Грудка",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 125.0,
+  "protein": 22.1,
+  "fat": 3.6,
+  "carbs": 1.0
+ },
+ {
+  "code": "ru-0248",
+  "name": "Уха из Форели по-Фински",
+  "brand": "Теремок (Teremok, блины Теремок)",
+  "calories": 87.0,
+  "protein": 5.4,
+  "fat": 5.2,
+  "carbs": 4.6
+ },
+ {
+  "code": "zt-0001",
+  "name": "Пицца Маргарита",
+  "brand": "Zotman (Зотман, Перекрёсток, ВкусВилл)",
+  "calories": 197.0,
+  "protein": 9.0,
+  "fat": 8.0,
+  "carbs": 22.0
+ },
+ {
+  "code": "zt-0002",
+  "name": "Пицца на бородинском тесте с окороком",
+  "brand": "Zotman (Зотман, Перекрёсток, ВкусВилл)",
+  "calories": 204.0,
+  "protein": 8.0,
+  "fat": 11.0,
+  "carbs": 19.0
+ },
+ {
+  "code": "zt-0003",
+  "name": "Пицца Пепперони",
+  "brand": "Zotman (Зотман, Перекрёсток, ВкусВилл)",
+  "calories": 194.0,
+  "protein": 9.0,
+  "fat": 8.0,
+  "carbs": 21.0
+ },
+ {
+  "code": "zt-0004",
+  "name": "Пицца Ветчина и грибы",
+  "brand": "Zotman (Зотман, Перекрёсток, ВкусВилл)",
+  "calories": 182.0,
+  "protein": 8.0,
+  "fat": 7.0,
+  "carbs": 22.0
+ },
+ {
+  "code": "zt-0005",
+  "name": "Пицца Баварская мясная",
+  "brand": "Zotman (Зотман, Перекрёсток, ВкусВилл)",
+  "calories": 175.0,
+  "protein": 9.0,
+  "fat": 7.0,
+  "carbs": 20.0
+ },
+ {
+  "code": "zt-0006",
+  "name": "Пицца Груша и горгонзола",
+  "brand": "Zotman (Зотман, Перекрёсток, ВкусВилл)",
+  "calories": 197.0,
+  "protein": 9.0,
+  "fat": 8.0,
+  "carbs": 22.0
+ },
+ {
+  "code": "zt-0007",
+  "name": "Пицца Четыре сыра",
+  "brand": "Zotman (Зотман, Перекрёсток, ВкусВилл)",
+  "calories": 221.0,
+  "protein": 12.0,
+  "fat": 10.0,
+  "carbs": 21.0
+ },
+ {
+  "code": "zt-0008",
+  "name": "Пицца Чиз карбонара",
+  "brand": "Zotman (Зотман, Перекрёсток, ВкусВилл)",
+  "calories": 225.0,
+  "protein": 10.0,
+  "fat": 12.0,
+  "carbs": 20.0
+ },
+ {
+  "code": "st-4601674008758",
+  "name": "Кетчуп с чесноком и пряностями",
+  "brand": "Heinz (Перекрёсток)",
+  "calories": 110.0,
+  "protein": 1.5,
+  "fat": 0.1,
+  "carbs": 26.0
+ },
+ {
+  "code": "st-4601363001329",
+  "name": "Майонез Провансаль 67 %",
+  "brand": "Скит (Перекрёсток)",
+  "calories": 616.6,
+  "protein": 0.8,
+  "fat": 67.0,
+  "carbs": 2.6
+ },
+ {
+  "code": "st-7622210770660",
+  "name": "Bitter. Горький шоколад 70 % какао",
+  "brand": "Alpen Gold (Перекрёсток)",
+  "calories": 530.4,
+  "protein": 9.4,
+  "fat": 38.0,
+  "carbs": 30.0
+ },
+ {
+  "code": "st-4607809322744",
+  "name": "Крупа гречневая",
+  "brand": "Джюса-А (Перекрёсток)",
+  "calories": 308.2,
+  "protein": 12.6,
+  "fat": 3.3,
+  "carbs": 57.1
+ },
+ {
+  "code": "st-4630005744096",
+  "name": "Творог 5 %",
+  "brand": "Милава (Перекрёсток)",
+  "calories": 114.7,
+  "protein": 16.0,
+  "fat": 5.0,
+  "carbs": 1.5
+ },
+ {
+  "code": "st-4680019562018",
+  "name": "Nemoloko гречневое классическое лайт 1,5 %",
+  "brand": "nemoloko (Перекрёсток)",
+  "calories": 45.0,
+  "protein": 1.0,
+  "fat": 1.5,
+  "carbs": 6.5
+ },
+ {
+  "code": "st-4607063131779",
+  "name": "Арахисовая паста «LA PINA»",
+  "brand": "la-pina (Перекрёсток)",
+  "calories": 640.3,
+  "protein": 28.0,
+  "fat": 53.0,
+  "carbs": 11.0
+ },
+ {
+  "code": "st-4610009940649",
+  "name": "Фасоль белая в томатном соусе",
+  "brand": "Просто! (Перекрёсток)",
+  "calories": 90.0,
+  "protein": 6.2,
+  "fat": 0.0,
+  "carbs": 15.7
+ },
+ {
+  "code": "st-4601916000649",
+  "name": "Фасоль Кидни темно-красная",
+  "brand": "Мистраль (Перекрёсток)",
+  "calories": 314.0,
+  "protein": 22.0,
+  "fat": 1.6,
+  "carbs": 59.1
+ },
+ {
+  "code": "st-4607066050077",
+  "name": "Медвежье ушко",
+  "brand": "Стародворские пельмени (Перекрёсток)",
+  "calories": 253.6,
+  "protein": 12.0,
+  "fat": 10.0,
+  "carbs": 29.0
+ },
+ {
+  "code": "st-4660000323835",
+  "name": "Спагетти высший сорт",
+  "brand": "Просто! (Перекрёсток)",
+  "calories": 344.2,
+  "protein": 10.4,
+  "fat": 1.1,
+  "carbs": 71.5
+ },
+ {
+  "code": "st-4607075851337",
+  "name": "Скумбрия атлантическая натуральная с добавлением масла",
+  "brand": "5 Морей (Перекрёсток)",
+  "calories": 294.2,
+  "protein": 15.0,
+  "fat": 26.0,
+  "carbs": 0.0
+ },
+ {
+  "code": "st-4610019090471",
+  "name": "Крупа пшено шлифованное 1 сорта",
+  "brand": "Бакалейный стандарт (Перекрёсток, Пятёрочка)",
+  "calories": 348.0,
+  "protein": 11.5,
+  "fat": 3.3,
+  "carbs": 66.5
+ },
+ {
+  "code": "st-0016229919313",
+  "name": "Кокосовая вода Organic",
+  "brand": "Foco (Перекрёсток)",
+  "calories": 21.0,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 5.2
+ },
+ {
+  "code": "st-4607936770661",
+  "name": "Икра свекольная «Прекрасная»",
+  "brand": "Лукашинские закуски (Перекрёсток)",
+  "calories": 119.5,
+  "protein": 1.0,
+  "fat": 7.0,
+  "carbs": 12.0
+ },
+ {
+  "code": "st-4607007230025",
+  "name": "Спагетти № 3",
+  "brand": "Federici (Перекрёсток)",
+  "calories": 340.0,
+  "protein": 10.0,
+  "fat": 1.0,
+  "carbs": 72.0
+ },
+ {
+  "code": "st-4600605021316",
+  "name": "Творожный Десерт Тирамису",
+  "brand": "Даниссимо (Перекрёсток)",
+  "calories": 135.8,
+  "protein": 5.3,
+  "fat": 5.1,
+  "carbs": 17.0
+ },
+ {
+  "code": "st-4601936004009",
+  "name": "Творог Груша-ваниль",
+  "brand": "Бежин луг (Перекрёсток)",
+  "calories": 117.1,
+  "protein": 7.5,
+  "fat": 4.2,
+  "carbs": 12.0
+ },
+ {
+  "code": "st-4680017787116",
+  "name": "Свинина тушеная",
+  "brand": "Курганский стандарт (Перекрёсток)",
+  "calories": 349.2,
+  "protein": 13.0,
+  "fat": 33.0,
+  "carbs": 0.0
+ },
+ {
+  "code": "st-4690228025037",
+  "name": "Снежок на натуральной закваске 2,5%",
+  "brand": "Домик в деревне (Перекрёсток)",
+  "calories": 74.6,
+  "protein": 2.9,
+  "fat": 2.5,
+  "carbs": 10.0
+ },
+ {
+  "code": "st-4607001852858",
+  "name": "Манка из твердой пшеницы",
+  "brand": "Шебекинская (Перекрёсток)",
+  "calories": 341.8,
+  "protein": 13.0,
+  "fat": 0.0,
+  "carbs": 72.0
+ },
+ {
+  "code": "st-4607001415916",
+  "name": "Рулет бисквитный ЧЕРНИКА",
+  "brand": "Просто! (Перекрёсток)",
+  "calories": 380.0,
+  "protein": 4.0,
+  "fat": 16.0,
+  "carbs": 55.0
+ },
+ {
+  "code": "st-4607072716417",
+  "name": "Хлопья овсянные быстрооо приготовления №3",
+  "brand": "Перекрёсток",
+  "calories": 370.0,
+  "protein": 12.0,
+  "fat": 5.0,
+  "carbs": 70.0
+ },
+ {
+  "code": "st-7622210721976",
+  "name": "Belvita Утреннее печенье",
+  "brand": "Belvita (Перекрёсток)",
+  "calories": 450.0,
+  "protein": 8.2,
+  "fat": 15.0,
+  "carbs": 68.0
+ },
+ {
+  "code": "st-4600605022320",
+  "name": "Творожный Десерт Черничный чизкейк",
+  "brand": "Даниссимо (Перекрёсток)",
+  "calories": 131.7,
+  "protein": 5.2,
+  "fat": 5.1,
+  "carbs": 16.1
+ },
+ {
+  "code": "st-4810268022647",
+  "name": "101 зерно (творог зерненый) малина 5 %",
+  "brand": "Савушкин (Перекрёсток)",
+  "calories": 156.8,
+  "protein": 10.5,
+  "fat": 5.2,
+  "carbs": 16.9
+ },
+ {
+  "code": "st-4600699002116",
+  "name": "Йогурт &quot;Hi&quot; Фейхоа, виноград, базилик",
+  "brand": "hi (Перекрёсток)",
+  "calories": 80.0,
+  "protein": 2.2,
+  "fat": 2.5,
+  "carbs": 13.3
+ },
+ {
+  "code": "st-4607064327188",
+  "name": "Галеты классические",
+  "brand": "Любятово (Перекрёсток)",
+  "calories": 363.0,
+  "protein": 11.0,
+  "fat": 1.2,
+  "carbs": 75.2
+ },
+ {
+  "code": "st-4612732843129",
+  "name": "Масло сливочное 72,5 %",
+  "brand": "Аланталь (Перекрёсток)",
+  "calories": 662.5,
+  "protein": 1.0,
+  "fat": 72.5,
+  "carbs": 1.4
+ },
+ {
+  "code": "st-4601780010867",
+  "name": "Цельнозерновые",
+  "brand": "makfa (Перекрёсток)",
+  "calories": 365.0,
+  "protein": 15.5,
+  "fat": 1.4,
+  "carbs": 72.7
+ },
+ {
+  "code": "st-4680017921831",
+  "name": "Молоко 3,5%",
+  "brand": "Эконива (Перекрёсток)",
+  "calories": 63.0,
+  "protein": 3.2,
+  "fat": 3.5,
+  "carbs": 4.7
+ },
+ {
+  "code": "st-4660015860967",
+  "name": "Картофель Фри Классический",
+  "brand": "Fry Me (Перекрёсток)",
+  "calories": 140.0,
+  "protein": 2.5,
+  "fat": 4.5,
+  "carbs": 23.0
+ },
+ {
+  "code": "st-4600949010359",
+  "name": "Молоко Лианозовское 3,2 %",
+  "brand": "Лианозовское (Перекрёсток)",
+  "calories": 59.3,
+  "protein": 2.9,
+  "fat": 3.2,
+  "carbs": 4.7
+ },
+ {
+  "code": "st-4607061491615",
+  "name": "Желатин быстрорастворимый",
+  "brand": "Dr.Oetker (Перекрёсток)",
+  "calories": 300.0,
+  "protein": 87.2,
+  "fat": 0.4,
+  "carbs": 0.7
+ },
+ {
+  "code": "st-4607061492384",
+  "name": "Желатин говяжий быстрорастворимый",
+  "brand": "Dr.Oetker (Перекрёсток)",
+  "calories": 300.0,
+  "protein": 87.2,
+  "fat": 0.4,
+  "carbs": 0.7
+ },
+ {
+  "code": "st-4606272030200",
+  "name": "Российский. Тёмный шоколад с миндалём",
+  "brand": "«Россия» — Щедрая Душа! (Перекрёсток)",
+  "calories": 527.5,
+  "protein": 5.6,
+  "fat": 30.0,
+  "carbs": 56.0
+ },
+ {
+  "code": "st-4600699505433",
+  "name": "Масло подсолнечное ароматное",
+  "brand": "Слобода (Перекрёсток)",
+  "calories": 898.7,
+  "protein": 0.0,
+  "fat": 99.7,
+  "carbs": 0.0
+ },
+ {
+  "code": "st-4607009874258",
+  "name": "Яйца куриные пищевые столовые",
+  "brand": "Золото Сеймы (Перекрёсток)",
+  "calories": 157.0,
+  "protein": 12.7,
+  "fat": 11.5,
+  "carbs": 0.7
+ },
+ {
+  "code": "st-4610011340376",
+  "name": "Крупа гречневая ядрица быстроразваривающаяся Первый сорт ГОСТ Р 55290-2012",
+  "brand": "Сольоптторг (Перекрёсток)",
+  "calories": 350.0,
+  "protein": 13.0,
+  "fat": 2.5,
+  "carbs": 68.0
+ },
+ {
+  "code": "st-4600528352054",
+  "name": "Масло кокосовое рафинированное отбеленное дезодорированное",
+  "brand": "delicato (Перекрёсток, Пятёрочка)",
+  "calories": 900.0,
+  "protein": 0.0,
+  "fat": 99.9,
+  "carbs": 0.0
+ },
+ {
+  "code": "st-4607155392392",
+  "name": "Ряпушка сибирская разделанная обжаренная в томатном соусе",
+  "brand": "Легенда Ямала (Перекрёсток)",
+  "calories": 110.0,
+  "protein": 13.0,
+  "fat": 6.0,
+  "carbs": 1.5
+ },
+ {
+  "code": "st-4607072714116",
+  "name": "Крупа пшено шлифованное",
+  "brand": "Маркет Перекрёсток (Перекрёсток)",
+  "calories": 356.1,
+  "protein": 12.0,
+  "fat": 3.0,
+  "carbs": 69.0
+ },
+ {
+  "code": "st-4680017787055",
+  "name": "Говядина тушеная",
+  "brand": "Курганский стандарт (Перекрёсток)",
+  "calories": 213.2,
+  "protein": 15.0,
+  "fat": 17.0,
+  "carbs": 0.0
+ },
+ {
+  "code": "st-4607097074769",
+  "name": "Алтайская сказка",
+  "brand": "Алтайская Сказка (Перекрёсток)",
+  "calories": 330.0,
+  "protein": 12.0,
+  "fat": 2.0,
+  "carbs": 67.0
+ },
+ {
+  "code": "st-4600657412063",
+  "name": "Молоко ультрапастеризованное 1,5 %",
+  "brand": "Просто! (Перекрёсток)",
+  "calories": 44.5,
+  "protein": 3.0,
+  "fat": 1.5,
+  "carbs": 4.7
+ },
+ {
+  "code": "st-4607145590012",
+  "name": "Окское вкусное и свежее",
+  "brand": "Окское (Перекрёсток)",
+  "calories": 156.1,
+  "protein": 12.7,
+  "fat": 11.5,
+  "carbs": 0.7
+ },
+ {
+  "code": "st-4000417702005",
+  "name": "Цельный лесной орех. Шоколад темный.",
+  "brand": "Ritter Sport (Перекрёсток)",
+  "calories": 577.0,
+  "protein": 8.4,
+  "fat": 41.0,
+  "carbs": 39.0
+ },
+ {
+  "code": "st-2311286003165",
+  "name": "Кижуч стейк на пару",
+  "brand": "Перекрёсток",
+  "calories": 167.1,
+  "protein": 20.3,
+  "fat": 9.5,
+  "carbs": 0.1
+ },
+ {
+  "code": "st-4603290003032",
+  "name": "Французский крекер с кунжутом",
+  "brand": "Яшкино (Перекрёсток)",
+  "calories": 480.0,
+  "protein": 7.5,
+  "fat": 22.0,
+  "carbs": 62.0
+ },
+ {
+  "code": "st-4810268016806",
+  "name": "Творог «Мягкий Нежный» 0.1%",
+  "brand": "Савушкин (Перекрёсток, Пятёрочка)",
+  "calories": 44.9,
+  "protein": 10.0,
+  "fat": 0.1,
+  "carbs": 1.0
+ },
+ {
+  "code": "st-4601916000502",
+  "name": "Ядрица гречневая",
+  "brand": "Мистраль (Перекрёсток)",
+  "calories": 335.0,
+  "protein": 12.0,
+  "fat": 3.4,
+  "carbs": 72.0
+ },
+ {
+  "code": "st-4601727000364",
+  "name": "Молоко ультрапастеризованное 2,5%",
+  "brand": "Белый город (Перекрёсток)",
+  "calories": 53.1,
+  "protein": 3.0,
+  "fat": 2.5,
+  "carbs": 4.7
+ },
+ {
+  "code": "st-4606272028757",
+  "name": "Горький шоколад «Российский» 70 % какао",
+  "brand": "«Россия» — Щедрая Душа! (Перекрёсток, Пятёрочка)",
+  "calories": 545.2,
+  "protein": 9.1,
+  "fat": 39.0,
+  "carbs": 36.0
+ },
+ {
+  "code": "st-4601388003735",
+  "name": "Хлеб Дарницкий",
+  "brand": "ЩелковоХлеб (Перекрёсток)",
+  "calories": 200.0,
+  "protein": 6.6,
+  "fat": 1.1,
+  "carbs": 41.0
+ },
+ {
+  "code": "st-4607163091645",
+  "name": "Нектар с мякотью яблоко-морковь",
+  "brand": "Сады Придонья (Перекрёсток, Пятёрочка)",
+  "calories": 47.8,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 12.0
+ },
+ {
+  "code": "st-4600605022610",
+  "name": "Даниссимо Воздушный Йогуртный мусс с клубникой",
+  "brand": "Даниссимо (Перекрёсток)",
+  "calories": 125.7,
+  "protein": 3.8,
+  "fat": 5.4,
+  "carbs": 15.4
+ },
+ {
+  "code": "st-4600699506911",
+  "name": "Чесночный соус",
+  "brand": "Слобода (Перекрёсток)",
+  "calories": 552.0,
+  "protein": 0.4,
+  "fat": 60.0,
+  "carbs": 2.6
+ },
+ {
+  "code": "st-4601075346077",
+  "name": "Сливки для кофе 10 %",
+  "brand": "Valio (Перекрёсток)",
+  "calories": 117.1,
+  "protein": 2.6,
+  "fat": 10.0,
+  "carbs": 4.1
+ },
+ {
+  "code": "st-4813515004649",
+  "name": "Шампиньоны маринованные",
+  "brand": "Маркет Перекрёсток (Перекрёсток)",
+  "calories": 35.0,
+  "protein": 2.5,
+  "fat": 0.6,
+  "carbs": 5.1
+ },
+ {
+  "code": "st-4607163093038",
+  "name": "Сок яблочно-грушевый с мякотью восстановленный",
+  "brand": "Сады Придонья (Перекрёсток)",
+  "calories": 46.0,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 11.5
+ },
+ {
+  "code": "st-7622210309310",
+  "name": "Орео",
+  "brand": "oreo (Перекрёсток)",
+  "calories": 478.0,
+  "protein": 4.9,
+  "fat": 20.8,
+  "carbs": 68.0
+ },
+ {
+  "code": "st-4607065378868",
+  "name": "Итальянский соус для приготовления блюд С ароматными травами",
+  "brand": "Dolmio (Перекрёсток)",
+  "calories": 45.0,
+  "protein": 1.3,
+  "fat": 0.5,
+  "carbs": 8.0
+ },
+ {
+  "code": "st-4690228030666",
+  "name": "Творог 5,5 %",
+  "brand": "Домик в деревне (Перекрёсток)",
+  "calories": 97.8,
+  "protein": 8.6,
+  "fat": 5.5,
+  "carbs": 3.5
+ },
+ {
+  "code": "st-4690502001238",
+  "name": "Кефир",
+  "brand": "Простоквашино (Перекрёсток)",
+  "calories": 37.0,
+  "protein": 3.0,
+  "fat": 1.0,
+  "carbs": 4.0
+ },
+ {
+  "code": "st-4607009780047",
+  "name": "Деревенское молоко из Талицы",
+  "brand": "Перекрёсток",
+  "calories": 62.0,
+  "protein": 2.8,
+  "fat": 3.7,
+  "carbs": 4.7
+ },
+ {
+  "code": "st-4600494694813",
+  "name": "Fresh Taste Сок апельсиновый с мякотью",
+  "brand": "J7 (Перекрёсток)",
+  "calories": 35.0,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 9.0
+ },
+ {
+  "code": "st-4602441011124",
+  "name": "Байкал",
+  "brand": "Черноголовка (Перекрёсток)",
+  "calories": 40.0,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 10.0
+ },
+ {
+  "code": "st-4000417025005",
+  "name": "Марципан. Шоколад темный с начинкой.",
+  "brand": "CONAXESS TRADE NORGE AS (Перекрёсток, Пятёрочка)",
+  "calories": 496.0,
+  "protein": 7.0,
+  "fat": 27.0,
+  "carbs": 52.0
+ },
+ {
+  "code": "st-4630024913077",
+  "name": "Сыр Маасдам",
+  "brand": "Маркет Перекрёсток (Перекрёсток)",
+  "calories": 350.0,
+  "protein": 28.0,
+  "fat": 26.5,
+  "carbs": 0.0
+ },
+ {
+  "code": "st-4607148393115",
+  "name": "Попкорн",
+  "brand": "Перекрёсток",
+  "calories": 460.0,
+  "protein": 6.0,
+  "fat": 27.0,
+  "carbs": 48.0
+ },
+ {
+  "code": "st-4620001460120",
+  "name": "Хлопья овсяные быстрого приготовления",
+  "brand": "Перекрёсток",
+  "calories": 342.0,
+  "protein": 12.3,
+  "fat": 6.1,
+  "carbs": 59.5
+ },
+ {
+  "code": "st-4607001852919",
+  "name": "Макаронные изделия &quot;Спираль&quot;",
+  "brand": "Маркет Перекрёсток (Перекрёсток)",
+  "calories": 340.0,
+  "protein": 10.5,
+  "fat": 1.0,
+  "carbs": 71.0
+ },
+ {
+  "code": "st-4601132003622",
+  "name": "мясо мидий",
+  "brand": "перекрёсток (Перекрёсток)",
+  "calories": 70.0,
+  "protein": 10.5,
+  "fat": 1.5,
+  "carbs": 3.1
+ },
+ {
+  "code": "st-4607958075379",
+  "name": "Дымовийа Из Лопатки",
+  "brand": "Маркет Перекрёсток (Перекрёсток)",
+  "calories": 97.0,
+  "protein": 13.0,
+  "fat": 5.0,
+  "carbs": 0.0
+ },
+ {
+  "code": "st-4630024918843",
+  "name": "Сыр Гауда",
+  "brand": "Маркет Перекрёсток (Перекрёсток)",
+  "calories": 351.0,
+  "protein": 31.8,
+  "fat": 24.9,
+  "carbs": 0.0
+ },
+ {
+  "code": "st-4607072713539",
+  "name": "Рис длиннозерный шлифованный",
+  "brand": "Маркет Перекрёсток (Перекрёсток)",
+  "calories": 340.0,
+  "protein": 7.0,
+  "fat": 0.4,
+  "carbs": 77.0
+ },
+ {
+  "code": "st-4600294023349",
+  "name": "Орехи Фисташк Жареные Соленые",
+  "brand": "Маркет Перекрёсток (Перекрёсток)",
+  "calories": 600.0,
+  "protein": 18.0,
+  "fat": 55.0,
+  "carbs": 8.0
+ },
+ {
+  "code": "st-2823378100015",
+  "name": "Чиабатта РУСТИК",
+  "brand": "Перекрёсток",
+  "calories": 213.0,
+  "protein": 6.0,
+  "fat": 0.6,
+  "carbs": 46.0
+ },
+ {
+  "code": "st-4680038472923",
+  "name": "Орехи Кедровые",
+  "brand": "Перекрёсток Маркет (Перекрёсток)",
+  "calories": 677.0,
+  "protein": 19.8,
+  "fat": 59.7,
+  "carbs": 15.0
+ },
+ {
+  "code": "st-4810281001056",
+  "name": "Горчица &quot;Столовая&quot; острая",
+  "brand": "Красная цена (Перекрёсток, Пятёрочка)",
+  "calories": 120.0,
+  "protein": 4.0,
+  "fat": 5.0,
+  "carbs": 18.0
+ },
+ {
+  "code": "st-2574579003116",
+  "name": "Свр российский",
+  "brand": "Перекрёсток",
+  "calories": 330.0,
+  "protein": 24.5,
+  "fat": 25.5,
+  "carbs": 0.0
+ },
+ {
+  "code": "st-4607058975562",
+  "name": "Сэндвич на угольном хлебе с индейкой и пикантным соусом",
+  "brand": "Шеф Перекрёсток (Перекрёсток)",
+  "calories": 217.0,
+  "protein": 12.2,
+  "fat": 8.3,
+  "carbs": 23.9
+ },
+ {
+  "code": "st-9001414504703",
+  "name": "Чили кайенский",
+  "brand": "Маркет Перекрёсток (Перекрёсток)",
+  "calories": 330.0,
+  "protein": 12.0,
+  "fat": 17.0,
+  "carbs": 32.0
+ },
+ {
+  "code": "st-4640033667465",
+  "name": "Сэндвич двойной с бужениной",
+  "brand": "Шеф Перекрёсток (Перекрёсток)",
+  "calories": 191.0,
+  "protein": 6.7,
+  "fat": 8.8,
+  "carbs": 21.1
+ },
+ {
+  "code": "st-4640033668448",
+  "name": "Мусс из марки с работой и клюквой",
+  "brand": "Перекрёсток",
+  "calories": 159.0,
+  "protein": 2.9,
+  "fat": 5.4,
+  "carbs": 24.5
+ },
+ {
+  "code": "st-4607060380569",
+  "name": "Козельский Живой йогурт",
+  "brand": "Козельский Молочный завод (Пятёрочка)",
+  "calories": 78.1,
+  "protein": 2.9,
+  "fat": 2.5,
+  "carbs": 11.0
+ },
+ {
+  "code": "st-4607035890024",
+  "name": "Горошек зеленый",
+  "brand": "6 соток (Пятёрочка)",
+  "calories": 40.0,
+  "protein": 3.0,
+  "fat": 0.0,
+  "carbs": 6.5
+ },
+ {
+  "code": "st-4607048480687",
+  "name": "Молоко питьевое ультрапастеризованное 3,2 %",
+  "brand": "Ясный луг (Пятёрочка)",
+  "calories": 59.5,
+  "protein": 3.0,
+  "fat": 3.2,
+  "carbs": 4.7
+ },
+ {
+  "code": "st-4600717053762",
+  "name": "Горький шоколад классический",
+  "brand": "СладКо (Пятёрочка)",
+  "calories": 540.2,
+  "protein": 6.5,
+  "fat": 35.0,
+  "carbs": 50.0
+ },
+ {
+  "code": "st-4602701200299",
+  "name": "Хлеб немецкий цельнозерновой «КЕРНброт»",
+  "brand": "Fazer (Пятёрочка)",
+  "calories": 222.0,
+  "protein": 6.5,
+  "fat": 4.0,
+  "carbs": 39.3
+ },
+ {
+  "code": "st-4602048008190",
+  "name": "Молоко ультрапастеризованное 2,5 %",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 53.1,
+  "protein": 3.0,
+  "fat": 2.5,
+  "carbs": 4.7
+ },
+ {
+  "code": "st-4630005743679",
+  "name": "Молоко цельное сгущенное с сахаром ГОСТ 31688-2012 8,5 %",
+  "brand": "Милава (Пятёрочка)",
+  "calories": 329.8,
+  "protein": 7.2,
+  "fat": 8.5,
+  "carbs": 56.0
+ },
+ {
+  "code": "st-4600935010776",
+  "name": "Рис для плова",
+  "brand": "Националь (Пятёрочка)",
+  "calories": 360.9,
+  "protein": 6.5,
+  "fat": 0.5,
+  "carbs": 83.0
+ },
+ {
+  "code": "st-4601916006276",
+  "name": "Цельнозерновые овсяные хлопья",
+  "brand": "Мистраль (Пятёрочка)",
+  "calories": 365.2,
+  "protein": 13.5,
+  "fat": 6.1,
+  "carbs": 69.7
+ },
+ {
+  "code": "st-4620011195173",
+  "name": "Сухарики со вкусом томата и зелени",
+  "brand": "MIX BAR (Пятёрочка)",
+  "calories": 390.0,
+  "protein": 10.0,
+  "fat": 10.0,
+  "carbs": 64.0
+ },
+ {
+  "code": "st-4607163091560",
+  "name": "Сок яблочный прямого отжима",
+  "brand": "Сады Придонья (Пятёрочка)",
+  "calories": 44.0,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 11.0
+ },
+ {
+  "code": "st-4602048004109",
+  "name": "Молоко натуральное от коров Рязанского края 3,2 %",
+  "brand": "С нашей фермы (Пятёрочка)",
+  "calories": 60.0,
+  "protein": 3.0,
+  "fat": 3.2,
+  "carbs": 4.7
+ },
+ {
+  "code": "st-4607015239607",
+  "name": "Шарлиз печенье сдобное",
+  "brand": "Пятёрочка",
+  "calories": 370.0,
+  "protein": 3.0,
+  "fat": 8.0,
+  "carbs": 71.0
+ },
+ {
+  "code": "st-4600528347265",
+  "name": "Майонез «Провансаль оливковый» 67 %",
+  "brand": "Ряба (Пятёрочка)",
+  "calories": 620.0,
+  "protein": 0.5,
+  "fat": 67.0,
+  "carbs": 2.5
+ },
+ {
+  "code": "st-4601201017697",
+  "name": "Сок томатный с сахаром и солью с мякотью для детского питания",
+  "brand": "Фруктовый сад (Пятёрочка)",
+  "calories": 22.7,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 5.5
+ },
+ {
+  "code": "st-4600605029268",
+  "name": "Сметана Простоквашино 20%",
+  "brand": "Пятёрочка",
+  "calories": 204.0,
+  "protein": 2.5,
+  "fat": 20.0,
+  "carbs": 3.4
+ },
+ {
+  "code": "st-4627107393581",
+  "name": "Хлеб Дарницкий (на жидкой ржаной закваске, половина)",
+  "brand": "АрхангельскХлеб (Пятёрочка)",
+  "calories": 200.8,
+  "protein": 6.5,
+  "fat": 1.0,
+  "carbs": 41.0
+ },
+ {
+  "code": "st-4607177744544",
+  "name": "Хлеб украинский",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 205.3,
+  "protein": 6.8,
+  "fat": 6.8,
+  "carbs": 41.7
+ },
+ {
+  "code": "st-4606180019601",
+  "name": "Молоко цельное сгущенное с сахаром",
+  "brand": "Станция Молочная (Пятёрочка)",
+  "calories": 320.5,
+  "protein": 5.0,
+  "fat": 8.5,
+  "carbs": 56.0
+ },
+ {
+  "code": "st-4607012274168",
+  "name": "Творог 9%",
+  "brand": "Белозорие (Пятёрочка)",
+  "calories": 160.1,
+  "protein": 16.0,
+  "fat": 9.0,
+  "carbs": 3.0
+ },
+ {
+  "code": "st-4607118061143",
+  "name": "Молоко 3,2 %",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 57.4,
+  "protein": 3.0,
+  "fat": 3.2,
+  "carbs": 4.7
+ },
+ {
+  "code": "st-4810410062897",
+  "name": "Шоколад десертный горький 68%",
+  "brand": "Коммунарка (Пятёрочка)",
+  "calories": 568.0,
+  "protein": 7.1,
+  "fat": 39.3,
+  "carbs": 39.3
+ },
+ {
+  "code": "st-01570151",
+  "name": "Творог с вареньем черничным 9%",
+  "brand": "Село Устьяны (Пятёрочка)",
+  "calories": 170.0,
+  "protein": 9.0,
+  "fat": 6.0,
+  "carbs": 20.0
+ },
+ {
+  "code": "st-4810268033261",
+  "name": "Сыр полутвердый «Брест-Литовск классический» массовой долей жира в сухом веществе 45%",
+  "brand": "Брест-Литовск (Пятёрочка)",
+  "calories": 340.1,
+  "protein": 26.3,
+  "fat": 26.1,
+  "carbs": 0.0
+ },
+ {
+  "code": "st-4605922010654",
+  "name": "Баварский медово-горчичный соус",
+  "brand": "Calve (Пятёрочка)",
+  "calories": 270.0,
+  "protein": 0.7,
+  "fat": 25.0,
+  "carbs": 11.8
+ },
+ {
+  "code": "st-4606038066283",
+  "name": "Творог 5% Красная цена",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 121.0,
+  "protein": 16.0,
+  "fat": 5.0,
+  "carbs": 3.0
+ },
+ {
+  "code": "st-4600605017265",
+  "name": "Даниссимо Творожный с сочным киви 130г",
+  "brand": "Даниссимо (Пятёрочка)",
+  "calories": 135.0,
+  "protein": 5.5,
+  "fat": 5.5,
+  "carbs": 15.8
+ },
+ {
+  "code": "st-4600605021002",
+  "name": "Творожный с клубникой, киви и бананом",
+  "brand": "Даниссимо (Пятёрочка)",
+  "calories": 131.9,
+  "protein": 5.2,
+  "fat": 5.4,
+  "carbs": 15.5
+ },
+ {
+  "code": "st-4600657412117",
+  "name": "Кефир на кефирных грибках 3,2 % ГОСТ 31454-2012",
+  "brand": "36 копеек (Пятёрочка)",
+  "calories": 57.1,
+  "protein": 3.2,
+  "fat": 3.0,
+  "carbs": 4.0
+ },
+ {
+  "code": "st-4600935000128",
+  "name": "Крупа манная марка «М»",
+  "brand": "Националь (Пятёрочка)",
+  "calories": 320.3,
+  "protein": 10.0,
+  "fat": 1.0,
+  "carbs": 67.0
+ },
+ {
+  "code": "st-4601512006724",
+  "name": "Земляничное лето",
+  "brand": "любимый (Пятёрочка)",
+  "calories": 40.6,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 10.0
+ },
+ {
+  "code": "st-4605082000526",
+  "name": "Кекс «Мраморный» с какао",
+  "brand": "Русский бисквит (Пятёрочка)",
+  "calories": 394.4,
+  "protein": 5.5,
+  "fat": 20.0,
+  "carbs": 50.0
+ },
+ {
+  "code": "st-4605299000371",
+  "name": "Сайра тихоокеанская натуральная",
+  "brand": "Курильский берег (Пятёрочка)",
+  "calories": 261.0,
+  "protein": 18.0,
+  "fat": 21.0,
+  "carbs": 0.0
+ },
+ {
+  "code": "st-4627107391853",
+  "name": "Изделия булочные слоеные &quot;Каприз&quot; (с шоколадной начинкой)",
+  "brand": "АрхангельскХлеб (Пятёрочка)",
+  "calories": 370.5,
+  "protein": 6.5,
+  "fat": 19.0,
+  "carbs": 44.0
+ },
+ {
+  "code": "st-4601248015175",
+  "name": "Томат 100% сок",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 20.0,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 5.0
+ },
+ {
+  "code": "st-4607004004766",
+  "name": "Рожки",
+  "brand": "Ладные (Пятёрочка)",
+  "calories": 344.2,
+  "protein": 10.4,
+  "fat": 1.1,
+  "carbs": 71.5
+ },
+ {
+  "code": "st-4607016240930",
+  "name": "Пшено шлифованное",
+  "brand": "Увелка (Пятёрочка)",
+  "calories": 360.9,
+  "protein": 11.0,
+  "fat": 3.0,
+  "carbs": 73.0
+ },
+ {
+  "code": "st-4607042438998",
+  "name": "Персик-яблоко",
+  "brand": "Добрый (Пятёрочка)",
+  "calories": 48.0,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 12.0
+ },
+ {
+  "code": "st-4600080280475",
+  "name": "Халва с арахисом Дружба",
+  "brand": "ротфронт (Пятёрочка)",
+  "calories": 540.0,
+  "protein": 17.0,
+  "fat": 31.0,
+  "carbs": 45.0
+ },
+ {
+  "code": "st-4604921001366",
+  "name": "Мягкие вафли с суфле и фруктовой начинкой &quot;Черника&quot;",
+  "brand": "Дарлетто (Пятёрочка)",
+  "calories": 420.0,
+  "protein": 4.5,
+  "fat": 22.0,
+  "carbs": 52.0
+ },
+ {
+  "code": "st-4607177073118",
+  "name": "Наггетсы куриные хрустящие",
+  "brand": "Мираторг (Пятёрочка)",
+  "calories": 180.0,
+  "protein": 13.5,
+  "fat": 7.5,
+  "carbs": 14.0
+ },
+ {
+  "code": "st-46164209",
+  "name": "Halls оригинальный",
+  "brand": "Halls (Пятёрочка)",
+  "calories": 390.5,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 96.0
+ },
+ {
+  "code": "st-4606038054969",
+  "name": "Черника протёртая с сахаром",
+  "brand": "Варенька (Пятёрочка)",
+  "calories": 220.0,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 55.0
+ },
+ {
+  "code": "st-4810168035792",
+  "name": "Паста с антарктическим крилем «Антарктик-криль подкопченый»",
+  "brand": "Санта Бремор (Пятёрочка)",
+  "calories": 412.0,
+  "protein": 5.2,
+  "fat": 41.1,
+  "carbs": 5.3
+ },
+ {
+  "code": "st-4607091767711",
+  "name": "Сосиски &quot;Детям&quot;",
+  "brand": "Пятёрочка",
+  "calories": 250.0,
+  "protein": 12.0,
+  "fat": 22.0,
+  "carbs": 0.0
+ },
+ {
+  "code": "st-4607016245966",
+  "name": "Овсяные хлопья питательные",
+  "brand": "Увелка (Пятёрочка)",
+  "calories": 380.0,
+  "protein": 16.9,
+  "fat": 6.9,
+  "carbs": 66.3
+ },
+ {
+  "code": "st-4600300071067",
+  "name": "Шоколад Мишка косолапый с орехами и вафлями",
+  "brand": "Красный Октябрь (Пятёрочка)",
+  "calories": 530.0,
+  "protein": 7.0,
+  "fat": 31.0,
+  "carbs": 54.0
+ },
+ {
+  "code": "st-4600823123014",
+  "name": "Шоколад Бабаевский фирменный",
+  "brand": "Бабаевский (Пятёрочка)",
+  "calories": 549.7,
+  "protein": 7.0,
+  "fat": 36.0,
+  "carbs": 47.0
+ },
+ {
+  "code": "st-4607120230933",
+  "name": "Гречневая крупа",
+  "brand": "Гудвилл (Пятёрочка)",
+  "calories": 329.0,
+  "protein": 12.6,
+  "fat": 2.6,
+  "carbs": 68.0
+ },
+ {
+  "code": "st-4690388109974",
+  "name": "Чипсы из натурального картофеля со вкусом «Ребрышки гриль»",
+  "brand": "Lay's (Пятёрочка)",
+  "calories": 520.0,
+  "protein": 6.0,
+  "fat": 32.0,
+  "carbs": 53.0
+ },
+ {
+  "code": "st-4810168038151",
+  "name": "Икра мойвы с ароматом копчения",
+  "brand": "Fish House (Пятёрочка)",
+  "calories": 439.8,
+  "protein": 6.0,
+  "fat": 46.0,
+  "carbs": 0.0
+ },
+ {
+  "code": "st-4600819414270",
+  "name": "Каша овсяная ассорти: с клубникой, с малиной, с изюмом",
+  "brand": "Ясно солнышко (Пятёрочка)",
+  "calories": 370.5,
+  "protein": 9.0,
+  "fat": 4.5,
+  "carbs": 73.0
+ },
+ {
+  "code": "st-4601201054197",
+  "name": "Грейпфрут, лимон и лайм",
+  "brand": "Любимый (Пятёрочка)",
+  "calories": 47.8,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 12.0
+ },
+ {
+  "code": "st-4606791006762",
+  "name": "Напиток безалкогольный на ароматизаторах негазированный",
+  "brand": "Вкус лимона (Пятёрочка)",
+  "calories": 17.0,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 4.3
+ },
+ {
+  "code": "st-4630007985152",
+  "name": "Цикорий растворимый сливочный",
+  "brand": "Здравник (Пятёрочка)",
+  "calories": 439.8,
+  "protein": 9.0,
+  "fat": 18.9,
+  "carbs": 53.0
+ },
+ {
+  "code": "st-4600528343588",
+  "name": "Соус майонезный &quot;Сметанный с грибами&quot; Астория",
+  "brand": "ASTORIA (Пятёрочка)",
+  "calories": 400.0,
+  "protein": 0.0,
+  "fat": 42.0,
+  "carbs": 5.0
+ },
+ {
+  "code": "st-4603554000067",
+  "name": "Крупа гречневая быстроразваривающаяся (пропаренная) ядрица",
+  "brand": "Скайфуд (Пятёрочка)",
+  "calories": 329.0,
+  "protein": 12.6,
+  "fat": 2.6,
+  "carbs": 68.0
+ },
+ {
+  "code": "st-4607006508170",
+  "name": "Палочки кукурузные к чаю. Сладкие",
+  "brand": "Пензенский хлебозавод № 2 (Пятёрочка)",
+  "calories": 470.8,
+  "protein": 6.0,
+  "fat": 14.0,
+  "carbs": 80.0
+ },
+ {
+  "code": "st-4640013230719",
+  "name": "Крекер «Здрава» с луком и сыром",
+  "brand": "Здрава (Пятёрочка)",
+  "calories": 449.8,
+  "protein": 7.5,
+  "fat": 18.0,
+  "carbs": 64.0
+ },
+ {
+  "code": "st-4630009181330",
+  "name": "Нектар яблочно-вишневый",
+  "brand": "Сады Придонья (Пятёрочка)",
+  "calories": 48.0,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 12.0
+ },
+ {
+  "code": "st-4602112212324",
+  "name": "Картофель хрустящий &quot;Со вкусом пиццы&quot;",
+  "brand": "Московский картофель (Пятёрочка)",
+  "calories": 550.0,
+  "protein": 5.5,
+  "fat": 37.0,
+  "carbs": 48.0
+ },
+ {
+  "code": "st-7622210343161",
+  "name": "Шоколад белый пористый &quot;Воздушный&quot;",
+  "brand": "Mondelez (Пятёрочка)",
+  "calories": 530.0,
+  "protein": 4.4,
+  "fat": 27.0,
+  "carbs": 65.0
+ },
+ {
+  "code": "st-4607025804291",
+  "name": "Варенье черничное",
+  "brand": "Вологодское варенье (Пятёрочка)",
+  "calories": 220.0,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 55.0
+ },
+ {
+  "code": "st-4607002998616",
+  "name": "Закусочка по-тоскански",
+  "brand": "Дядя Ваня (Пятёрочка)",
+  "calories": 80.0,
+  "protein": 2.7,
+  "fat": 6.3,
+  "carbs": 3.0
+ },
+ {
+  "code": "st-4607025805779",
+  "name": "Варенье Варенька клубника",
+  "brand": "Варенька (Пятёрочка)",
+  "calories": 252.0,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 63.0
+ },
+ {
+  "code": "st-4605496017561",
+  "name": "Пюре картофельное с сухариками и соус с жареной курицей",
+  "brand": "Big Bon (Пятёрочка)",
+  "calories": 420.0,
+  "protein": 6.0,
+  "fat": 16.0,
+  "carbs": 62.0
+ },
+ {
+  "code": "st-4607025805762",
+  "name": "Варенье Варенька абрикос",
+  "brand": "Варенька (Пятёрочка)",
+  "calories": 252.0,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 63.0
+ },
+ {
+  "code": "st-4607025805786",
+  "name": "Варенье Варенька Малина",
+  "brand": "Варенька (Пятёрочка)",
+  "calories": 252.0,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 63.0
+ },
+ {
+  "code": "st-4620012340787",
+  "name": "Гренки ржано-пшеничные с томатом, чесноком и зеленью",
+  "brand": "Mixbar (Пятёрочка)",
+  "calories": 400.0,
+  "protein": 6.5,
+  "fat": 25.0,
+  "carbs": 37.0
+ },
+ {
+  "code": "st-7622300802646",
+  "name": "Белый шоколад Миндаль и кокос",
+  "brand": "Alpen Gold (Пятёрочка)",
+  "calories": 544.9,
+  "protein": 6.3,
+  "fat": 32.6,
+  "carbs": 56.3
+ },
+ {
+  "code": "st-4602290601002",
+  "name": "Мороженое эскимо пломбир с малиной в молочном шоколаде",
+  "brand": "Село Зелёное (Пятёрочка)",
+  "calories": 335.0,
+  "protein": 4.2,
+  "fat": 22.3,
+  "carbs": 29.4
+ },
+ {
+  "code": "st-4607007314862",
+  "name": "Джем персиковый",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 220.0,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 56.0
+ },
+ {
+  "code": "st-4620017453130",
+  "name": "Тараллини классические",
+  "brand": "nina-farina (Пятёрочка)",
+  "calories": 460.0,
+  "protein": 9.0,
+  "fat": 20.0,
+  "carbs": 61.0
+ },
+ {
+  "code": "st-4607024970768",
+  "name": "Отруби овсяные хрустящие",
+  "brand": "DiaDar (Пятёрочка)",
+  "calories": 197.0,
+  "protein": 13.5,
+  "fat": 4.8,
+  "carbs": 25.0
+ },
+ {
+  "code": "st-4680019560892",
+  "name": "Nemoloko овсяное классическое лайт",
+  "brand": "ne-moloko (Пятёрочка)",
+  "calories": 45.0,
+  "protein": 1.0,
+  "fat": 1.5,
+  "carbs": 6.5
+ },
+ {
+  "code": "st-5998304241111",
+  "name": "Кукуруза сладкая в зернах",
+  "brand": "Globus (Пятёрочка)",
+  "calories": 80.0,
+  "protein": 2.6,
+  "fat": 1.0,
+  "carbs": 15.2
+ },
+ {
+  "code": "st-4603554000081",
+  "name": "Сахар-песок",
+  "brand": "Скайфуд (Пятёрочка)",
+  "calories": 398.0,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 99.8
+ },
+ {
+  "code": "st-4607057920143",
+  "name": "Масло сливочное «Крестьянское»",
+  "brand": "Молоко (Пятёрочка)",
+  "calories": 662.5,
+  "protein": 1.0,
+  "fat": 72.5,
+  "carbs": 1.4
+ },
+ {
+  "code": "st-4607048694008",
+  "name": "Мороженое пломбир в ванильный в вафельном стакане",
+  "brand": "Городецкая ферма (Пятёрочка)",
+  "calories": 300.0,
+  "protein": 4.0,
+  "fat": 22.0,
+  "carbs": 22.0
+ },
+ {
+  "code": "st-4640017350536",
+  "name": "Молоко питьевое ультрапастеризованное 3,2 %",
+  "brand": "Село Зелёное (Пятёрочка)",
+  "calories": 60.0,
+  "protein": 3.0,
+  "fat": 3.2,
+  "carbs": 4.7
+ },
+ {
+  "code": "st-4607004001154",
+  "name": "Макаронные изделия Перья",
+  "brand": "Baisad (Пятёрочка)",
+  "calories": 351.3,
+  "protein": 12.6,
+  "fat": 1.1,
+  "carbs": 71.5
+ },
+ {
+  "code": "st-4602041005196",
+  "name": "Кукурузные палочки с сахарой пудрой",
+  "brand": "Кузя Лакомкин (Пятёрочка)",
+  "calories": 510.0,
+  "protein": 4.0,
+  "fat": 23.0,
+  "carbs": 72.0
+ },
+ {
+  "code": "st-4650191170332",
+  "name": "Печенье Чеховские грибочки",
+  "brand": "ООО &quot;Чеховский Кондитер Альянс&quot; (Пятёрочка)",
+  "calories": 518.0,
+  "protein": 6.4,
+  "fat": 29.1,
+  "carbs": 58.0
+ },
+ {
+  "code": "st-4690228027192",
+  "name": "Молоко 2,5%",
+  "brand": "Кубанская Бурёнка (Пятёрочка)",
+  "calories": 54.0,
+  "protein": 3.1,
+  "fat": 2.5,
+  "carbs": 4.7
+ },
+ {
+  "code": "st-4607008054941",
+  "name": "Сырок творожный с сахаром и курагой с массовой долей жира 4,5%",
+  "brand": "ПервыйВкус (Пятёрочка)",
+  "calories": 172.0,
+  "protein": 13.8,
+  "fat": 4.5,
+  "carbs": 19.0
+ },
+ {
+  "code": "st-4606968002078",
+  "name": "Хлопья овсяные быстрого приготовления 3 мин.",
+  "brand": "Селяночка (Пятёрочка)",
+  "calories": 358.5,
+  "protein": 13.0,
+  "fat": 6.0,
+  "carbs": 59.0
+ },
+ {
+  "code": "st-4612733710772",
+  "name": "Сардина атлантическая с добавлением масла",
+  "brand": "Новый океан (Пятёрочка)",
+  "calories": 220.0,
+  "protein": 19.0,
+  "fat": 16.0,
+  "carbs": 0.0
+ },
+ {
+  "code": "st-4607034020033",
+  "name": "Деликатесный горошек нежный",
+  "brand": "Грин Рэй (Пятёрочка)",
+  "calories": 38.4,
+  "protein": 3.1,
+  "fat": 0.0,
+  "carbs": 6.5
+ },
+ {
+  "code": "st-4607024150566",
+  "name": "Мука пшеничная хлебопекарная высший сорт",
+  "brand": "Бело-Нежная (Пятёрочка)",
+  "calories": 334.0,
+  "protein": 10.3,
+  "fat": 1.1,
+  "carbs": 70.6
+ },
+ {
+  "code": "st-4610009940151",
+  "name": "Фасоль красная",
+  "brand": "Global Village (Пятёрочка)",
+  "calories": 83.7,
+  "protein": 6.1,
+  "fat": 0.0,
+  "carbs": 14.9
+ },
+ {
+  "code": "st-4620007591149",
+  "name": "Цикорий растворимый порошкообразный",
+  "brand": "Elite (Пятёрочка)",
+  "calories": 279.6,
+  "protein": 4.2,
+  "fat": 0.0,
+  "carbs": 64.6
+ },
+ {
+  "code": "st-4607010730123",
+  "name": "Сельдь тихоокеанская специального посола",
+  "brand": "Балтийский берег (Пятёрочка)",
+  "calories": 136.0,
+  "protein": 15.0,
+  "fat": 8.0,
+  "carbs": 1.0
+ },
+ {
+  "code": "st-4603554000951",
+  "name": "Крупа гречневая ядрица",
+  "brand": "Яровое поле (Пятёрочка)",
+  "calories": 329.1,
+  "protein": 12.6,
+  "fat": 2.6,
+  "carbs": 68.0
+ },
+ {
+  "code": "st-4607175484121",
+  "name": "Шпроты в масле",
+  "brand": "Морская радуга (Пятёрочка)",
+  "calories": 356.1,
+  "protein": 17.0,
+  "fat": 32.0,
+  "carbs": 0.0
+ },
+ {
+  "code": "st-4612133770369",
+  "name": "Горбуша дальневосточная натуральная",
+  "brand": "Морская удача (Пятёрочка)",
+  "calories": 136.2,
+  "protein": 20.9,
+  "fat": 5.8,
+  "carbs": 0.0
+ },
+ {
+  "code": "st-4607012272386",
+  "name": "Молоко питьевое пастеризованное с массовой долей жира 2,5%",
+  "brand": "Белозорие (Пятёрочка)",
+  "calories": 55.0,
+  "protein": 3.0,
+  "fat": 2.5,
+  "carbs": 4.7
+ },
+ {
+  "code": "st-4607014783118",
+  "name": "Масло подсолнечное рафинированное",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 899.0,
+  "protein": 0.0,
+  "fat": 99.9,
+  "carbs": 0.0
+ },
+ {
+  "code": "st-4607084415346",
+  "name": "Икра из кабачков",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 90.0,
+  "protein": 0.0,
+  "fat": 7.0,
+  "carbs": 7.0
+ },
+ {
+  "code": "st-4607177742496",
+  "name": "Хлеб белый ГОСТ",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 242.4,
+  "protein": 7.9,
+  "fat": 0.8,
+  "carbs": 50.8
+ },
+ {
+  "code": "st-4680019560922",
+  "name": "Ne moloko овсяное классическое",
+  "brand": "АО &quot; Сады Придонья&quot; (Пятёрочка)",
+  "calories": 60.0,
+  "protein": 1.0,
+  "fat": 3.2,
+  "carbs": 6.5
+ },
+ {
+  "code": "st-4602041002584",
+  "name": "Кукурузные палочки с сахарной пудрой",
+  "brand": "Кузя Лакомкин (Пятёрочка)",
+  "calories": 510.0,
+  "protein": 4.0,
+  "fat": 23.0,
+  "carbs": 72.0
+ },
+ {
+  "code": "st-4607084417371",
+  "name": "Икра из кабачков",
+  "brand": "Global Village (Пятёрочка)",
+  "calories": 95.6,
+  "protein": 1.0,
+  "fat": 7.0,
+  "carbs": 7.0
+ },
+ {
+  "code": "st-4680019561042",
+  "name": "Напиток овсяный классический лайт",
+  "brand": "ne-moloko (Пятёрочка)",
+  "calories": 45.0,
+  "protein": 0.0,
+  "fat": 1.5,
+  "carbs": 6.5
+ },
+ {
+  "code": "st-4620001171637",
+  "name": "Фарш говяжий",
+  "brand": "Рестория (Пятёрочка)",
+  "calories": 240.0,
+  "protein": 12.0,
+  "fat": 20.0,
+  "carbs": 0.0
+ },
+ {
+  "code": "st-4610012191243",
+  "name": "Сок томатный восстановленный",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 20.0,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 5.0
+ },
+ {
+  "code": "st-4600384007242",
+  "name": "Цедра апельсина",
+  "brand": "Россия (Пятёрочка)",
+  "calories": 532.3,
+  "protein": 5.9,
+  "fat": 30.0,
+  "carbs": 57.0
+ },
+ {
+  "code": "st-4600605019795",
+  "name": "Творожный со вкусом пломбира",
+  "brand": "Даниссимо (Пятёрочка)",
+  "calories": 123.3,
+  "protein": 5.3,
+  "fat": 5.4,
+  "carbs": 13.3
+ },
+ {
+  "code": "st-4601248015168",
+  "name": "Яблоко",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 45.4,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 11.0
+ },
+ {
+  "code": "st-4601512009015",
+  "name": "Гранатовый сезон",
+  "brand": "Любимый (Пятёрочка)",
+  "calories": 45.4,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 11.0
+ },
+ {
+  "code": "st-4607004001130",
+  "name": "Макаронные изделия Вермишель паутинка",
+  "brand": "Baisad (Пятёрочка)",
+  "calories": 344.2,
+  "protein": 10.4,
+  "fat": 1.1,
+  "carbs": 71.5
+ },
+ {
+  "code": "st-4607042438776",
+  "name": "Апельсининовый нектар",
+  "brand": "Добрый (Пятёрочка)",
+  "calories": 42.0,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 10.5
+ },
+ {
+  "code": "st-4610009511313",
+  "name": "Краковская традиционная",
+  "brand": "Черкизово (Пятёрочка)",
+  "calories": 282.3,
+  "protein": 11.0,
+  "fat": 22.0,
+  "carbs": 10.0
+ },
+ {
+  "code": "st-4600605017296",
+  "name": "Творожный с ароматным персиком",
+  "brand": "Даниссимо (Пятёрочка)",
+  "calories": 130.3,
+  "protein": 5.2,
+  "fat": 5.4,
+  "carbs": 15.1
+ },
+ {
+  "code": "st-4600605020104",
+  "name": "Творожный (груша и банан)",
+  "brand": "Danone (Пятёрочка)",
+  "calories": 111.1,
+  "protein": 6.3,
+  "fat": 3.6,
+  "carbs": 13.2
+ },
+ {
+  "code": "st-4601201017727",
+  "name": "Персик-Яблоко",
+  "brand": "Фруктовый Сад (Пятёрочка)",
+  "calories": 52.6,
+  "protein": 0.2,
+  "fat": 0.0,
+  "carbs": 13.0
+ },
+ {
+  "code": "st-4601201054616",
+  "name": "Волшебная сказка",
+  "brand": "Любимый (Пятёрочка)",
+  "calories": 52.6,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 13.0
+ },
+ {
+  "code": "st-4601780000189",
+  "name": "Спагетти",
+  "brand": "Makfa (Пятёрочка)",
+  "calories": 342.3,
+  "protein": 12.0,
+  "fat": 1.3,
+  "carbs": 70.5
+ },
+ {
+  "code": "st-4607004004704",
+  "name": "Вермишель паутинка",
+  "brand": "Ладные (Пятёрочка)",
+  "calories": 344.2,
+  "protein": 10.4,
+  "fat": 1.1,
+  "carbs": 71.5
+ },
+ {
+  "code": "st-4607174579842",
+  "name": "Морс Клюква",
+  "brand": "Добрый (Пятёрочка)",
+  "calories": 48.8,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 12.0
+ },
+ {
+  "code": "st-4605498008420",
+  "name": "Молоко цельное сгущенное с сахаром",
+  "brand": "СКЗ (Пятёрочка)",
+  "calories": 320.0,
+  "protein": 5.0,
+  "fat": 8.5,
+  "carbs": 56.0
+ },
+ {
+  "code": "st-4601674008741",
+  "name": "Кетчуп для гриля и шашлыка",
+  "brand": "Heinz (Пятёрочка)",
+  "calories": 95.0,
+  "protein": 1.0,
+  "fat": 0.1,
+  "carbs": 23.0
+ },
+ {
+  "code": "st-4601674008642",
+  "name": "Томатный кетчуп",
+  "brand": "Heinz (Пятёрочка)",
+  "calories": 95.0,
+  "protein": 1.0,
+  "fat": 0.1,
+  "carbs": 23.0
+ },
+ {
+  "code": "st-4603290004817",
+  "name": "Печенье с клубничным кремом",
+  "brand": "Яшкино (Пятёрочка)",
+  "calories": 490.0,
+  "protein": 5.5,
+  "fat": 24.0,
+  "carbs": 64.0
+ },
+ {
+  "code": "st-6411401015144",
+  "name": "&quot;Karl Fazer&quot; Молочный шоколад с изюмом и фундуком",
+  "brand": "Fazer (Пятёрочка)",
+  "calories": 524.0,
+  "protein": 11.0,
+  "fat": 32.0,
+  "carbs": 48.0
+ },
+ {
+  "code": "st-4607048552919",
+  "name": "Сыр фасованный тильзитэр",
+  "brand": "Кезский сырзавод (Пятёрочка)",
+  "calories": 335.0,
+  "protein": 23.0,
+  "fat": 27.0,
+  "carbs": 0.0
+ },
+ {
+  "code": "st-2574577003224",
+  "name": "Голландский сыр",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 334.0,
+  "protein": 26.8,
+  "fat": 25.2,
+  "carbs": 0.0
+ },
+ {
+  "code": "st-4607012274328",
+  "name": "Масса творожная с фруктово-ягодным наполнителем «Вишня-черешня» с массовой долей жира 4,5%",
+  "brand": "Радостино (Пятёрочка)",
+  "calories": 150.6,
+  "protein": 13.0,
+  "fat": 4.5,
+  "carbs": 14.6
+ },
+ {
+  "code": "st-4600935000432",
+  "name": "Крупа гречневая",
+  "brand": "PROSTO (Пятёрочка)",
+  "calories": 340.0,
+  "protein": 13.1,
+  "fat": 3.5,
+  "carbs": 64.0
+ },
+ {
+  "code": "st-4605093013065",
+  "name": "Крупа гречневая алтайская",
+  "brand": "Пассим (Пятёрочка)",
+  "calories": 333.7,
+  "protein": 13.0,
+  "fat": 2.6,
+  "carbs": 68.0
+ },
+ {
+  "code": "st-4606968388776",
+  "name": "Хлопья овсяные быстроразваривающиеся, 3 мин.",
+  "brand": "Селяночка (Пятёрочка)",
+  "calories": 358.5,
+  "protein": 13.0,
+  "fat": 6.0,
+  "carbs": 59.0
+ },
+ {
+  "code": "st-4631142658208",
+  "name": "Творог 9%",
+  "brand": "Северодвинск-Молоко (Пятёрочка)",
+  "calories": 157.0,
+  "protein": 16.0,
+  "fat": 9.0,
+  "carbs": 3.0
+ },
+ {
+  "code": "st-4603552014912",
+  "name": "Суп грибной",
+  "brand": "Домашнее бистро (Пятёрочка)",
+  "calories": 300.0,
+  "protein": 8.0,
+  "fat": 4.5,
+  "carbs": 54.0
+ },
+ {
+  "code": "st-4607015232585",
+  "name": "Вафли &quot;Со сливочным вкусом&quot;",
+  "brand": "Яшкино (Пятёрочка)",
+  "calories": 480.0,
+  "protein": 4.5,
+  "fat": 26.0,
+  "carbs": 58.0
+ },
+ {
+  "code": "st-7622210372192",
+  "name": "Шоколад молочный «Милка» с цельным фундуком",
+  "brand": "Milka (Пятёрочка)",
+  "calories": 551.0,
+  "protein": 7.6,
+  "fat": 36.0,
+  "carbs": 50.0
+ },
+ {
+  "code": "st-4610009940168",
+  "name": "Фасоль белая в томатном соусе",
+  "brand": "Global Village (Пятёрочка)",
+  "calories": 87.6,
+  "protein": 6.2,
+  "fat": 0.0,
+  "carbs": 15.7
+ },
+ {
+  "code": "st-4612515500102",
+  "name": "Овсяное печенье",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 432.6,
+  "protein": 5.9,
+  "fat": 14.2,
+  "carbs": 61.2
+ },
+ {
+  "code": "st-4601780002565",
+  "name": "Мука пшеничная хлебопекарная высший сорт",
+  "brand": "Макфа (Пятёрочка)",
+  "calories": 334.0,
+  "protein": 10.3,
+  "fat": 1.1,
+  "carbs": 70.6
+ },
+ {
+  "code": "st-4604248002725",
+  "name": "Майонез &quot;Провансаль&quot;",
+  "brand": "Махеевъ (Пятёрочка)",
+  "calories": 461.0,
+  "protein": 0.0,
+  "fat": 50.5,
+  "carbs": 1.5
+ },
+ {
+  "code": "st-4610009940144",
+  "name": "Фасоль белая",
+  "brand": "Global Village (Пятёрочка)",
+  "calories": 83.7,
+  "protein": 6.1,
+  "fat": 0.0,
+  "carbs": 14.9
+ },
+ {
+  "code": "st-4690228027079",
+  "name": "Сметана из свежих сливок 15 %",
+  "brand": "Домик в деревне (Пятёрочка)",
+  "calories": 157.7,
+  "protein": 2.6,
+  "fat": 15.0,
+  "carbs": 3.6
+ },
+ {
+  "code": "st-7622210770639",
+  "name": "Dark. Тёмный шоколад с фундуком.",
+  "brand": "Alpen Gold (Пятёрочка)",
+  "calories": 525.3,
+  "protein": 5.8,
+  "fat": 33.0,
+  "carbs": 52.0
+ },
+ {
+  "code": "st-4603554000944",
+  "name": "Рис круглозерный шлифованный",
+  "brand": "Яровое поле (Пятёрочка)",
+  "calories": 333.2,
+  "protein": 7.0,
+  "fat": 1.0,
+  "carbs": 74.0
+ },
+ {
+  "code": "st-4603990002649",
+  "name": "100 % масло подсолнечное рафинированное высший сорт",
+  "brand": "Россиянка (Пятёрочка)",
+  "calories": 899.6,
+  "protein": 0.0,
+  "fat": 99.9,
+  "carbs": 0.0
+ },
+ {
+  "code": "st-4810410056285",
+  "name": "Горький шоколад 72 %",
+  "brand": "Plán B (Пятёрочка)",
+  "calories": 543.0,
+  "protein": 10.0,
+  "fat": 39.9,
+  "carbs": 34.3
+ },
+ {
+  "code": "st-4607016243276",
+  "name": "Гречка экстра",
+  "brand": "Увелка (Пятёрочка)",
+  "calories": 360.9,
+  "protein": 13.0,
+  "fat": 2.0,
+  "carbs": 72.0
+ },
+ {
+  "code": "st-4791045009009",
+  "name": "Чай &quot;Спринг филингс&quot; цейлонский черный байховый среднелистовой с лепестками календулы, ароматом персика и ванили",
+  "brand": "Hyleys (Пятёрочка)",
+  "calories": 0.0,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 0.0
+ },
+ {
+  "code": "st-4810980000138",
+  "name": "Масло сладко-сливочное Крестьянское м.д.ж. 72,5 % высший сорт",
+  "brand": "Родная кухня (Пятёрочка)",
+  "calories": 650.8,
+  "protein": 1.0,
+  "fat": 72.5,
+  "carbs": 1.4
+ },
+ {
+  "code": "st-5411188081852",
+  "name": "Напиток Alpro vanilla",
+  "brand": "alpro (Пятёрочка)",
+  "calories": 57.0,
+  "protein": 3.0,
+  "fat": 1.8,
+  "carbs": 6.8
+ },
+ {
+  "code": "st-4607015232677",
+  "name": "Яшкино вафли с варёной сгущёнкой",
+  "brand": "Яшкино (Пятёрочка)",
+  "calories": 520.0,
+  "protein": 6.0,
+  "fat": 28.0,
+  "carbs": 62.0
+ },
+ {
+  "code": "st-4604248018283",
+  "name": "Майонезный соус «Сметанный с грибами»",
+  "brand": "Махеевъ (Пятёрочка)",
+  "calories": 270.0,
+  "protein": 0.7,
+  "fat": 25.0,
+  "carbs": 11.8
+ },
+ {
+  "code": "st-4604248006204",
+  "name": "Джем &quot;Клубничный&quot; нестерилизованный",
+  "brand": "Махеевъ (Пятёрочка)",
+  "calories": 272.0,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 68.0
+ },
+ {
+  "code": "st-4602481800467",
+  "name": "Рожки высший сорт",
+  "brand": "Красная Цена (Пятёрочка)",
+  "calories": 330.0,
+  "protein": 10.0,
+  "fat": 1.0,
+  "carbs": 71.0
+ },
+ {
+  "code": "st-4627101740121",
+  "name": "Помидоры резаные",
+  "brand": "Trattoria di maestro Turatti (Пятёрочка)",
+  "calories": 28.0,
+  "protein": 1.2,
+  "fat": 0.1,
+  "carbs": 4.5
+ },
+ {
+  "code": "st-4650075427613",
+  "name": "Добрый Апельсин",
+  "brand": "Добрый (Пятёрочка)",
+  "calories": 32.0,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 8.0
+ },
+ {
+  "code": "st-4600823150003",
+  "name": "«Вдохновение» миндаль и трюфельный крем",
+  "brand": "вдохновение (Пятёрочка)",
+  "calories": 566.4,
+  "protein": 6.5,
+  "fat": 38.0,
+  "carbs": 47.0
+ },
+ {
+  "code": "st-4607015234497",
+  "name": "Вафли глазированные с орешками",
+  "brand": "Яшкино (Пятёрочка)",
+  "calories": 530.0,
+  "protein": 6.0,
+  "fat": 32.0,
+  "carbs": 55.0
+ },
+ {
+  "code": "st-4600742011041",
+  "name": "Молоко питьевое пастеризованное с массовой долей жира 2,5%",
+  "brand": "Северное молоко (Пятёрочка)",
+  "calories": 53.3,
+  "protein": 3.0,
+  "fat": 2.5,
+  "carbs": 4.7
+ },
+ {
+  "code": "st-7622210210920",
+  "name": "MAX FUN (арахис, разноцветные драже, карамель)",
+  "brand": "Alpen Gold (Пятёрочка)",
+  "calories": 515.1,
+  "protein": 6.3,
+  "fat": 27.5,
+  "carbs": 60.0
+ },
+ {
+  "code": "st-4810410064891",
+  "name": "Шоколад молочный с начинкой &quot;Трюфельный элит&quot;",
+  "brand": "Коммунарка (Пятёрочка)",
+  "calories": 560.0,
+  "protein": 4.0,
+  "fat": 36.0,
+  "carbs": 52.0
+ },
+ {
+  "code": "st-4607072710224",
+  "name": "Гречневая крупа Экстра",
+  "brand": "Агро-Альянс (Пятёрочка)",
+  "calories": 351.3,
+  "protein": 13.0,
+  "fat": 3.0,
+  "carbs": 68.0
+ },
+ {
+  "code": "st-4600935000418",
+  "name": "Рис Отборный длиннозерный",
+  "brand": "PROSTO (Пятёрочка)",
+  "calories": 330.0,
+  "protein": 7.5,
+  "fat": 0.5,
+  "carbs": 74.0
+ },
+ {
+  "code": "st-4607060380491",
+  "name": "Масса творожная с сахаром и изюмом",
+  "brand": "Козельская (Пятёрочка)",
+  "calories": 243.0,
+  "protein": 12.1,
+  "fat": 15.5,
+  "carbs": 13.9
+ },
+ {
+  "code": "st-4604248016920",
+  "name": "Джем персик-манго",
+  "brand": "Махеевъ (Пятёрочка)",
+  "calories": 268.0,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 67.0
+ },
+ {
+  "code": "st-4607021095150",
+  "name": "Печенье сахарное «Творожное»",
+  "brand": "Дымка добрые сладости (Пятёрочка)",
+  "calories": 440.0,
+  "protein": 7.9,
+  "fat": 16.7,
+  "carbs": 64.5
+ },
+ {
+  "code": "st-4605538011762",
+  "name": "Хлеб Белый",
+  "brand": "Красная Цена (Пятёрочка)",
+  "calories": 242.0,
+  "protein": 7.9,
+  "fat": 0.8,
+  "carbs": 51.0
+ },
+ {
+  "code": "st-4601201017819",
+  "name": "Нектар яблочно-виногрвдный осветленный для детского питания",
+  "brand": "Фруктовый сад (Пятёрочка)",
+  "calories": 55.0,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 14.0
+ },
+ {
+  "code": "st-4607015232653",
+  "name": "Вафли шоколадные",
+  "brand": "Яшкино (Пятёрочка)",
+  "calories": 540.0,
+  "protein": 6.0,
+  "fat": 31.0,
+  "carbs": 60.0
+ },
+ {
+  "code": "st-4604248013233",
+  "name": "Вишневый джем",
+  "brand": "Махеевъ (Пятёрочка)",
+  "calories": 272.0,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 68.0
+ },
+ {
+  "code": "st-4607001414810",
+  "name": "Рулет бисквитный черника",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 380.0,
+  "protein": 4.0,
+  "fat": 16.0,
+  "carbs": 55.0
+ },
+ {
+  "code": "st-4607001414797",
+  "name": "Рулет бисквитный клубника",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 380.0,
+  "protein": 4.0,
+  "fat": 16.0,
+  "carbs": 55.0
+ },
+ {
+  "code": "st-4606428221766",
+  "name": "Варенье Малина",
+  "brand": "Абрико (Пятёрочка)",
+  "calories": 268.0,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 67.0
+ },
+ {
+  "code": "st-4601201017994",
+  "name": "Нектар яблочный осветлённый для детского питания",
+  "brand": "Фруктовый сад (Пятёрочка)",
+  "calories": 45.4,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 11.0
+ },
+ {
+  "code": "st-4601674009281",
+  "name": "Сырный соус",
+  "brand": "Heinz (Пятёрочка)",
+  "calories": 560.0,
+  "protein": 1.5,
+  "fat": 59.0,
+  "carbs": 5.0
+ },
+ {
+  "code": "st-4607004004681",
+  "name": "Спираль (макаронные изделия из твердых сортов пшеницы)",
+  "brand": "Ладные (Пятёрочка)",
+  "calories": 344.2,
+  "protein": 10.4,
+  "fat": 1.1,
+  "carbs": 71.5
+ },
+ {
+  "code": "st-4607070756033",
+  "name": "Коктейль молочный &quot;Шоколадный&quot;",
+  "brand": "Milkavel (Пятёрочка)",
+  "calories": 70.0,
+  "protein": 2.8,
+  "fat": 2.5,
+  "carbs": 9.1
+ },
+ {
+  "code": "st-4620004251947",
+  "name": "Козинак Подсолнечный",
+  "brand": "Mixbar (Пятёрочка)",
+  "calories": 578.4,
+  "protein": 15.0,
+  "fat": 43.0,
+  "carbs": 34.0
+ },
+ {
+  "code": "st-4660000320629",
+  "name": "Спагетти высший сорт",
+  "brand": "Красная Цена (Пятёрочка)",
+  "calories": 344.2,
+  "protein": 10.4,
+  "fat": 1.1,
+  "carbs": 71.5
+ },
+ {
+  "code": "st-4600605020081",
+  "name": "Творожный (клубника и земляника)",
+  "brand": "Danone (Пятёрочка)",
+  "calories": 108.7,
+  "protein": 6.2,
+  "fat": 3.6,
+  "carbs": 12.7
+ },
+ {
+  "code": "st-4600605021019",
+  "name": "Творожный с манго, апельсином и бананом",
+  "brand": "Даниссимо (Пятёрочка)",
+  "calories": 133.1,
+  "protein": 5.2,
+  "fat": 5.4,
+  "carbs": 15.8
+ },
+ {
+  "code": "st-4600935010189",
+  "name": "Крупа кукурузная",
+  "brand": "Агрокультура (Пятёрочка)",
+  "calories": 339.4,
+  "protein": 8.5,
+  "fat": 1.0,
+  "carbs": 75.0
+ },
+ {
+  "code": "st-4601512006090",
+  "name": "Виноград и яблоко",
+  "brand": "Любимый (Пятёрочка)",
+  "calories": 57.4,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 14.0
+ },
+ {
+  "code": "st-4603554001088",
+  "name": "Крупа перловая",
+  "brand": "Яровое поле (Пятёрочка)",
+  "calories": 315.2,
+  "protein": 9.3,
+  "fat": 1.1,
+  "carbs": 66.9
+ },
+ {
+  "code": "st-4660000322210",
+  "name": "Перья высший сорт",
+  "brand": "Красная Цена (Пятёрочка)",
+  "calories": 344.2,
+  "protein": 10.4,
+  "fat": 1.1,
+  "carbs": 71.5
+ },
+ {
+  "code": "st-4607053473780",
+  "name": "Кефир 2,5%",
+  "brand": "Простоквашино (Пятёрочка)",
+  "calories": 51.0,
+  "protein": 3.0,
+  "fat": 2.5,
+  "carbs": 4.0
+ },
+ {
+  "code": "st-4600545625100",
+  "name": "Вермишель быстрого приготовления с говяжьим бульоном",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 410.0,
+  "protein": 7.5,
+  "fat": 20.0,
+  "carbs": 49.0
+ },
+ {
+  "code": "st-4603955002004",
+  "name": "Шоколад Бабаевский элитный 75 % какао",
+  "brand": "Бабаевский (Пятёрочка)",
+  "calories": 521.0,
+  "protein": 11.0,
+  "fat": 36.0,
+  "carbs": 32.0
+ },
+ {
+  "code": "st-8714100704165",
+  "name": "Кетчуп Черри",
+  "brand": "Calvé (Пятёрочка)",
+  "calories": 70.0,
+  "protein": 1.0,
+  "fat": 0.4,
+  "carbs": 15.0
+ },
+ {
+  "code": "st-5998304141930",
+  "name": "Фасоль красная натуральная",
+  "brand": "Globus (Пятёрочка)",
+  "calories": 87.0,
+  "protein": 5.3,
+  "fat": 0.2,
+  "carbs": 16.0
+ },
+ {
+  "code": "st-4600935000043",
+  "name": "Крупа греча ядрица",
+  "brand": "Националь (Пятёрочка)",
+  "calories": 329.1,
+  "protein": 12.6,
+  "fat": 2.6,
+  "carbs": 68.0
+ },
+ {
+  "code": "st-4600605022085",
+  "name": "Творог мягкий 0*%",
+  "brand": "Danone (Пятёрочка)",
+  "calories": 61.4,
+  "protein": 10.9,
+  "fat": 0.1,
+  "carbs": 4.0
+ },
+ {
+  "code": "st-4606968001989",
+  "name": "Хлопья овсяные Геркулес",
+  "brand": "Селяночка (Пятёрочка)",
+  "calories": 358.5,
+  "protein": 13.0,
+  "fat": 6.0,
+  "carbs": 59.0
+ },
+ {
+  "code": "st-4603931777322",
+  "name": "Геркулес",
+  "brand": "Каскад (Пятёрочка)",
+  "calories": 310.7,
+  "protein": 11.0,
+  "fat": 6.0,
+  "carbs": 51.0
+ },
+ {
+  "code": "st-4600851012618",
+  "name": "Подсолнечное масло рафинированное дезодорированное",
+  "brand": "Золотая лейка (Пятёрочка)",
+  "calories": 899.6,
+  "protein": 0.0,
+  "fat": 99.9,
+  "carbs": 0.0
+ },
+ {
+  "code": "st-4600605021507",
+  "name": "Творог мягкий 5 %",
+  "brand": "Danone (Пятёрочка)",
+  "calories": 97.0,
+  "protein": 8.8,
+  "fat": 5.0,
+  "carbs": 4.2
+ },
+ {
+  "code": "st-4607033681419",
+  "name": "Натуральный тунец",
+  "brand": "Капитан Вкусов (Пятёрочка)",
+  "calories": 95.6,
+  "protein": 22.5,
+  "fat": 0.7,
+  "carbs": 0.0
+ },
+ {
+  "code": "st-4620004792105",
+  "name": "Воздушные зерна риса в сахарном сиропе",
+  "brand": "Русский десерт (Пятёрочка)",
+  "calories": 380.0,
+  "protein": 3.5,
+  "fat": 2.0,
+  "carbs": 86.0
+ },
+ {
+  "code": "st-4601201054630",
+  "name": "Сок томатный &quot;спелый томат&quot;",
+  "brand": "любимый (Пятёрочка)",
+  "calories": 20.0,
+  "protein": 0.4,
+  "fat": 0.0,
+  "carbs": 5.0
+ },
+ {
+  "code": "st-4600699502210",
+  "name": "Майонез провансаль с массовой долей жира 67%",
+  "brand": "Слобода (Пятёрочка)",
+  "calories": 612.0,
+  "protein": 0.4,
+  "fat": 67.2,
+  "carbs": 2.0
+ },
+ {
+  "code": "st-4600605022399",
+  "name": "натуральный биойогурт, с черникой и 5 злаками",
+  "brand": "DANONE (Пятёрочка)",
+  "calories": 95.0,
+  "protein": 4.1,
+  "fat": 2.9,
+  "carbs": 13.0
+ },
+ {
+  "code": "st-4607016356884",
+  "name": "сырок творожный глазированный с ванилью в темном шоколаде Б.Ю.Александров",
+  "brand": "&quot;Б.Ю.Александров&quot; (Пятёрочка)",
+  "calories": 410.0,
+  "protein": 8.5,
+  "fat": 29.0,
+  "carbs": 29.0
+ },
+ {
+  "code": "st-4607163091621",
+  "name": "Сок мультифруктовый с мякоть восстановленный",
+  "brand": "Сады Придонья (Пятёрочка)",
+  "calories": 45.4,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 11.5
+ },
+ {
+  "code": "st-4607072710033",
+  "name": "Элитный пропаренный рис",
+  "brand": "«Агро-Альянс» ООО (Пятёрочка)",
+  "calories": 350.0,
+  "protein": 6.5,
+  "fat": 1.0,
+  "carbs": 79.0
+ },
+ {
+  "code": "st-4606038031465",
+  "name": "Сокосодержащий напиток из смеси овощей с мякотью «Гаспачо» с солью и сахаром",
+  "brand": "Soko GRANDE Premium (Пятёрочка)",
+  "calories": 22.0,
+  "protein": 0.7,
+  "fat": 0.2,
+  "carbs": 4.0
+ },
+ {
+  "code": "st-4607038709507",
+  "name": "Сливки питьевые ультра-пастеризованные с массовой долей жира 20%",
+  "brand": "станция молочная (Пятёрочка)",
+  "calories": 205.0,
+  "protein": 2.5,
+  "fat": 20.0,
+  "carbs": 3.8
+ },
+ {
+  "code": "st-7622210457554",
+  "name": "Юбилейное молочное",
+  "brand": "Большевик (Пятёрочка)",
+  "calories": 460.0,
+  "protein": 8.1,
+  "fat": 17.5,
+  "carbs": 66.5
+ },
+ {
+  "code": "st-4680019566474",
+  "name": "НеМолоко кокосовое на рисовой основе",
+  "brand": "NeMoloko (Пятёрочка)",
+  "calories": 35.0,
+  "protein": 0.4,
+  "fat": 1.5,
+  "carbs": 5.0
+ },
+ {
+  "code": "st-4600605010976",
+  "name": "Биойогурт Активиа",
+  "brand": "Активиа (Пятёрочка)",
+  "calories": 78.0,
+  "protein": 4.8,
+  "fat": 3.5,
+  "carbs": 6.7
+ },
+ {
+  "code": "st-4607035893339",
+  "name": "Корнишоны хрустящие",
+  "brand": "6 соток (Пятёрочка)",
+  "calories": 20.0,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 4.5
+ },
+ {
+  "code": "st-4640168951385",
+  "name": "Салат «Гнездо Глухаря»",
+  "brand": "Пятёрочка Кафе (Пятёрочка)",
+  "calories": 229.0,
+  "protein": 12.8,
+  "fat": 18.3,
+  "carbs": 3.1
+ },
+ {
+  "code": "st-4607968575395",
+  "name": "Изделие мучное кулинарное охлажденное. шаурма с курицей",
+  "brand": "Пятёрочка кафе (Пятёрочка)",
+  "calories": 170.0,
+  "protein": 11.7,
+  "fat": 6.5,
+  "carbs": 17.0
+ },
+ {
+  "code": "st-4002442806116",
+  "name": "Маслины с косточкой",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 127.0,
+  "protein": 0.5,
+  "fat": 13.2,
+  "carbs": 0.0
+ },
+ {
+  "code": "st-4813515003307",
+  "name": "Маслины без косточки",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 180.0,
+  "protein": 2.0,
+  "fat": 16.0,
+  "carbs": 5.0
+ },
+ {
+  "code": "st-4607007312479",
+  "name": "Джем черничный",
+  "brand": "Красная Цена (Пятёрочка)",
+  "calories": 206.0,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 53.7
+ },
+ {
+  "code": "st-2574579003598",
+  "name": "Российский сыр",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 327.5,
+  "protein": 24.5,
+  "fat": 25.5,
+  "carbs": 0.0
+ },
+ {
+  "code": "st-4606038091506",
+  "name": "Кукуруза",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 50.0,
+  "protein": 2.0,
+  "fat": 0.0,
+  "carbs": 11.0
+ },
+ {
+  "code": "st-4603741769784",
+  "name": "Кетчуп шашлычный",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 48.0,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 12.0
+ },
+ {
+  "code": "st-4603560003250",
+  "name": "Кетчуп томатный",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 75.0,
+  "protein": 1.2,
+  "fat": 0.0,
+  "carbs": 17.4
+ },
+ {
+  "code": "st-4606038077418",
+  "name": "Фасоль белая",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 84.0,
+  "protein": 6.1,
+  "fat": 0.0,
+  "carbs": 14.9
+ },
+ {
+  "code": "st-4603421360638",
+  "name": "Фасоль стручковая",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 30.0,
+  "protein": 3.0,
+  "fat": 0.3,
+  "carbs": 3.0
+ },
+ {
+  "code": "st-4630055870127",
+  "name": "Фасоль красная",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 84.0,
+  "protein": 6.1,
+  "fat": 0.0,
+  "carbs": 14.9
+ },
+ {
+  "code": "st-4606038062223",
+  "name": "Яблочный сок",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 40.0,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 10.0
+ },
+ {
+  "code": "st-4610005176028",
+  "name": "Колбаса красная цена Ароматная сырокопченая 300г",
+  "brand": "Красная Цена (Пятёрочка)",
+  "calories": 366.0,
+  "protein": 24.0,
+  "fat": 30.0,
+  "carbs": 0.0
+ },
+ {
+  "code": "st-4606038031229",
+  "name": "Зефир",
+  "brand": "Красная Цена (Пятёрочка)",
+  "calories": 326.0,
+  "protein": 0.8,
+  "fat": 0.4,
+  "carbs": 79.9
+ },
+ {
+  "code": "st-4607018298434",
+  "name": "Приправа для мяса",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 160.0,
+  "protein": 8.0,
+  "fat": 5.0,
+  "carbs": 20.0
+ },
+ {
+  "code": "st-4607015599534",
+  "name": "Каша овсяная со сливками",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 320.0,
+  "protein": 11.0,
+  "fat": 6.0,
+  "carbs": 55.0
+ },
+ {
+  "code": "st-4813515003871",
+  "name": "Корнишоны",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 8.0,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 0.0
+ },
+ {
+  "code": "st-4607003260606",
+  "name": "Хрен столовый острый",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 32.0,
+  "protein": 2.5,
+  "fat": 0.4,
+  "carbs": 4.6
+ },
+ {
+  "code": "st-4606763007841",
+  "name": "Печенье сахарное чайное",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 450.0,
+  "protein": 7.5,
+  "fat": 15.0,
+  "carbs": 72.0
+ },
+ {
+  "code": "st-4607026017478",
+  "name": "Яблоко виноград",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 45.4,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 11.0
+ },
+ {
+  "code": "st-4602292018082",
+  "name": "Печенье Мария",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 390.0,
+  "protein": 8.5,
+  "fat": 7.0,
+  "carbs": 74.0
+ },
+ {
+  "code": "st-4607018298519",
+  "name": "Лавровый лист",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 406.0,
+  "protein": 8.0,
+  "fat": 8.0,
+  "carbs": 75.0
+ },
+ {
+  "code": "st-4670002100525",
+  "name": "Нектар яблочный осветленный",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 47.8,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 12.0
+ },
+ {
+  "code": "st-4600653110710",
+  "name": "Творог 9%",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 157.0,
+  "protein": 16.0,
+  "fat": 9.0,
+  "carbs": 3.0
+ },
+ {
+  "code": "st-4630055384655",
+  "name": "Котлеты Куриные охлажденные",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 227.0,
+  "protein": 12.0,
+  "fat": 17.0,
+  "carbs": 6.5
+ },
+ {
+  "code": "st-4602277010865",
+  "name": "Яйца куриные",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 157.0,
+  "protein": 12.7,
+  "fat": 11.5,
+  "carbs": 0.7
+ },
+ {
+  "code": "st-4607086497241",
+  "name": "Консервированные персики половинки в сиропе",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 54.5,
+  "protein": 1.0,
+  "fat": 0.0,
+  "carbs": 13.0
+ },
+ {
+  "code": "st-4604713003479",
+  "name": "Молоко ультрапастеризованное 1,5 %",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 44.5,
+  "protein": 3.0,
+  "fat": 1.5,
+  "carbs": 4.7
+ },
+ {
+  "code": "st-4606038059155",
+  "name": "Изюм темный",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 290.0,
+  "protein": 2.5,
+  "fat": 0.5,
+  "carbs": 70.0
+ },
+ {
+  "code": "st-4640203981612",
+  "name": "Домашняя колбаса",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 248.0,
+  "protein": 9.0,
+  "fat": 20.0,
+  "carbs": 8.0
+ },
+ {
+  "code": "st-2574579002836",
+  "name": "сыр российский",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 343.0,
+  "protein": 26.8,
+  "fat": 26.2,
+  "carbs": 0.0
+ },
+ {
+  "code": "st-4606038066566",
+  "name": "Огурцы маринованные",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 18.4,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 4.6
+ },
+ {
+  "code": "st-4606038077432",
+  "name": "Сардина натуральная с добавлением масла",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 248.0,
+  "protein": 17.0,
+  "fat": 20.0,
+  "carbs": 0.0
+ },
+ {
+  "code": "st-4607115069562",
+  "name": "Огурцы солёные",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 10.0,
+  "protein": 0.8,
+  "fat": 0.0,
+  "carbs": 1.7
+ },
+ {
+  "code": "st-4600742013274",
+  "name": "Молоко питьевое ультрапастеризованное 1,5%",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 45.0,
+  "protein": 2.8,
+  "fat": 1.5,
+  "carbs": 4.7
+ },
+ {
+  "code": "st-4607065604806",
+  "name": "Продукт плавленый с сыром Дружба континентов",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 280.0,
+  "protein": 1.0,
+  "fat": 24.0,
+  "carbs": 15.0
+ },
+ {
+  "code": "st-4606038051555",
+  "name": "Арахис жареный солёный",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 590.0,
+  "protein": 28.3,
+  "fat": 48.7,
+  "carbs": 9.9
+ },
+ {
+  "code": "st-4606038050206",
+  "name": "Вафли со вкусом сливок",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 550.0,
+  "protein": 4.0,
+  "fat": 35.0,
+  "carbs": 54.0
+ },
+ {
+  "code": "st-4605538011786",
+  "name": "Хлеб Украинский Новый",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 205.0,
+  "protein": 6.8,
+  "fat": 1.2,
+  "carbs": 41.7
+ },
+ {
+  "code": "st-4640028781091",
+  "name": "Творог обезжиренный",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 85.0,
+  "protein": 18.0,
+  "fat": 0.0,
+  "carbs": 3.3
+ },
+ {
+  "code": "st-2574579003475",
+  "name": "Сыр фасованный Российский",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 355.0,
+  "protein": 24.5,
+  "fat": 28.5,
+  "carbs": 2.7
+ },
+ {
+  "code": "st-4620021165326",
+  "name": "Хлеб Славянский",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 230.0,
+  "protein": 8.0,
+  "fat": 1.5,
+  "carbs": 46.0
+ },
+ {
+  "code": "st-4603702246330",
+  "name": "Молоко 2,5%",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 55.0,
+  "protein": 3.0,
+  "fat": 2.5,
+  "carbs": 4.7
+ },
+ {
+  "code": "st-4607018298410",
+  "name": "Приправа для курицы",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 150.0,
+  "protein": 8.5,
+  "fat": 3.0,
+  "carbs": 22.0
+ },
+ {
+  "code": "st-4607175484770",
+  "name": "Килька в томатном соусе",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 190.0,
+  "protein": 10.0,
+  "fat": 9.5,
+  "carbs": 16.0
+ },
+ {
+  "code": "st-4600545624103",
+  "name": "Вермишель быстрого приготовления с куриным бульоном",
+  "brand": "Красная Цена (Пятёрочка)",
+  "calories": 410.0,
+  "protein": 7.5,
+  "fat": 20.0,
+  "carbs": 49.0
+ },
+ {
+  "code": "st-4606038054761",
+  "name": "Горошек",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 30.0,
+  "protein": 2.5,
+  "fat": 0.0,
+  "carbs": 5.0
+ },
+ {
+  "code": "st-4606038068638",
+  "name": "Мясо цыплёнка в собственном соку",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 160.0,
+  "protein": 13.0,
+  "fat": 12.0,
+  "carbs": 0.0
+ },
+ {
+  "code": "st-4650063811158",
+  "name": "Масло сливочное 72,5%",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 662.0,
+  "protein": 1.0,
+  "fat": 72.5,
+  "carbs": 1.4
+ },
+ {
+  "code": "st-4640178340063",
+  "name": "Молоко пастеризованное 2,5%",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 55.0,
+  "protein": 3.0,
+  "fat": 2.5,
+  "carbs": 4.7
+ },
+ {
+  "code": "st-4650259570012",
+  "name": "Крупа Рис шлифованный длиннозерный",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 321.0,
+  "protein": 7.0,
+  "fat": 1.0,
+  "carbs": 71.0
+ },
+ {
+  "code": "st-2590740003204",
+  "name": "Сыр по-Российски классический",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 353.0,
+  "protein": 23.0,
+  "fat": 29.0,
+  "carbs": 0.0
+ },
+ {
+  "code": "st-4607115069555",
+  "name": "Капуста квашенная",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 19.0,
+  "protein": 1.9,
+  "fat": 0.0,
+  "carbs": 2.2
+ },
+ {
+  "code": "st-4607065605490",
+  "name": "Колбасный копченый",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 250.0,
+  "protein": 1.0,
+  "fat": 19.0,
+  "carbs": 19.0
+ },
+ {
+  "code": "st-4601203015141",
+  "name": "Мороженое ванильное",
+  "brand": "Красная Цена (Пятёрочка)",
+  "calories": 150.0,
+  "protein": 2.5,
+  "fat": 6.0,
+  "carbs": 22.0
+ },
+ {
+  "code": "st-4607003262778",
+  "name": "Горчица острая",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 91.0,
+  "protein": 7.4,
+  "fat": 2.0,
+  "carbs": 10.8
+ },
+ {
+  "code": "st-4606180018659",
+  "name": "Сгущёнка с сахаром 1%",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 258.6,
+  "protein": 0.0,
+  "fat": 1.0,
+  "carbs": 61.0
+ },
+ {
+  "code": "st-4604713003493",
+  "name": "Молоко ультрапастеризованное 3,2 %",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 59.8,
+  "protein": 3.0,
+  "fat": 3.2,
+  "carbs": 4.7
+ },
+ {
+  "code": "st-4607009877556",
+  "name": "Яйца куриные пищевые столовые C2",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 157.0,
+  "protein": 12.7,
+  "fat": 11.5,
+  "carbs": 0.7
+ },
+ {
+  "code": "st-4606791008681",
+  "name": "Кола",
+  "brand": "Красная Цена (Пятёрочка)",
+  "calories": 0.4,
+  "protein": 0.0,
+  "fat": 0.0,
+  "carbs": 0.0
+ },
+ {
+  "code": "st-4610003761752",
+  "name": "Ряженка",
+  "brand": "Красная Цена (Пятёрочка)",
+  "calories": 51.0,
+  "protein": 3.0,
+  "fat": 2.5,
+  "carbs": 4.2
+ },
+ {
+  "code": "st-4607171830861",
+  "name": "Семечки жареные",
+  "brand": "Красная цена (Пятёрочка)",
+  "calories": 660.0,
+  "protein": 25.5,
+  "fat": 65.3,
+  "carbs": 5.8
+ }
 ]

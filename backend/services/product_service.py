@@ -98,8 +98,12 @@ def _search_local(db: Session, words: list[str]) -> list[Product]:
         )
     stmt = stmt.order_by(
         case((Product.source == "local", 0), else_=1), func.length(Product.name)
-    ).limit(MAX_RESULTS)
-    return list(db.scalars(stmt))
+    ).limit(MAX_RESULTS * 2)
+    # Один и тот же продукт может быть и в справочнике, и в кэше OFF — убираем дубли
+    unique: dict[str, Product] = {}
+    for product in db.scalars(stmt):
+        unique.setdefault(product.name_search, product)
+    return list(unique.values())[:MAX_RESULTS]
 
 
 def _upsert_off_products(db: Session, parsed: list[dict]) -> list[Product]:
