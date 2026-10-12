@@ -1,6 +1,6 @@
 // Экран «Статистика»: линейный график калорий (Chart.js 4) за неделю или месяц.
-import { initApp, tg, haptic, todayLocal, addDays, round1 } from './app.js?v=20261013b';
-import { getStats } from './api.js?v=20261013b';
+import { initApp, tg, haptic, todayLocal, addDays, round1 } from './app.js?v=20261013c';
+import { getStats } from './api.js?v=20261013c';
 
 const el = {
   periodButtons: document.querySelectorAll('#periodSwitch [data-days]'),

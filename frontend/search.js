@@ -1,6 +1,6 @@
 // Экран «Поиск»: debounce, отмена предыдущего запроса, карточки продуктов.
-import { initApp, navigate, haptic, displayBrand, foodEmoji } from './app.js?v=20261013b';
-import { searchProducts } from './api.js?v=20261013b';
+import { initApp, navigate, haptic, displayBrand, foodEmoji } from './app.js?v=20261013c';
+import { searchProducts } from './api.js?v=20261013c';
 
 const DEBOUNCE_MS = 300;
 const MIN_QUERY_LENGTH = 2;
@@ -82,7 +82,8 @@ function renderCard(product) {
   const name = document.createElement('div');
   name.className = 'product-name';
   name.textContent = product.name;
-  if (product.source === 'off' || product.source === 'user') {
+  const isOff = product.source === 'off' || String(product.code || '').startsWith('off-');
+  if (isOff || product.source === 'user') {
     const badge = document.createElement('span');
     badge.className = 'badge';
     badge.textContent = product.source === 'user' ? 'МОЁ' : 'OFF';

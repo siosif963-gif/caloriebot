@@ -19,7 +19,10 @@ from services.errors import ExternalServiceError, NotFoundError, ValidationError
 
 logger = logging.getLogger(__name__)
 
-SEED_FILE = Path(__file__).resolve().parent.parent / "data" / "russian_products.json"
+DATA_DIR = Path(__file__).resolve().parent.parent / "data"
+SEED_FILE = DATA_DIR / "russian_products.json"
+# Выгрузка OpenFoodFacts (русскоязычные продукты с КБЖУ), коды вида off-<штрихкод>
+SEED_OFF_FILE = DATA_DIR / "off_ru_products.json"
 MAX_RESULTS = 20
 MIN_LOCAL_RESULTS = 5
 MAX_USER_PRODUCTS = 300
@@ -106,8 +109,9 @@ def _search_local(
     stmt = stmt.order_by(
         case(
             (Product.source == "user", 0),
+            (Product.code.like("off-%"), 2),
             (Product.source == "local", 1),
-            else_=2,
+            else_=3,
         ),
         func.length(Product.name),
     ).limit(MAX_RESULTS * 2)
@@ -246,15 +250,24 @@ def _merge(local: list[Product], extra: list[Product]) -> list[Product]:
         if product.id not in seen:
             seen.add(product.id)
             merged.append(product)
-    order = {"user": 0, "local": 1}
-    merged.sort(key=lambda p: order.get(p.source, 2))
+    def rank(p: Product) -> int:
+        if p.source == "user":
+            return 0
+        if p.source == "local":
+            return 2 if p.code.startswith("off-") else 1
+        return 3
+
+    merged.sort(key=rank)
     return merged[:MAX_RESULTS]
 
 
 def seed_local_products(db: Session) -> None:
     """Синхронизирует локальные продукты с JSON: добавляет новые и обновляет изменённые (по code)."""
-    with SEED_FILE.open(encoding="utf-8") as file:
-        all_items = json.load(file)
+    all_items: list[dict] = []
+    for seed_file in (SEED_FILE, SEED_OFF_FILE):
+        if seed_file.exists():
+            with seed_file.open(encoding="utf-8") as file:
+                all_items.extend(json.load(file))
 
     existing = {
         p.code: p
@@ -273,13 +286,13 @@ def seed_local_products(db: Session) -> None:
             "protein": float(item["protein"]),
             "fat": float(item["fat"]),
             "carbs": float(item["carbs"]),
+            "image_url": item.get("image_url"),
         }
         product = existing.get(item["code"])
         if product is None:
             db.add(
                 Product(
                     code=item["code"],
-                    image_url=None,
                     source="local",
                     cached_at=None,
                     created_at=now,

@@ -13,8 +13,8 @@ import {
   defaultMealType,
   displayBrand,
   foodEmoji,
-} from './app.js?v=20261013b';
-import { getProduct, addDiaryEntry, deleteProduct } from './api.js?v=20261013b';
+} from './app.js?v=20261013c';
+import { getProduct, addDiaryEntry, deleteProduct } from './api.js?v=20261013c';
 
 const el = {
   media: document.getElementById('productMedia'),

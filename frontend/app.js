@@ -117,7 +117,7 @@ export function initApp({ backTo = null } = {}) {
 }
 
 // Версия фронтенда: меняется при каждом релизе, чтобы клиенты не держали старый кэш
-export const APP_VERSION = '20261013b';
+export const APP_VERSION = '20261013c';
 
 export function navigate(page, params = {}) {
   haptic.light();

@@ -13,8 +13,8 @@ import {
   MEAL_LABELS,
   displayBrand,
   foodEmoji,
-} from './app.js?v=20261013b';
-import { getUser, getDiaryDay, deleteDiaryEntry } from './api.js?v=20261013b';
+} from './app.js?v=20261013c';
+import { getUser, getDiaryDay, deleteDiaryEntry } from './api.js?v=20261013c';
 
 const el = {
   greeting: document.getElementById('greeting'),
