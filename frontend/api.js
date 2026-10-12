@@ -2,7 +2,7 @@
 import { tg } from './app.js';
 
 // Адрес бэкенда. Меняется только здесь.
-export const API_BASE_URL = 'https://your-backend.up.railway.app';
+export const API_BASE_URL = 'https://caloriebot-production-5651.up.railway.app';
 
 const REQUEST_TIMEOUT_MS = 20000;
 
