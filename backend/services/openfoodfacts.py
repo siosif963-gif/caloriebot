@@ -124,6 +124,8 @@ def parse_product(raw: dict) -> dict | None:
 
     brand: str | None = None
     brands = raw.get("brands")
+    if isinstance(brands, list):  # новый поисковый сервис отдаёт список брендов
+        brands = ",".join(str(b) for b in brands if b)
     if isinstance(brands, str):
         first = brands.split(",")[0].strip()
         brand = first[:255] or None
@@ -171,9 +173,28 @@ def parse_product(raw: dict) -> dict | None:
     }
 
 
-def search_products(query: str) -> list[dict]:
-    """Поиск по названию. Возвращает уже распарсенные продукты (parse_product)."""
-    _acquire_search_slot()
+def _parse_list(items: object) -> list[dict]:
+    if not isinstance(items, list):
+        raise ExternalServiceError("В ответе OpenFoodFacts нет списка продуктов")
+    result: list[dict] = []
+    for raw in items:
+        parsed = parse_product(raw)
+        if parsed is not None:
+            result.append(parsed)
+    return result
+
+
+def _search_new(query: str) -> list[dict]:
+    """Поиск через search-a-licious (стабильный сервис OpenFoodFacts)."""
+    data = _get_json(
+        settings.OFF_SEARCH_URL,
+        {"q": query, "page_size": 20, "fields": FIELDS},
+    )
+    return _parse_list(data.get("hits"))
+
+
+def _search_legacy(query: str) -> list[dict]:
+    """Запасной поиск через старый cgi/search.pl (часто отвечает 503)."""
     data = _get_json(
         f"{settings.OFF_BASE_URL}/cgi/search.pl",
         {
@@ -185,16 +206,17 @@ def search_products(query: str) -> list[dict]:
             "fields": FIELDS,
         },
     )
-    products = data.get("products")
-    if not isinstance(products, list):
-        raise ExternalServiceError("В ответе OpenFoodFacts нет списка products")
+    return _parse_list(data.get("products"))
 
-    result: list[dict] = []
-    for raw in products:
-        parsed = parse_product(raw)
-        if parsed is not None:
-            result.append(parsed)
-    return result
+
+def search_products(query: str) -> list[dict]:
+    """Поиск по названию. Возвращает уже распарсенные продукты (parse_product)."""
+    _acquire_search_slot()
+    try:
+        return _search_new(query)
+    except ExternalServiceError as exc:
+        logger.warning("Новый поиск OpenFoodFacts не ответил (%s), пробуем запасной", exc.message)
+        return _search_legacy(query)
 
 
 def get_product(code: str) -> dict | None:

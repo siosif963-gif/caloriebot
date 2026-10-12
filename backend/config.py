@@ -15,6 +15,7 @@ class Settings(BaseSettings):
     DATABASE_URL: str = f"sqlite:///{BASE_DIR / 'database.db'}"
     FRONTEND_ORIGINS: str = ""
     OFF_BASE_URL: str = "https://world.openfoodfacts.org"
+    OFF_SEARCH_URL: str = "https://search.openfoodfacts.org/search"
     OFF_CONTACT_EMAIL: str = "caloriebot@example.com"
     OFF_CACHE_TTL_DAYS: int = 30
     OFF_SEARCH_MAX_PER_MINUTE: int = 8
