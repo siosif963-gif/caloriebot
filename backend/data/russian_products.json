@@ -776,7 +776,7 @@
   {
     "code": "ru-0087",
     "name": "Биг Мак",
-    "brand": "Вкусно — и точка (бывший Макдоналдс)",
+    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
     "calories": 250,
     "protein": 12.5,
     "fat": 13.5,
@@ -785,7 +785,7 @@
   {
     "code": "ru-0088",
     "name": "Чизбургер",
-    "brand": "Вкусно — и точка (бывший Макдоналдс)",
+    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
     "calories": 260,
     "protein": 13,
     "fat": 11.5,
@@ -794,7 +794,7 @@
   {
     "code": "ru-0089",
     "name": "Гамбургер",
-    "brand": "Вкусно — и точка (бывший Макдоналдс)",
+    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
     "calories": 250,
     "protein": 12.5,
     "fat": 9.5,
@@ -803,7 +803,7 @@
   {
     "code": "ru-0090",
     "name": "Двойной чизбургер",
-    "brand": "Вкусно — и точка (бывший Макдоналдс)",
+    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
     "calories": 270,
     "protein": 16,
     "fat": 15,
@@ -812,7 +812,7 @@
   {
     "code": "ru-0091",
     "name": "Филе-о-фиш",
-    "brand": "Вкусно — и точка (бывший Макдоналдс)",
+    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
     "calories": 270,
     "protein": 11.5,
     "fat": 12.5,
@@ -821,7 +821,7 @@
   {
     "code": "ru-0092",
     "name": "Картофель фри",
-    "brand": "Вкусно — и точка (бывший Макдоналдс)",
+    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
     "calories": 320,
     "protein": 3.5,
     "fat": 15,
@@ -830,7 +830,7 @@
   {
     "code": "ru-0093",
     "name": "Куриные наггетсы",
-    "brand": "Вкусно — и точка (бывший Макдоналдс)",
+    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
     "calories": 250,
     "protein": 15,
     "fat": 15,
@@ -839,7 +839,7 @@
   {
     "code": "ru-0094",
     "name": "Кока-Кола",
-    "brand": "Вкусно — и точка (бывший Макдоналдс)",
+    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
     "calories": 42,
     "protein": 0,
     "fat": 0,
@@ -848,7 +848,7 @@
   {
     "code": "ru-0095",
     "name": "Мороженое рожок",
-    "brand": "Вкусно — и точка (бывший Макдоналдс)",
+    "brand": "Вкусно — и точка (Макдоналдс, Макдак, McDonald's)",
     "calories": 150,
     "protein": 3.5,
     "fat": 4,
@@ -857,7 +857,7 @@
   {
     "code": "ru-0096",
     "name": "Воппер",
-    "brand": "Burger King (Бургер Кинг)",
+    "brand": "Burger King (Бургер Кинг, БК)",
     "calories": 250,
     "protein": 11.5,
     "fat": 14.5,
@@ -866,7 +866,7 @@
   {
     "code": "ru-0097",
     "name": "Чизбургер",
-    "brand": "Burger King (Бургер Кинг)",
+    "brand": "Burger King (Бургер Кинг, БК)",
     "calories": 270,
     "protein": 14,
     "fat": 12,
@@ -875,7 +875,7 @@
   {
     "code": "ru-0098",
     "name": "Картофель фри",
-    "brand": "Burger King (Бургер Кинг)",
+    "brand": "Burger King (Бургер Кинг, БК)",
     "calories": 300,
     "protein": 3.5,
     "fat": 14,
@@ -884,7 +884,7 @@
   {
     "code": "ru-0099",
     "name": "Луковые кольца",
-    "brand": "Burger King (Бургер Кинг)",
+    "brand": "Burger King (Бургер Кинг, БК)",
     "calories": 280,
     "protein": 4.5,
     "fat": 13,
@@ -893,7 +893,7 @@
   {
     "code": "ru-0100",
     "name": "Наггетсы",
-    "brand": "Burger King (Бургер Кинг)",
+    "brand": "Burger King (Бургер Кинг, БК)",
     "calories": 270,
     "protein": 15,
     "fat": 16,
@@ -902,7 +902,7 @@
   {
     "code": "ru-0101",
     "name": "Острые крылья",
-    "brand": "KFC (Rostic's, Ростикс)",
+    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
     "calories": 260,
     "protein": 17,
     "fat": 17,
@@ -911,7 +911,7 @@
   {
     "code": "ru-0102",
     "name": "Стрипсы",
-    "brand": "KFC (Rostic's, Ростикс)",
+    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
     "calories": 260,
     "protein": 17,
     "fat": 14,
@@ -920,7 +920,7 @@
   {
     "code": "ru-0103",
     "name": "Бургер Зингер",
-    "brand": "KFC (Rostic's, Ростикс)",
+    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
     "calories": 240,
     "protein": 12,
     "fat": 11,
@@ -929,7 +929,7 @@
   {
     "code": "ru-0104",
     "name": "Картофель фри",
-    "brand": "KFC (Rostic's, Ростикс)",
+    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
     "calories": 290,
     "protein": 3.5,
     "fat": 14,
@@ -938,7 +938,7 @@
   {
     "code": "ru-0105",
     "name": "Картофельное пюре с соусом",
-    "brand": "KFC (Rostic's, Ростикс)",
+    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
     "calories": 90,
     "protein": 1.5,
     "fat": 3.5,
@@ -947,7 +947,7 @@
   {
     "code": "ru-0106",
     "name": "Цезарь ролл",
-    "brand": "KFC (Rostic's, Ростикс)",
+    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
     "calories": 230,
     "protein": 10,
     "fat": 11,
@@ -956,7 +956,7 @@
   {
     "code": "ru-0107",
     "name": "Куриная ножка",
-    "brand": "KFC (Rostic's, Ростикс)",
+    "brand": "KFC (КФС, Rostic's, Rostics, Ростикс)",
     "calories": 240,
     "protein": 17,
     "fat": 16,
@@ -1001,7 +1001,7 @@
   {
     "code": "ru-0112",
     "name": "Пицца Пепперони",
-    "brand": "Додо Пицца",
+    "brand": "Додо Пицца (Dodo)",
     "calories": 270,
     "protein": 12,
     "fat": 13,
@@ -1010,7 +1010,7 @@
   {
     "code": "ru-0113",
     "name": "Пицца Маргарита",
-    "brand": "Додо Пицца",
+    "brand": "Додо Пицца (Dodo)",
     "calories": 230,
     "protein": 10,
     "fat": 8.5,
@@ -1019,7 +1019,7 @@
   {
     "code": "ru-0114",
     "name": "Пицца Четыре сыра",
-    "brand": "Додо Пицца",
+    "brand": "Додо Пицца (Dodo)",
     "calories": 270,
     "protein": 12,
     "fat": 13,
@@ -1028,7 +1028,7 @@
   {
     "code": "ru-0115",
     "name": "Пицца Гавайская",
-    "brand": "Додо Пицца",
+    "brand": "Додо Пицца (Dodo)",
     "calories": 235,
     "protein": 10,
     "fat": 8,
@@ -1037,7 +1037,7 @@
   {
     "code": "ru-0116",
     "name": "Додстер с ветчиной и сыром",
-    "brand": "Додо Пицца",
+    "brand": "Додо Пицца (Dodo)",
     "calories": 220,
     "protein": 10,
     "fat": 10,

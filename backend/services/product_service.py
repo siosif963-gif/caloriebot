@@ -233,34 +233,48 @@ def _merge(local: list[Product], extra: list[Product]) -> list[Product]:
 
 
 def seed_local_products(db: Session) -> None:
-    """Догружает из JSON локальные продукты, которых ещё нет в базе (по code)."""
+    """Синхронизирует локальные продукты с JSON: добавляет новые и обновляет изменённые (по code)."""
     with SEED_FILE.open(encoding="utf-8") as file:
         all_items = json.load(file)
 
-    existing_codes = set(
-        db.scalars(select(Product.code).where(Product.source == "local"))
-    )
-    items = [item for item in all_items if item["code"] not in existing_codes]
-    if not items:
-        return
+    existing = {
+        p.code: p
+        for p in db.scalars(select(Product).where(Product.source == "local"))
+    }
 
     now: datetime = utcnow()
-    for item in items:
-        db.add(
-            Product(
-                code=item["code"],
-                name=item["name"],
-                brand=item.get("brand"),
-                name_search=normalize_name(item["name"], item.get("brand")),
-                calories=float(item["calories"]),
-                protein=float(item["protein"]),
-                fat=float(item["fat"]),
-                carbs=float(item["carbs"]),
-                image_url=None,
-                source="local",
-                cached_at=None,
-                created_at=now,
+    added = 0
+    updated = 0
+    for item in all_items:
+        values = {
+            "name": item["name"],
+            "brand": item.get("brand"),
+            "name_search": normalize_name(item["name"], item.get("brand")),
+            "calories": float(item["calories"]),
+            "protein": float(item["protein"]),
+            "fat": float(item["fat"]),
+            "carbs": float(item["carbs"]),
+        }
+        product = existing.get(item["code"])
+        if product is None:
+            db.add(
+                Product(
+                    code=item["code"],
+                    image_url=None,
+                    source="local",
+                    cached_at=None,
+                    created_at=now,
+                    **values,
+                )
             )
+            added += 1
+        elif any(getattr(product, key) != value for key, value in values.items()):
+            for key, value in values.items():
+                setattr(product, key, value)
+            updated += 1
+
+    if added or updated:
+        db.commit()
+        logger.info(
+            "Локальные продукты: добавлено %d, обновлено %d", added, updated
         )
-    db.commit()
-    logger.info("Загружено локальных продуктов: %d", len(items))
