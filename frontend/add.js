@@ -10,6 +10,7 @@ import {
   todayLocal,
   round1,
   defaultMealType,
+  displayBrand,
 } from './app.js';
 import { getProduct, addDiaryEntry } from './api.js';
 
@@ -72,7 +73,7 @@ function renderProduct() {
     el.media.append(createAvatar(product.name));
   }
   el.name.textContent = product.name;
-  el.brand.textContent = product.brand || '';
+  el.brand.textContent = displayBrand(product.brand);
   el.per100.textContent =
     `На 100 г: ${product.calories} ккал · Б ${product.protein} · Ж ${product.fat} · У ${product.carbs}`;
   updatePreview();

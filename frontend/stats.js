@@ -12,6 +12,10 @@ const el = {
   content: document.getElementById('content'),
   canvas: document.getElementById('chartCanvas'),
   averageLine: document.getElementById('averageLine'),
+  statCalories: document.getElementById('statCalories'),
+  statProtein: document.getElementById('statProtein'),
+  statFat: document.getElementById('statFat'),
+  statCarbs: document.getElementById('statCarbs'),
   daysLine: document.getElementById('daysLine'),
 };
 
@@ -41,6 +45,14 @@ function themeColors() {
   };
 }
 
+// Полупрозрачная заливка: поддерживаем #rrggbb, иначе возвращаем цвет как есть
+function withAlpha(color, alpha) {
+  const m = /^#([0-9a-f]{6})$/i.exec(color);
+  if (!m) return color;
+  const n = parseInt(m[1], 16);
+  return `rgba(${(n >> 16) & 255}, ${(n >> 8) & 255}, ${n & 255}, ${alpha})`;
+}
+
 function formatLabel(dateStr) {
   const [, month, day] = dateStr.split('-');
   return `${day}.${month}`;
@@ -64,10 +76,12 @@ function drawChart() {
           label: 'Калории',
           data: lastStats.days.map((d) => d.calories),
           borderColor: colors.button,
-          backgroundColor: colors.button,
-          borderWidth: 2,
+          backgroundColor: withAlpha(colors.button, 0.14),
+          fill: true,
+          borderWidth: 3,
           pointRadius: 3,
-          tension: 0.2,
+          pointBackgroundColor: colors.button,
+          tension: 0.3,
         },
         {
           label: 'Норма',
@@ -85,7 +99,7 @@ function drawChart() {
       maintainAspectRatio: false,
       animation: false,
       plugins: {
-        legend: { labels: { color: colors.text } },
+        legend: { labels: { color: colors.text, usePointStyle: true, boxWidth: 8, boxHeight: 8 } },
       },
       scales: {
         x: {
@@ -113,6 +127,10 @@ function render(stats) {
     return;
   }
   const avg = stats.averages;
+  el.statCalories.textContent = String(Math.round(avg.calories));
+  el.statProtein.textContent = String(Math.round(avg.protein));
+  el.statFat.textContent = String(Math.round(avg.fat));
+  el.statCarbs.textContent = String(Math.round(avg.carbs));
   el.averageLine.textContent =
     `В среднем: ${Math.round(avg.calories)} ккал · Б ${round1(avg.protein)}` +
     ` · Ж ${round1(avg.fat)} · У ${round1(avg.carbs)}`;

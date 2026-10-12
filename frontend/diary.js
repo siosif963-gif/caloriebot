@@ -11,6 +11,7 @@ import {
   round1,
   MEAL_TYPES,
   MEAL_LABELS,
+  displayBrand,
 } from './app.js';
 import { getUser, getDiaryDay, deleteDiaryEntry } from './api.js';
 
@@ -23,9 +24,9 @@ const el = {
   retryBtn: document.getElementById('retryBtn'),
   content: document.getElementById('content'),
   kcalText: document.getElementById('kcalText'),
-  progressFill: document.getElementById('progressFill'),
+  ringValue: document.getElementById('ringValue'),
+  ringFill: document.getElementById('ringFill'),
   kcalCaption: document.getElementById('kcalCaption'),
-  macrosLine: document.getElementById('macrosLine'),
   meals: document.getElementById('meals'),
 };
 
@@ -37,10 +38,18 @@ function showState(state) {
   el.content.hidden = state !== 'content';
 }
 
+const RING_LENGTH = 2 * Math.PI * 52;
+
 function progressColor(percent) {
-  if (percent < 90) return '#34c759';
-  if (percent <= 100) return '#ffcc00';
-  return '#ff3b30';
+  if (percent < 90) return '#30c25d';
+  if (percent <= 100) return '#f5b800';
+  return '#ff4d43';
+}
+
+function setMacro(name, eaten, goal) {
+  const percent = goal > 0 ? (eaten / goal) * 100 : 0;
+  document.getElementById(`${name}Text`).textContent = `${Math.round(eaten)} / ${goal} г`;
+  document.getElementById(`${name}Fill`).style.width = `${Math.min(percent, 100)}%`;
 }
 
 function renderSummary(day) {
@@ -48,18 +57,19 @@ function renderSummary(day) {
   const goal = day.goals.calories;
   const percent = goal > 0 ? (eaten / goal) * 100 : 0;
 
-  el.kcalText.textContent = `${Math.round(eaten)} / ${Math.round(goal)} ккал`;
-  el.progressFill.style.width = `${Math.min(percent, 100)}%`;
-  el.progressFill.style.backgroundColor = progressColor(percent);
+  el.ringValue.textContent = String(Math.round(eaten));
+  el.ringFill.style.strokeDasharray = String(RING_LENGTH);
+  el.ringFill.style.strokeDashoffset = String(RING_LENGTH * (1 - Math.min(percent, 100) / 100));
+  el.ringFill.style.stroke = progressColor(percent);
 
+  el.kcalText.textContent = `${Math.round(eaten)} / ${Math.round(goal)} ккал`;
   const diff = Math.round(goal - eaten);
   el.kcalCaption.textContent =
     diff >= 0 ? `Осталось ${diff} ккал` : `Превышение на ${Math.abs(diff)} ккал`;
 
-  el.macrosLine.textContent =
-    `Б ${round1(day.totals.protein)} / ${day.goals.protein}` +
-    ` · Ж ${round1(day.totals.fat)} / ${day.goals.fat}` +
-    ` · У ${round1(day.totals.carbs)} / ${day.goals.carbs} г`;
+  setMacro('protein', day.totals.protein, day.goals.protein);
+  setMacro('fat', day.totals.fat, day.goals.fat);
+  setMacro('carbs', day.totals.carbs, day.goals.carbs);
 }
 
 function renderEntry(entry) {
@@ -75,7 +85,7 @@ function renderEntry(entry) {
   if (entry.product_brand) {
     const brand = document.createElement('span');
     brand.className = 'entry-brand';
-    brand.textContent = ` ${entry.product_brand}`;
+    brand.textContent = ` ${displayBrand(entry.product_brand)}`;
     name.append(brand);
   }
 

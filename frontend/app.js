@@ -224,6 +224,11 @@ export function round1(n) {
   return Math.round(n * 10) / 10;
 }
 
+// Бренд без скобок с алиасами для поиска: «KFC (КФС, Ростикс)» -> «KFC»
+export function displayBrand(brand) {
+  return String(brand || '').replace(/\s*\(.*\)\s*$/, '').trim();
+}
+
 export function escapeHtml(str) {
   return String(str)
     .replace(/&/g, '&amp;')

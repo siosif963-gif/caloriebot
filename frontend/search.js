@@ -1,5 +1,5 @@
 // Экран «Поиск»: debounce, отмена предыдущего запроса, карточки продуктов.
-import { initApp, navigate, haptic } from './app.js';
+import { initApp, navigate, haptic, displayBrand } from './app.js';
 import { searchProducts } from './api.js';
 
 const DEBOUNCE_MS = 300;
@@ -91,7 +91,7 @@ function renderCard(product) {
   if (product.brand) {
     const brand = document.createElement('div');
     brand.className = 'hint';
-    brand.textContent = product.brand;
+    brand.textContent = displayBrand(product.brand);
     info.append(brand);
   }
 
