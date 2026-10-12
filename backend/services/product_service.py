@@ -273,8 +273,19 @@ def seed_local_products(db: Session) -> None:
                 setattr(product, key, value)
             updated += 1
 
-    if added or updated:
+    # Локальные продукты, которых больше нет в JSON, удаляем (в дневнике останутся снимки)
+    json_codes = {item["code"] for item in all_items}
+    removed = 0
+    for code, product in existing.items():
+        if code not in json_codes:
+            db.delete(product)
+            removed += 1
+
+    if added or updated or removed:
         db.commit()
         logger.info(
-            "Локальные продукты: добавлено %d, обновлено %d", added, updated
+            "Локальные продукты: добавлено %d, обновлено %d, удалено %d",
+            added,
+            updated,
+            removed,
         )
