@@ -843,7 +843,8 @@ h1 + .field {
 }
 
 .create-btn {
-  margin-top: 16px;
+  margin-top: 12px;
+  min-height: 46px;
 }
 
 .btn-link {

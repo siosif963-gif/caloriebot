@@ -37,7 +37,6 @@ function storageSet(key, value) {
 }
 
 function resetView() {
-  el.createBtn.hidden = true;
   el.banner.hidden = true;
   el.errorBox.hidden = true;
   el.stateText.textContent = '';
@@ -112,7 +111,6 @@ function renderCard(product) {
 
 function renderResults(response) {
   resetView();
-  el.createBtn.hidden = false;
   el.banner.hidden = response.external_status !== 'unavailable';
   if (response.items.length === 0) {
     el.stateText.textContent = 'Продукт не найден. Попробуйте другое название';
@@ -123,7 +121,6 @@ function renderResults(response) {
 
 function showError(message) {
   resetView();
-  el.createBtn.hidden = false;
   el.errorText.textContent = message;
   el.errorBox.hidden = false;
 }
