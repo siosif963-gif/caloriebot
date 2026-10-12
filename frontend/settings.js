@@ -6,8 +6,8 @@ import {
   setMainButtonEnabled,
   haptic,
   showToast,
-} from './app.js';
-import { getUser, updateSettings } from './api.js';
+} from './app.js?v=20261013b';
+import { getUser, updateSettings } from './api.js?v=20261013b';
 
 // Диапазоны совпадают с UserSettingsUpdate на бэкенде
 const FIELDS = [
