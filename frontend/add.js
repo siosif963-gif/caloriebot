@@ -11,6 +11,7 @@ import {
   round1,
   defaultMealType,
   displayBrand,
+  foodEmoji,
 } from './app.js';
 import { getProduct, addDiaryEntry } from './api.js';
 
@@ -56,7 +57,7 @@ function parseWeight() {
 function createAvatar(name) {
   const avatar = document.createElement('div');
   avatar.className = 'avatar';
-  avatar.textContent = (name || '?').trim().charAt(0).toUpperCase() || '?';
+  avatar.textContent = foodEmoji(name);
   return avatar;
 }
 

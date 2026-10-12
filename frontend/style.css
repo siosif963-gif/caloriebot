@@ -784,3 +784,30 @@ h1 + .segmented,
 h1 + .field {
   margin-top: 16px;
 }
+
+/* ---- Иконки блюд ---- */
+.avatar {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.product-hero .avatar {
+  font-size: 34px;
+}
+
+.entry-icon {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: var(--accent-soft);
+  font-size: 20px;
+}
+
+.meal-empty {
+  padding-left: 0;
+}

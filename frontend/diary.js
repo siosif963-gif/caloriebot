@@ -12,6 +12,7 @@ import {
   MEAL_TYPES,
   MEAL_LABELS,
   displayBrand,
+  foodEmoji,
 } from './app.js';
 import { getUser, getDiaryDay, deleteDiaryEntry } from './api.js';
 
@@ -102,7 +103,11 @@ function renderEntry(entry) {
   del.setAttribute('aria-label', `Удалить «${entry.product_name}»`);
   del.addEventListener('click', () => onDelete(entry));
 
-  row.append(main, del);
+  const icon = document.createElement('div');
+  icon.className = 'entry-icon';
+  icon.textContent = foodEmoji(entry.product_name);
+
+  row.append(icon, main, del);
   return row;
 }
 

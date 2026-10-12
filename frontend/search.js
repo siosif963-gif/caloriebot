@@ -1,5 +1,5 @@
 // Экран «Поиск»: debounce, отмена предыдущего запроса, карточки продуктов.
-import { initApp, navigate, haptic, displayBrand } from './app.js';
+import { initApp, navigate, haptic, displayBrand, foodEmoji } from './app.js';
 import { searchProducts } from './api.js';
 
 const DEBOUNCE_MS = 300;
@@ -54,7 +54,7 @@ function renderSkeletons() {
 function createAvatar(name) {
   const avatar = document.createElement('div');
   avatar.className = 'avatar';
-  avatar.textContent = (name || '?').trim().charAt(0).toUpperCase() || '?';
+  avatar.textContent = foodEmoji(name);
   return avatar;
 }
 
