@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>CalorieBot — Дневник</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <main class="container">
+    <header class="page-header">
+      <h1 id="greeting">Привет!</h1>
+      <div id="dateLabel" class="hint"></div>
+    </header>
+
+    <div id="loading">
+      <div class="skeleton" style="height: 120px; margin-top: 12px"></div>
+      <div class="skeleton skeleton-card"></div>
+      <div class="skeleton skeleton-card"></div>
+      <div class="skeleton skeleton-card"></div>
+    </div>
+
+    <div id="errorBox" class="error-box" hidden>
+      <div id="errorText"></div>
+      <button id="retryBtn" class="btn" type="button">Повторить</button>
+    </div>
+
+    <div id="content" hidden>
+      <section class="card hero">
+        <div class="hero-label">Сегодня</div>
+        <div id="kcalText" class="kcal-main"></div>
+        <div class="progress"><div id="progressFill" class="progress-fill"></div></div>
+        <div id="kcalCaption"></div>
+        <div id="macrosLine" class="hint"></div>
+      </section>
+      <div id="meals"></div>
+    </div>
+  </main>
+
+  <nav class="tabbar">
+    <div class="tabbar-inner">
+      <a href="index.html" class="active">Дневник</a>
+      <a href="stats.html">Статистика</a>
+      <a href="settings.html">Настройки</a>
+    </div>
+  </nav>
+
+  <script type="module" src="diary.js"></script>
+</body>
+</html>

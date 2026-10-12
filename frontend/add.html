@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>CalorieBot — Добавление</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <main class="container">
+    <section class="card product-hero">
+      <div id="productMedia"></div>
+      <div>
+        <div id="productName" class="product-name"></div>
+        <div id="productBrand" class="hint"></div>
+        <div id="productPer100" class="hint"></div>
+      </div>
+    </section>
+
+    <div class="weight-row">
+      <input id="weightInput" class="text-input weight-input" type="text" inputmode="decimal"
+             value="100" autocomplete="off" aria-label="Вес порции в граммах">
+      <span class="weight-suffix">г</span>
+    </div>
+    <div id="weightError" class="field-error" hidden>Введите вес от 1 до 5000 г</div>
+
+    <div class="quick-row">
+      <button type="button" class="chip quick-btn" data-weight="50">50 г</button>
+      <button type="button" class="chip quick-btn" data-weight="100">100 г</button>
+      <button type="button" class="chip quick-btn" data-weight="150">150 г</button>
+      <button type="button" class="chip quick-btn" data-weight="200">200 г</button>
+    </div>
+
+    <section class="card">
+      <div id="previewKcal" class="preview-kcal"></div>
+      <div id="previewMacros" class="hint"></div>
+    </section>
+
+    <div id="mealSwitch" class="segmented">
+      <button type="button" class="chip" data-meal="breakfast">Завтрак</button>
+      <button type="button" class="chip" data-meal="lunch">Обед</button>
+      <button type="button" class="chip" data-meal="dinner">Ужин</button>
+      <button type="button" class="chip" data-meal="snack">Перекус</button>
+    </div>
+  </main>
+
+  <script type="module" src="add.js"></script>
+</body>
+</html>

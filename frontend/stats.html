@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>CalorieBot — Статистика</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Статистика</h1>
+
+    <div id="periodSwitch" class="segmented">
+      <button type="button" class="chip active" data-days="7">Неделя</button>
+      <button type="button" class="chip" data-days="30">Месяц</button>
+    </div>
+
+    <div id="loading" hidden>
+      <div class="skeleton" style="height: 260px; margin-top: 12px"></div>
+    </div>
+
+    <div id="errorBox" class="error-box" hidden>
+      <div id="errorText"></div>
+      <button id="retryBtn" class="btn" type="button">Повторить</button>
+    </div>
+
+    <div id="emptyState" class="state-text" hidden>За этот период нет записей</div>
+
+    <div id="content" hidden>
+      <div class="chart-box"><canvas id="chartCanvas"></canvas></div>
+      <section class="card">
+        <div id="averageLine"></div>
+        <div id="daysLine" class="hint"></div>
+      </section>
+    </div>
+  </main>
+
+  <nav class="tabbar">
+    <div class="tabbar-inner">
+      <a href="index.html">Дневник</a>
+      <a href="stats.html" class="active">Статистика</a>
+      <a href="settings.html">Настройки</a>
+    </div>
+  </nav>
+
+  <script type="module" src="stats.js"></script>
+</body>
+</html>

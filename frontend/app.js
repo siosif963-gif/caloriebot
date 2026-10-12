@@ -1,0 +1,242 @@
+// Telegram SDK, навигация, haptic и общие утилиты.
+
+const noop = () => {};
+
+// Заглушка на случай, если скрипт Telegram не загрузился
+function createStub() {
+  const button = {
+    setText: noop, show: noop, hide: noop, onClick: noop, offClick: noop,
+    showProgress: noop, hideProgress: noop, enable: noop, disable: noop,
+  };
+  return {
+    initData: '',
+    colorScheme: 'light',
+    ready: noop,
+    expand: noop,
+    onEvent: noop,
+    offEvent: noop,
+    isVersionAtLeast: () => false,
+    MainButton: button,
+    BackButton: { show: noop, hide: noop, onClick: noop, offClick: noop },
+  };
+}
+
+export const tg = window.Telegram?.WebApp ?? createStub();
+export const isTelegram = typeof tg.initData === 'string' && tg.initData.length > 0;
+
+export const MEAL_TYPES = ['breakfast', 'lunch', 'dinner', 'snack'];
+export const MEAL_LABELS = {
+  breakfast: 'Завтрак',
+  lunch: 'Обед',
+  dinner: 'Ужин',
+  snack: 'Перекус',
+};
+
+// ---------- Haptic ----------
+
+export const haptic = {
+  light() {
+    tg.HapticFeedback?.impactOccurred?.('light');
+  },
+  select() {
+    tg.HapticFeedback?.selectionChanged?.();
+  },
+  success() {
+    tg.HapticFeedback?.notificationOccurred?.('success');
+  },
+  error() {
+    tg.HapticFeedback?.notificationOccurred?.('error');
+  },
+};
+
+// ---------- Тема ----------
+
+function applyTheme() {
+  document.documentElement.dataset.theme = tg.colorScheme || 'light';
+}
+
+// ---------- Запасные кнопки (страница открыта вне Telegram) ----------
+
+let fallbackMain = null;
+let fallbackBack = null;
+let mainHandler = null;
+let backHandler = null;
+
+function ensureFallbackMain() {
+  if (!fallbackMain) {
+    fallbackMain = document.createElement('button');
+    fallbackMain.type = 'button';
+    fallbackMain.className = 'fb-main';
+    fallbackMain.addEventListener('click', () => {
+      if (mainHandler) mainHandler();
+    });
+    document.body.append(fallbackMain);
+  }
+  return fallbackMain;
+}
+
+function showFallbackBack(onClick) {
+  if (!fallbackBack) {
+    fallbackBack = document.createElement('button');
+    fallbackBack.type = 'button';
+    fallbackBack.className = 'fb-back';
+    fallbackBack.textContent = '←';
+    fallbackBack.setAttribute('aria-label', 'Назад');
+    fallbackBack.addEventListener('click', () => {
+      if (backHandler) backHandler();
+    });
+    document.body.append(fallbackBack);
+  }
+  backHandler = onClick;
+  document.body.classList.add('has-fb-back');
+}
+
+// ---------- Инициализация ----------
+
+export function initApp({ backTo = null } = {}) {
+  tg.ready();
+  tg.expand();
+  tg.MainButton.hide();
+  tg.BackButton.hide();
+  applyTheme();
+  tg.onEvent('themeChanged', applyTheme);
+
+  if (backTo) {
+    const onBack = () => navigate(backTo);
+    tg.BackButton.onClick(onBack);
+    tg.BackButton.show();
+    if (!isTelegram) showFallbackBack(onBack);
+  }
+
+  if (document.querySelector('.tabbar')) {
+    document.body.classList.add('has-tabbar');
+    document.querySelectorAll('.tabbar a').forEach((link) => {
+      link.addEventListener('click', () => haptic.light());
+    });
+  }
+}
+
+export function navigate(page, params = {}) {
+  haptic.light();
+  const query = new URLSearchParams(params).toString();
+  location.href = query ? `${page}?${query}` : page;
+}
+
+// ---------- MainButton ----------
+
+export function setMainButton(text, onClick) {
+  if (mainHandler) tg.MainButton.offClick(mainHandler);
+  mainHandler = onClick;
+  tg.MainButton.setText(text);
+  tg.MainButton.onClick(onClick);
+  tg.MainButton.show();
+  if (!isTelegram) {
+    const button = ensureFallbackMain();
+    button.textContent = text;
+    button.hidden = false;
+  }
+}
+
+export function setMainButtonLoading(isLoading) {
+  if (isLoading) {
+    tg.MainButton.showProgress(false);
+    tg.MainButton.disable();
+  } else {
+    tg.MainButton.hideProgress();
+    tg.MainButton.enable();
+  }
+  if (fallbackMain) fallbackMain.disabled = isLoading;
+}
+
+// Включает/выключает MainButton без индикатора загрузки (для валидации форм)
+export function setMainButtonEnabled(enabled) {
+  if (enabled) tg.MainButton.enable();
+  else tg.MainButton.disable();
+  if (fallbackMain) fallbackMain.disabled = !enabled;
+}
+
+// ---------- Диалоги и тосты ----------
+
+export function confirmDialog(message) {
+  return new Promise((resolve) => {
+    if (tg.isVersionAtLeast('6.2') && typeof tg.showConfirm === 'function') {
+      tg.showConfirm(message, (ok) => resolve(Boolean(ok)));
+    } else {
+      resolve(window.confirm(message));
+    }
+  });
+}
+
+let toastTimer = null;
+
+export function showToast(message, type = 'info') {
+  let toast = document.getElementById('toast');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.id = 'toast';
+    toast.setAttribute('role', 'status');
+    document.body.append(toast);
+  }
+  toast.className = `toast ${type}`;
+  toast.textContent = message;
+  toast.hidden = false;
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => {
+    toast.hidden = true;
+  }, 2500);
+}
+
+// ---------- Даты и числа ----------
+
+function pad(n) {
+  return String(n).padStart(2, '0');
+}
+
+function formatLocalDate(date) {
+  return `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}`;
+}
+
+function parseLocalDate(dateStr) {
+  const [y, m, d] = dateStr.split('-').map(Number);
+  return new Date(y, m - 1, d);
+}
+
+// Сегодняшняя дата по локальному времени (не toISOString — он даёт UTC)
+export function todayLocal() {
+  return formatLocalDate(new Date());
+}
+
+export function addDays(dateStr, n) {
+  const date = parseLocalDate(dateStr);
+  date.setDate(date.getDate() + n);
+  return formatLocalDate(date);
+}
+
+export function formatDateRu(dateStr) {
+  return parseLocalDate(dateStr).toLocaleDateString('ru-RU', {
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long',
+  });
+}
+
+export function round1(n) {
+  return Math.round(n * 10) / 10;
+}
+
+export function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+export function defaultMealType() {
+  const hour = new Date().getHours();
+  if (hour < 11) return 'breakfast';
+  if (hour <= 15) return 'lunch';
+  if (hour <= 20) return 'dinner';
+  return 'snack';
+}

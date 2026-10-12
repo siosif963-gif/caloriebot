@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>CalorieBot — Поиск</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <main class="container">
+    <input id="searchInput" class="search-input" type="search" enterkeyhint="search"
+           placeholder="Название или штрихкод" autocomplete="off" autocapitalize="off">
+
+    <div id="banner" class="banner" hidden>
+      Внешняя база временно недоступна — показаны результаты из локальной базы
+    </div>
+
+    <div id="stateText" class="state-text"></div>
+
+    <div id="errorBox" class="error-box" hidden>
+      <div id="errorText"></div>
+      <button id="retryBtn" class="btn" type="button">Повторить</button>
+    </div>
+
+    <div id="results"></div>
+  </main>
+
+  <script type="module" src="search.js"></script>
+</body>
+</html>

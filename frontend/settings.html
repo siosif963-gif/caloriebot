@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>CalorieBot — Настройки</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Дневные нормы</h1>
+
+    <div id="loading">
+      <div class="skeleton skeleton-card"></div>
+      <div class="skeleton skeleton-card"></div>
+      <div class="skeleton skeleton-card"></div>
+      <div class="skeleton skeleton-card"></div>
+    </div>
+
+    <div id="errorBox" class="error-box" hidden>
+      <div id="errorText"></div>
+      <button id="retryBtn" class="btn" type="button">Повторить</button>
+    </div>
+
+    <form id="form" hidden autocomplete="off" onsubmit="return false">
+      <div class="field">
+        <label for="fieldCalories">Калории (ккал)</label>
+        <input id="fieldCalories" class="text-input" type="text" inputmode="numeric">
+        <div class="field-error" hidden></div>
+      </div>
+      <div class="field">
+        <label for="fieldProtein">Белки (г)</label>
+        <input id="fieldProtein" class="text-input" type="text" inputmode="numeric">
+        <div class="field-error" hidden></div>
+      </div>
+      <div class="field">
+        <label for="fieldFat">Жиры (г)</label>
+        <input id="fieldFat" class="text-input" type="text" inputmode="numeric">
+        <div class="field-error" hidden></div>
+      </div>
+      <div class="field">
+        <label for="fieldCarbs">Углеводы (г)</label>
+        <input id="fieldCarbs" class="text-input" type="text" inputmode="numeric">
+        <div class="field-error" hidden></div>
+      </div>
+      <div id="macroHint" class="hint" style="margin-top: 16px"></div>
+    </form>
+  </main>
+
+  <nav class="tabbar">
+    <div class="tabbar-inner">
+      <a href="index.html">Дневник</a>
+      <a href="stats.html">Статистика</a>
+      <a href="settings.html" class="active">Настройки</a>
+    </div>
+  </nav>
+
+  <script type="module" src="settings.js"></script>
+</body>
+</html>
