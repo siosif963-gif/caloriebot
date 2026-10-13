@@ -6,6 +6,12 @@ CalorieBot — Telegram Mini App для ежедневного дневника 
 
 Стек: FastAPI + SQLAlchemy 2.0 + SQLite (бэкенд), Vanilla JS + Chart.js (фронтенд на GitHub Pages).
 
+## Демо
+
+Бот в Telegram: [@easyeatcounter_bot](https://t.me/easyeatcounter_bot) (кнопка меню открывает мини-апп).
+
+> **Важно:** бот может не отвечать. Бэкенд работал на пробном периоде хостинга (Railway), поэтому после его окончания приложение может быть недоступно. Как оно выглядит, показано на скриншотах ниже.
+
 ## Скриншоты
 
 ![Все экраны CalorieBot](screenshots/00-overview.jpg)
