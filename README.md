@@ -6,6 +6,26 @@ CalorieBot — Telegram Mini App для ежедневного дневника 
 
 Стек: FastAPI + SQLAlchemy 2.0 + SQLite (бэкенд), Vanilla JS + Chart.js (фронтенд на GitHub Pages).
 
+## Скриншоты
+
+![Все экраны CalorieBot](screenshots/00-overview.jpg)
+
+| Дневник | Поиск | Порция |
+|:---:|:---:|:---:|
+| <img src="screenshots/01-diary.jpg" width="240"> | <img src="screenshots/02-search.jpg" width="240"> | <img src="screenshots/03-add-portion.jpg" width="240"> |
+
+| Статистика | Свой продукт | Настройки |
+|:---:|:---:|:---:|
+| <img src="screenshots/04-stats.jpg" width="240"> | <img src="screenshots/05-create-product.jpg" width="240"> | <img src="screenshots/06-settings.jpg" width="240"> |
+
+## Возможности
+
+- Дневник питания по приёмам пищи: калории и БЖУ с прогрессом к дневной норме.
+- Умный поиск по названию и штрихкоду: локальная база (сети общепита, магазины, базовые продукты) и OpenFoodFacts.
+- Свои продукты: создание, видны только автору; проверка БЖУ на 100 г.
+- Статистика за неделю и месяц с графиком и средними значениями.
+- Авторизация через подпись Telegram `initData`, тема Telegram (светлая и тёмная).
+
 ## Локальный запуск бэкенда
 
 ```bash
