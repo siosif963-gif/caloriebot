@@ -35,14 +35,27 @@ def _ensure_db_dir() -> None:
         Path(url.database).parent.mkdir(parents=True, exist_ok=True)
 
 
-@asynccontextmanager
-async def lifespan(app: FastAPI):
+def check_startup_settings() -> None:
+    """Отказывается стартовать при опасной или неполной конфигурации (RuntimeError)."""
+    if settings.DEV_MODE and settings.BOT_TOKEN:
+        # DEV_MODE пускает без подписи initData: рядом с боевым токеном это почти наверняка ошибка
+        logger.critical(
+            "DEV_MODE=true вместе с заданным BOT_TOKEN: запуск запрещён, потому что DEV_MODE "
+            "отключает проверку подписи Telegram. Для боевого запуска поставьте DEV_MODE=false, "
+            "для локальной проверки без Telegram уберите BOT_TOKEN."
+        )
+        raise RuntimeError("DEV_MODE=true нельзя сочетать с BOT_TOKEN")
     if not settings.BOT_TOKEN and not settings.DEV_MODE:
         logger.critical(
             "BOT_TOKEN не задан и DEV_MODE выключен: запуск невозможен. "
             "Укажите BOT_TOKEN в переменных окружения."
         )
         raise RuntimeError("BOT_TOKEN не задан")
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    check_startup_settings()
     if settings.DEV_MODE:
         logger.warning("ВНИМАНИЕ: включён DEV_MODE — авторизация через initData отключена")
     _ensure_db_dir()

@@ -55,7 +55,7 @@ CalorieBot — Telegram Mini App для ежедневного дневника 
 Нужен только Docker. Из корня репозитория:
 
 ```bash
-cp .env.example .env        # задайте BOT_TOKEN (или DEV_MODE=true для проверки без Telegram)
+cp .env.example .env        # задайте BOT_TOKEN; для проверки без Telegram вместо токена: DEV_MODE=true и пустой BOT_TOKEN
 docker compose up --build
 ```
 
@@ -72,7 +72,7 @@ cd backend
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-cp .env.example .env        # DEV_MODE=true и FRONTEND_ORIGINS=http://localhost:5500
+cp .env.example .env        # DEV_MODE=true, пустой BOT_TOKEN, FRONTEND_ORIGINS=http://localhost:5500
 uvicorn main:app --reload
 ```
 
@@ -84,7 +84,7 @@ uvicorn main:app --reload
 python -m http.server 5500
 ```
 
-Откройте http://localhost:5500: вне Telegram это демо-режим, сервер не нужен. Чтобы работать с локальным бэкендом, временно поставьте в `frontend/api.js` `API_BASE_URL = 'http://localhost:8000'` и откройте http://localhost:5500/?demo=0 (бэкенд должен быть запущен с `DEV_MODE=true`).
+Откройте http://localhost:5500: вне Telegram это демо-режим, сервер не нужен. Чтобы работать с локальным бэкендом, временно поставьте в `frontend/api.js` `API_BASE_URL = 'http://localhost:8000'` и откройте http://localhost:5500/?demo=0 (бэкенд должен быть запущен с `DEV_MODE=true` и пустым `BOT_TOKEN`: вместе с токеном `DEV_MODE=true` запрещён, сервер не стартует).
 
 ## Тесты
 
