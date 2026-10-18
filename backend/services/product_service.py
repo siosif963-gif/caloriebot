@@ -255,14 +255,37 @@ def search(db: Session, q: str, user_id: int | None = None) -> SearchResult:
     return SearchResult(items=_merge(local, saved), external_status="ok")
 
 
+def _barcode_key(code: str) -> str | None:
+    """Штрихкод продукта: сам код или код вида off-<штрихкод> / st-<штрихкод>."""
+    match = re.fullmatch(r"(?:off-|st-)?(\d{8,14})", code)
+    return match.group(1) if match else None
+
+
 def _merge(local: list[Product], extra: list[Product]) -> list[Product]:
-    """Локальные результаты, затем недостающие из OFF; local-источник — первым."""
-    merged = list(local)
-    seen = {p.id for p in merged}
-    for product in extra:
-        if product.id not in seen:
-            seen.add(product.id)
-            merged.append(product)
+    """Локальные результаты, затем недостающие из OFF; local-источник — первым.
+
+    Один и тот же продукт не повторяется: дубль — это тот же id, тот же штрихкод
+    (импорт off-<код> и живой результат с кодом <код>) или та же поисковая строка
+    (название + бренд), как и при локальном поиске.
+    """
+    merged: list[Product] = []
+    seen_ids: set[int] = set()
+    seen_barcodes: set[str] = set()
+    seen_names: set[str] = set()
+    for product in [*local, *extra]:
+        barcode = _barcode_key(product.code)
+        if (
+            product.id in seen_ids
+            or (barcode is not None and barcode in seen_barcodes)
+            or product.name_search in seen_names
+        ):
+            continue
+        seen_ids.add(product.id)
+        if barcode is not None:
+            seen_barcodes.add(barcode)
+        seen_names.add(product.name_search)
+        merged.append(product)
+
     def rank(p: Product) -> int:
         if p.source == "user":
             return 0
