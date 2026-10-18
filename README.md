@@ -1,5 +1,7 @@
 # CalorieBot — Telegram Mini App
 
+[![Tests](https://github.com/siosif963-gif/caloriebot/actions/workflows/tests.yml/badge.svg)](https://github.com/siosif963-gif/caloriebot/actions/workflows/tests.yml)
+
 ## О проекте
 
 CalorieBot — Telegram Mini App для ежедневного дневника питания. Пользователь находит продукт (по названию или штрихкоду), вводит вес порции и приём пищи, а приложение считает калории и БЖУ и показывает прогресс к дневной норме. Поиск комбинированный: сначала локальная база российских продуктов, затем OpenFoodFacts с сохранением найденного в локальную БД.
