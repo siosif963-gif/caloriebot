@@ -1,0 +1,23 @@
+# Локальный запуск бэкенда: docker compose up --build
+# Переменные берутся из файла .env рядом с этим файлом (см. .env.example).
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: docker/Dockerfile
+    image: caloriebot-backend
+    ports:
+      - "8000:8000"
+    environment:
+      BOT_TOKEN: ${BOT_TOKEN:-}
+      DEV_MODE: ${DEV_MODE:-false}
+      DEV_USER_ID: ${DEV_USER_ID:-1}
+      FRONTEND_ORIGINS: ${FRONTEND_ORIGINS:-}
+      OFF_CONTACT_EMAIL: ${OFF_CONTACT_EMAIL:-caloriebot@example.com}
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+    volumes:
+      - caloriebot-data:/data
+    restart: unless-stopped
+
+volumes:
+  caloriebot-data:

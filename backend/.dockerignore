@@ -1,0 +1,22 @@
+# Секреты и локальные файлы
+.env
+.env.*
+!.env.example
+database.db
+*.db
+
+# Окружение и кэши
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Тесты и dev-зависимости в образ не нужны
+tests/
+pytest.ini
+requirements-dev.txt
+
+# Сам Dockerfile и служебное
+docker/
+.dockerignore
+.gitignore

@@ -34,6 +34,19 @@ CalorieBot — Telegram Mini App для ежедневного дневника 
 - Статистика за неделю и месяц с графиком и средними значениями.
 - Авторизация через подпись Telegram `initData`, тема Telegram (светлая и тёмная).
 
+## Запуск через Docker
+
+Нужен только Docker. Из корня репозитория:
+
+```bash
+cp .env.example .env        # задайте BOT_TOKEN (или DEV_MODE=true для проверки без Telegram)
+docker compose up --build
+```
+
+Бэкенд откроется на http://localhost:8000 (`/api/health`, `/docs`). База SQLite лежит в томе `caloriebot-data` и переживает перезапуск и пересоздание контейнера. Остановка: `docker compose down` (данные остаются), `docker compose down -v` (вместе с данными).
+
+Контейнер работает не от root. Dockerfile лежит в `backend/docker/Dockerfile`, а не в корне `backend/`, чтобы Railway не подхватил его вместо своей сборки.
+
 ## Локальный запуск бэкенда
 
 ```bash
