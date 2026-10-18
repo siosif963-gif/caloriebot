@@ -166,7 +166,20 @@ def _upsert_off_products(db: Session, parsed: list[dict]) -> list[Product]:
 
 def _barcode_lookup(db: Session, code: str) -> tuple[Product | None, str]:
     """Поиск по штрихкоду: (продукт или None, external_status)."""
-    product = db.scalar(select(Product).where(Product.code == code))
+    # Штрихкод может лежать в БД под своим кодом (кэш OpenFoodFacts) или с префиксом:
+    # off-<штрихкод> (импорт выгрузки), st-<штрихкод> (товары магазинов).
+    candidates = {
+        p.code: p
+        for p in db.scalars(
+            select(Product).where(
+                Product.code.in_([code, f"off-{code}", f"st-{code}"])
+            )
+        )
+    }
+    product = next(
+        (candidates[c] for c in (code, f"off-{code}", f"st-{code}") if c in candidates),
+        None,
+    )
     if product is not None:
         return _refresh_if_stale(db, product), "skipped"
 
