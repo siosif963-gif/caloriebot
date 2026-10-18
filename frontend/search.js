@@ -1,6 +1,6 @@
 // Экран «Поиск»: debounce, отмена предыдущего запроса, карточки продуктов.
-import { initApp, navigate, haptic, displayBrand, foodEmoji } from './app.js?v=20261019a';
-import { searchProducts } from './api.js?v=20261019a';
+import { initApp, navigate, haptic, displayBrand, foodEmoji } from './app.js?v=20261019b';
+import { searchProducts } from './api.js?v=20261019b';
 
 const DEBOUNCE_MS = 300;
 const MIN_QUERY_LENGTH = 2;

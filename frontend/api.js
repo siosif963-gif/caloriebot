@@ -1,7 +1,7 @@
 // Клиент бэкенда. Все сетевые запросы приложения идут только отсюда.
-import { tg } from './app.js?v=20261019a';
-import { ApiError } from './errors.js?v=20261019a';
-import * as demo from './api-demo.js?v=20261019a';
+import { tg } from './app.js?v=20261019b';
+import { ApiError } from './errors.js?v=20261019b';
+import * as demo from './api-demo.js?v=20261019b';
 
 // Адрес бэкенда. Меняется только здесь.
 export const API_BASE_URL = 'https://caloriebot-production-5651.up.railway.app';

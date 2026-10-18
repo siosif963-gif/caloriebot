@@ -1,9 +1,9 @@
 // Демо-режим: те же функции и форматы ответов, что у api.js, но без сервера.
 // Продукты берутся из встроенной базы (data/products.json), дневник, свои продукты и нормы
 // хранятся в localStorage этого браузера. Модуль не делает ничего при импорте.
-import { ApiError } from './errors.js?v=20261019a';
+import { ApiError } from './errors.js?v=20261019b';
 
-const VERSION = '20261019a';
+const VERSION = '20261019b';
 const STORAGE_KEY = 'caloriebot.demo.v1';
 const MODE_KEY = 'caloriebot.demo.mode';
 const MAX_USER_PRODUCTS = 300;
@@ -258,6 +258,25 @@ function makeEntry(id, product, weight, meal, date, minutes) {
   };
 }
 
+// Демо охватывает последние 30 дней, чтобы и неделя, и месяц в статистике были заполнены.
+const SEED_SPAN_DAYS = 30;
+// Несколько дней без записей: как у живого человека, и график не выглядит «нарисованным»
+const SKIPPED_SEED_DAYS = new Set([9, 12, 18, 24, 27]);
+
+// Дни 0–6 — подготовленные шаблоны выше. Старше — те же шаблоны по кругу
+// с детерминированным разбросом веса (0.8…1.28), округлённым до 5 г.
+function seedItemsFor(offset) {
+  if (offset < SEED_DAYS.length) return SEED_DAYS[offset];
+  if (SKIPPED_SEED_DAYS.has(offset)) return null;
+  const factor = 0.8 + ((offset * 37) % 9) * 0.06;
+  return SEED_DAYS[offset % SEED_DAYS.length].map(([name, brandHint, weight, meal]) => [
+    name,
+    brandHint,
+    Math.max(10, Math.round((weight * factor) / 5) * 5),
+    meal,
+  ]);
+}
+
 function buildSeedState(catalog) {
   const today = todayStr();
   const state = {
@@ -277,7 +296,9 @@ function buildSeedState(catalog) {
     nextEntryId: 1,
     nextProductId: USER_PRODUCT_ID_BASE,
   };
-  SEED_DAYS.forEach((items, offset) => {
+  for (let offset = 0; offset < SEED_SPAN_DAYS; offset += 1) {
+    const items = seedItemsFor(offset);
+    if (!items) continue;
     const date = addDays(today, -offset);
     const counters = {};
     items.forEach(([name, brandHint, weight, meal]) => {
@@ -300,7 +321,7 @@ function buildSeedState(catalog) {
       state.entries.push(entry);
       state.nextEntryId += 1;
     });
-  });
+  }
   return state;
 }
 

@@ -1,5 +1,5 @@
 // Telegram SDK, навигация, haptic и общие утилиты.
-import { isDemoMode, mountDemoBanner } from './api-demo.js?v=20261019a';
+import { isDemoMode, mountDemoBanner } from './api-demo.js?v=20261019b';
 
 const noop = () => {};
 
@@ -128,7 +128,7 @@ export function initApp({ backTo = null } = {}) {
 }
 
 // Версия фронтенда: меняется при каждом релизе, чтобы клиенты не держали старый кэш
-export const APP_VERSION = '20261019a';
+export const APP_VERSION = '20261019b';
 
 export function navigate(page, params = {}) {
   haptic.light();

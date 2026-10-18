@@ -8,8 +8,8 @@ import {
   haptic,
   showToast,
   round1,
-} from './app.js?v=20261019a';
-import { createProduct } from './api.js?v=20261019a';
+} from './app.js?v=20261019b';
+import { createProduct } from './api.js?v=20261019b';
 
 const NUMBER_FIELDS = [
   { key: 'calories', id: 'fieldCalories', label: 'Ккал', max: 900 },
