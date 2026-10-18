@@ -1,18 +1,18 @@
 // Клиент бэкенда. Все сетевые запросы приложения идут только отсюда.
-import { tg } from './app.js?v=20261013c';
+import { tg } from './app.js?v=20261019a';
+import { ApiError } from './errors.js?v=20261019a';
+import * as demo from './api-demo.js?v=20261019a';
 
 // Адрес бэкенда. Меняется только здесь.
 export const API_BASE_URL = 'https://caloriebot-production-5651.up.railway.app';
 
 const REQUEST_TIMEOUT_MS = 20000;
 
-export class ApiError extends Error {
-  constructor(message, status) {
-    super(message);
-    this.name = 'ApiError';
-    this.status = status;
-  }
-}
+export { ApiError };
+
+// Вне Telegram (или по ?demo=1) вместо сервера работает демо-режим из api-demo.js.
+// Внутри Telegram DEMO всегда false: запросы идут на настоящий бэкенд.
+const DEMO = demo.isDemoMode();
 
 async function request(path, { method = 'GET', body, signal } = {}) {
   const headers = { 'Content-Type': 'application/json' };
@@ -78,42 +78,53 @@ async function request(path, { method = 'GET', body, signal } = {}) {
 }
 
 export function getUser() {
-  return request('/api/user/settings');
+  return DEMO ? demo.getUser() : request('/api/user/settings');
 }
 
 export function updateSettings(data) {
-  return request('/api/user/settings', { method: 'PUT', body: data });
+  return DEMO
+    ? demo.updateSettings(data)
+    : request('/api/user/settings', { method: 'PUT', body: data });
 }
 
 export function searchProducts(q, signal) {
-  return request(`/api/products/search?q=${encodeURIComponent(q)}`, { signal });
+  return DEMO
+    ? demo.searchProducts(q, signal)
+    : request(`/api/products/search?q=${encodeURIComponent(q)}`, { signal });
 }
 
 export function getProduct(id) {
-  return request(`/api/products/${encodeURIComponent(id)}`);
+  return DEMO ? demo.getProduct(id) : request(`/api/products/${encodeURIComponent(id)}`);
 }
 
 export function createProduct(data) {
-  return request('/api/products', { method: 'POST', body: data });
+  return DEMO ? demo.createProduct(data) : request('/api/products', { method: 'POST', body: data });
 }
 
 export function deleteProduct(id) {
-  return request(`/api/products/${encodeURIComponent(id)}`, { method: 'DELETE' });
+  return DEMO
+    ? demo.deleteProduct(id)
+    : request(`/api/products/${encodeURIComponent(id)}`, { method: 'DELETE' });
 }
 
 export function addDiaryEntry(data) {
-  return request('/api/diary/add', { method: 'POST', body: data });
+  return DEMO ? demo.addDiaryEntry(data) : request('/api/diary/add', { method: 'POST', body: data });
 }
 
 export function getDiaryDay(date) {
-  return request(`/api/diary/day?date=${encodeURIComponent(date)}`);
+  return DEMO
+    ? demo.getDiaryDay(date)
+    : request(`/api/diary/day?date=${encodeURIComponent(date)}`);
 }
 
 export function deleteDiaryEntry(id) {
-  return request(`/api/diary/${encodeURIComponent(id)}`, { method: 'DELETE' });
+  return DEMO
+    ? demo.deleteDiaryEntry(id)
+    : request(`/api/diary/${encodeURIComponent(id)}`, { method: 'DELETE' });
 }
 
 export function getStats(startDate, endDate) {
+  if (DEMO) return demo.getStats(startDate, endDate);
   const params = new URLSearchParams({ start_date: startDate, end_date: endDate });
   return request(`/api/stats?${params.toString()}`);
 }

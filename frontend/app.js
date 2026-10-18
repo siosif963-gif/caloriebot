@@ -1,4 +1,5 @@
 // Telegram SDK, навигация, haptic и общие утилиты.
+import { isDemoMode, mountDemoBanner } from './api-demo.js?v=20261019a';
 
 const noop = () => {};
 
@@ -52,7 +53,13 @@ export const haptic = {
 // ---------- Тема ----------
 
 function applyTheme() {
-  document.documentElement.dataset.theme = tg.colorScheme || 'light';
+  // В Telegram тему задаёт клиент; в обычном браузере следуем системной
+  const scheme = isTelegram
+    ? tg.colorScheme
+    : window.matchMedia?.('(prefers-color-scheme: dark)').matches
+      ? 'dark'
+      : 'light';
+  document.documentElement.dataset.theme = scheme || 'light';
 }
 
 // ---------- Запасные кнопки (страница открыта вне Telegram) ----------
@@ -100,6 +107,10 @@ export function initApp({ backTo = null } = {}) {
   tg.BackButton.hide();
   applyTheme();
   tg.onEvent('themeChanged', applyTheme);
+  if (!isTelegram) {
+    window.matchMedia?.('(prefers-color-scheme: dark)').addEventListener?.('change', applyTheme);
+  }
+  if (isDemoMode()) mountDemoBanner();
 
   if (backTo) {
     const onBack = () => navigate(backTo);
@@ -117,7 +128,7 @@ export function initApp({ backTo = null } = {}) {
 }
 
 // Версия фронтенда: меняется при каждом релизе, чтобы клиенты не держали старый кэш
-export const APP_VERSION = '20261013c';
+export const APP_VERSION = '20261019a';
 
 export function navigate(page, params = {}) {
   haptic.light();
