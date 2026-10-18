@@ -261,13 +261,44 @@ def _merge(local: list[Product], extra: list[Product]) -> list[Product]:
     return merged[:MAX_RESULTS]
 
 
+def _read_seed_file(path: Path) -> list[dict] | None:
+    """Читает JSON-справочник. None — файла нет, он повреждён или пуст (использовать нельзя)."""
+    try:
+        with path.open(encoding="utf-8") as file:
+            data = json.load(file)
+    except FileNotFoundError:
+        logger.error("Файл справочника не найден: %s", path)
+        return None
+    except (OSError, ValueError) as exc:
+        logger.error("Не удалось прочитать файл справочника %s: %s", path, exc)
+        return None
+    if not isinstance(data, list) or not data:
+        logger.error("Файл справочника пуст или имеет неверный формат: %s", path)
+        return None
+    return data
+
+
 def seed_local_products(db: Session) -> None:
-    """Синхронизирует локальные продукты с JSON: добавляет новые и обновляет изменённые (по code)."""
-    all_items: list[dict] = []
-    for seed_file in (SEED_FILE, SEED_OFF_FILE):
-        if seed_file.exists():
-            with seed_file.open(encoding="utf-8") as file:
-                all_items.extend(json.load(file))
+    """Синхронизирует локальные продукты с JSON: добавляет новые, обновляет изменённые,
+    удаляет исчезнувшие (по code).
+
+    Защита от потери данных: если файл не удалось прочитать, ничего из того, что он
+    описывает, не удаляется. Нет основного справочника — синхронизация пропускается целиком;
+    нет выгрузки OpenFoodFacts (коды off-*) — такие продукты остаются как есть.
+    """
+    main_items = _read_seed_file(SEED_FILE)
+    if main_items is None:
+        logger.critical(
+            "Основной справочник продуктов не загружен: синхронизация пропущена, "
+            "продукты в базе не тронуты"
+        )
+        return
+    off_items = _read_seed_file(SEED_OFF_FILE)
+    if off_items is None:
+        logger.warning(
+            "Выгрузка OpenFoodFacts не загружена: продукты off-* не обновляются и не удаляются"
+        )
+    all_items = main_items + (off_items or [])
 
     existing = {
         p.code: p
@@ -305,13 +336,17 @@ def seed_local_products(db: Session) -> None:
                 setattr(product, key, value)
             updated += 1
 
-    # Локальные продукты, которых больше нет в JSON, удаляем (в дневнике останутся снимки)
+    # Удаляем локальные продукты, которых больше нет в загруженных файлах.
+    # В дневнике остаются снимки (product_id обнуляется), свои продукты не затрагиваются.
     json_codes = {item["code"] for item in all_items}
     removed = 0
     for code, product in existing.items():
-        if code not in json_codes:
-            db.delete(product)
-            removed += 1
+        if code in json_codes:
+            continue
+        if code.startswith("off-") and off_items is None:
+            continue  # выгрузка OFF не загружена — её продукты не трогаем
+        db.delete(product)
+        removed += 1
 
     if added or updated or removed:
         db.commit()
